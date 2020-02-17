@@ -1,0 +1,342 @@
+#########################
+# SUPER + KEYS #
+#########################
+
+super + {_,shift + } Return
+    {$TERMINAL, scratch}
+
+super + {_,shift + } d
+    {dmenu_run -fn Monospace-13, rofi_run -l}
+
+super + {_,shift + } r
+   {$TERMINAL -n $FILE -c $FILE -e $FILE, $TERMINAL -n $FILE -c $FILE -e sudo $FILE}
+
+super + {_,shift + } e
+    {$TERMINAL -e ranger, subl3}
+
+super + {_,shift + } m
+    {dman, spotify}
+
+super + {_,shift + } n
+    {$TERMINAL -e newsboat, $TERMINAL -e ncmpcpp}
+
+super + {_,shift + } i
+    {$TERMINAL -e htop, $TERMINAL -e gtop}
+
+
+#super + shift + a
+ #   $TERMINAL -e pulsemixer; pkill -RTMIN+10 i3blocks
+
+super + {_,shift + } c
+    {rofi_run, camtoggle}
+
+super + {_,shift + } w
+    {$BROWSER, firefox}
+
+super + {_,shift + } p
+    {discord, bspc rule -a TelegramDesktop -o desktop='^2' state=floating follow=on rectangle=550x800+1250+200 && telegram-desktop}
+
+
+super + shift + {x,BackSpace,Escape}
+    {prompt "Shutdown computer?" "sudo -A shutdown -h now", prompt "Reboot computer?" "sudo -A shutdown -r now", prompt "Are you sure you would like to quit this Xsession" "bspc quit"}
+
+super + u
+    cat /tmp/dropdown | xargs -I win bspc node win --flag hidden;bspc node -f win
+
+# Make a windoww sticky/non-sticky
+super + o
+    bspc node -g sticky={on,off}
+
+
+super + x
+    rofi_run -l
+
+
+super + alt + x
+    bspc rule -a St -o desktop='^1' state=floating follow=on rectangle=800x400+1100+650 && $TERMINAL -e htop
+
+# Et cetera...
+super + grave
+    dmenuunicode
+
+super + Scroll_Lock
+    killall screenkey || screenkey
+
+super + Insert
+    tdrop -ma -w 1080 -x 350 -h 37% -y 52 $TERMINAL -e htop
+
+
+#Toggle pseudo tiling of window/Toggle fullscreen
+super + {_,shift + } f
+    {bspc node --state \~fullscreen, bspc node --state \~pseudo_tiled, bspc node focused.tiled -t floating || bspc node focused.floating -t tiled}
+
+#Hide polybar/Reload bspwm
+super + {_,shift + } b
+    {polybar-msg cmd toggle, ~/.config/bspwm/bspwmrc}
+
+#Reload sxhkd:
+super + Escape
+    pkill -USR1 -x sxhkd
+
+
+#########################
+# ALT + KEYS #
+#########################
+
+alt + {_,shift + } a
+   {toggleprogram "picom -b", scratch}
+
+
+#########################
+# CONTROL + ALT KEYS    #
+#########################
+
+#Compton Toggle
+ctrl + alt + o
+    toggleprogram "picom" "-b"
+
+#Pulse Audio Control
+ctrl + alt + u
+     pavucomtrol
+
+#Launch vifm
+super + alt + v
+    dropdown.sh
+
+
+#########################
+#     SCREENSHOTS       #
+#########################
+
+# Recording
+# Take screenshot
+Prior
+    maim pic-full-$(date '+%y%m%d-%H%M-%S').png
+
+# Pick screenshot type
+shift + Prior
+    maimpick
+
+# Record audio or video
+super + Prior
+    dmenurecord
+
+# kill active recording
+super + shift + Prior
+    dmenurecord kill
+
+# kill x
+super + q
+   xdo close
+
+#########################
+#     MULTIMEDIA KEYS   #
+#########################
+
+XF86Launch1
+    xset dpms force off
+
+#F10
+ #   amixer set Master 5%-
+
+#F11
+ #   amixer set Master 5%+
+
+super + l ; {F11,F10,F9}
+	amixer {-q set Master 5%+,-q set Master 5%-,set Master toggle}
+
+## Music control
+XF86Audio{Next,Prev,Play,Stop}
+	mpc {next,prev,toggle,stop
+
+XF86MonBrightnessDown
+    xbacklight -dec 15
+XF86MonBrightnessUp
+    xbacklight -inc 15
+
+# Changes to next/previous tracks
+super + {comma,period}
+    lmc {prev,next}
+# Restart track
+super + shift + less
+    lmc replay
+# Increase volume
+super + {equal,plus}
+    lmc up {5,15}
+# Decrease volume
+super {_,shift +} + minus
+    lmc down {5,15}
+# Seek foward in song
+super + {_,shift +} bracketright
+    lmc forward {10,120}
+# Seek backward in song
+super + {_,shift +} bracketleft
+    lmc back {10,120}
+
+#########################
+# BSPWM LAYOUT KEYS     #
+#########################
+
+#azerty keyboard layout for numbers 1-10
+#{ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+
+#################################################################
+
+#Focus selected desktop FOR QWERTY KEYBOARDS
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}'
+
+#Focus selected desktop	FOR AZERTY KEYBOARDS
+#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+#    bspc desktop -f '^{1-9,10}'
+
+#################################################################
+
+#Move window to selected desktop FOR QWERTY KEYBOARDS
+super + shift + {1-9,0}
+    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
+
+#Move window to selected desktop FOR AZERTY KEYBOARDS
+#super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+#    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
+
+#################################################################
+
+
+#Focus selected desktop
+alt + Tab
+	bspc desktop -f '^{1-9,10}'
+
+#Focus selected desktop
+super + Tab
+	bspc desktop -f '^{1-9,10}'
+
+
+# Focus next/previous window
+ctrl + alt + Left
+	bspc node --focus west
+
+# Focus next/previous window
+ctrl + alt + Right
+	bspc node --focus east
+
+# Focus Up window
+ctrl +alt + Up
+	bspc node --focus north
+
+# Focus Down window
+ctrl + alt + Down
+	bspc node --focus south
+
+#Rotate desktop
+alt + space
+	bspc node @/ --rotate {90,-90}
+
+# Focus/swap windows by direction
+super + {_,shift + }{h,j,k,l}
+	bspc node --{focus,swap} {west,south,north,east}
+
+# Focus/swap windows by direction
+ctrl + super + {Left,Down,Up,Right}
+	bspc node --{focus} {west,south,north,east}
+
+# Flip layout vertically/horizontally
+super + {_,shift + }a
+	bspc node @/ --flip {vertical,horizontal}
+
+
+# Expand tiled space
+alt + shift + {h,j,k,l}
+	bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
+
+# Contract tiled space
+super + ctrl + {h,j,k,l}
+	bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
+
+# Increase/decrease window gap on focused desktop
+super + bracket{left,right}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+
+# Move floating window
+super + alt + {_,shift + }{Left,Down,Up,Right}
+	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
+
+# set the window state
+#super + space
+#	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Focus parent/brother/first/second for preselection
+super + ctrl + {e,r,t,y}
+	bspc node --focus @{parent,brother,first,second}
+
+# Preselect the splitting area for next window on leaf/parent
+super + ctrl + {u,i,o,p}
+	bspc node --presel-dir \~{west,south,north,east}
+
+# Define splitting ratio for next window on leaf/parent
+super + ctrl + {_,shift +}{1-9}
+	bspc node {_,@/} --presel-ratio 0.{1-9}
+
+# Cancel preselection
+super + ctrl + space
+	bspc node --presel-dir cancel
+
+ # Function keys
+# Show readme
+super + F1
+    dmenufm
+
+# Restart bspwm
+super + F2
+  edconf.sh
+
+# Change display
+super + F3
+    displayselect
+
+# Hibernate
+super + F4
+    prompt 'Hibernate computer?' 'sudo systemctl suspend'
+
+# Restart/rescan wifi/eth networks
+super + F5
+    sudo -A systemctl restart NetworkManager
+
+# Start torrent daemon/open interface
+super + F6
+    $TERMINAL -e cava
+
+# toggle torrent daemon
+super + F7
+    td-toggle
+# sync email
+
+super + F8
+    dmenumini
+
+# Mount a USB drive or Android device
+super + F9
+    dmenumount
+
+# Unmount a USB drive or Android device
+super + F10
+    dmenuumount
+
+# Search with Duckduckgo
+super + F11
+    ducksearch
+
+# Network Manager interface
+super + shift + F12
+    mpv --geometry=-0-0 --autofit=40%  --title="mpvfloat" https://www.youtube.com/watch?v=5zKizTREKzQ
+
+# Emulate i3's scratchpad
+F12
+    keybinds
+
+
+
+
+
+
+

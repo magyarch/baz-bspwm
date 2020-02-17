@@ -1,0 +1,102 @@
+theme
+	name Knurra blue
+	author weakhead <http://weakhead.deviantart.com/>
+	# Original author: lassekongo83
+	# License: Creative Commons Attribution-Noncommercial-Share Alike 3.0
+
+panel
+	position top
+	background tile.png
+	
+
+	height 25
+	desktop_spacing
+
+desktop_switcher
+	idle
+		left_corner ds-left.png
+		left tile.png
+		center tile.png
+		right tile.png
+		right_corner tile.png
+		font DejaVu Sans condensed bold 11
+			color 52 150 196
+			offset 0 0
+			align center
+
+	pressed
+		left_corner tile-active.png
+		left tile-active.png
+		center tile-active.png
+		right tile-active.png
+		right_corner tile-active.png
+		font DejaVu Sans condensed bold 11
+			color 255 255 255
+			offset 0 0
+			align center
+
+launchbar
+	icon_size 16 16
+
+empty 7
+
+taskbar
+	idle
+		left tb-lr-idle.png
+		center tile.png
+		right tb-lr-idle.png
+		font DejaVu Sans condensed 11
+			color 255 255 255
+			offset 5 0
+		icon_offset 0 0
+
+	idle_highlight
+		left tb-left-hover.png
+		center tb-tile-hover.png
+		right tb-right-hover.png
+		font ejaVu Sans condensed 11
+			color 255 255 255
+			offset 5 0
+		icon_offset 0 0
+
+	pressed
+		left tb-left-active.png
+		center tb-tile-active.png
+		right tb-right-active.png
+		font ejaVu Sans condensed 11
+			color 255 255 255
+			offset 5 1
+		icon_offset 1 1
+
+	pressed_highlight
+		left tb-left-hover.png
+		center tb-tile-hover.png
+		right tb-right-hover.png
+		font ejaVu Sans condensed 11
+			color 255 255 255
+			offset 5 1
+		icon_offset 1 1
+
+	task_max_width 200
+	default_icon default_icon.png
+
+empty 7
+
+systray
+	icon_size 20 20
+	icon_spacing 2
+
+empty 3
+
+clock
+	background
+		left tile.png
+		center tile.png
+		right clock-right.png
+
+	font DejaVu Sans condensed bold 11
+		color 255 255 255
+		offset 0 0
+		align center
+
+	time_format %H:%M

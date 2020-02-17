@@ -1,0 +1,13 @@
+theme Kupo-dark-red
+
+launchbar
+	exec termite
+		icon /usr/share/icons/Sardi/scalable/apps/terminal.svg
+	exec midori
+		icon /usr/share/icons/Sardi-Orb-Colora/scalable/apps/org.midori_browser.Midori.svg
+	exec pcmanfm
+		icon /usr/share/icons/Sardi/scalable/apps/thunar.svg
+	exec geany
+		icon /usr/share/icons/Sardi/scalable/apps/geany.svg
+	exec bmpanel2cfg
+		icon /usr/share/icons/Sardi/scalable/apps/gnome-ppp.png
