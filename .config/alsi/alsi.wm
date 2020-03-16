@@ -27,7 +27,7 @@ scalar {
          'flwm'                  => 'FLWM',
          'fvwm'                  => 'FVWM',
          'hackedbox'             => 'Hackedbox',
-         'hildon-desktop'        => 'Matchbox',
+         'herbstluftwm'          => 'Herbstluftwm',
          'i3'                    => 'i3',
          'icewm'                 => 'IceWM',
          'ion-3'                 => 'Ion3',

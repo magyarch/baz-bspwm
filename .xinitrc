@@ -11,3 +11,5 @@ exec bspwm
 #exec xmonad
 
 #exec herbstluftwm --locked
+
+#exec berry

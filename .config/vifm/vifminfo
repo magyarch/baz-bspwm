@@ -23,82 +23,76 @@ r2
 
 # Left window history (oldest to newest):
 d/home/xeoncpu
-	Downloads
+	.config
 3
+d/home/xeoncpu/.config
+	gtk-3.0
+15
+d/home/xeoncpu/.config/gtk-3.0
+	settings.ini
+1
+d/home/xeoncpu/.config
+	gtk-2.0
+14
+d/home/xeoncpu/.config/gtk-2.0
+	gtkrc-2.0
+1
+d/home/xeoncpu/.config
+	gtk-2.0
+14
+d/home/xeoncpu
+	.local
+7
+d/home/xeoncpu/.local
+	bin
+1
+d/home/xeoncpu/.local/bin
+	rofi_run
+15
+d/home/xeoncpu
+	Downloads
+1
 d/home/xeoncpu/Downloads
-	wallpapers-master
-3
-d/home/xeoncpu/Downloads/wallpapers-master
-	wallpapers-master
-1
-d/home/xeoncpu/Downloads/wallpapers-master/wallpapers-master
-	triangles_background_light_91693_1920x1080.jpg
-52
-d/home/xeoncpu
-	Downloads
-3
-d/home
-	xeoncpu
-1
-d/
-	etc
-3
-d/etc
-	hblock.d
-33
-d/etc/hblock.d
-	whitelist.list
-2
-d/home/xeoncpu
-	Downloads
-3
-d/home/xeoncpu/Downloads
-	dwm-systray-20190208-cb3f58a.diff
-12
-d/home/xeoncpu
-	dwm
-13
-d/home/xeoncpu/dwm
-	dwm-systray-20190208-cb3f58a.diff
-11
-d/home/xeoncpu
-	..
-0
-d/home
-	xeoncpu
-1
+	wallhaven-39em6d.png
+4
 d/home/xeoncpu
 	baz-voidrice
-11
+3
 d/home/xeoncpu/baz-voidrice
 	.config
 1
-d/home/xeoncpu
-	baz-voidrice
-11
-d/home
-	xeoncpu
-1
-d/
-	home
-5
-d/home
-	xeoncpu
-1
-d/home/xeoncpu
-	baz-voidrice
-11
+d/home/xeoncpu/baz-voidrice/.config
+	transmission-daemon
+26
 d/home/xeoncpu/baz-voidrice
-	.xprofile
-13
+	.local
+5
+d/home/xeoncpu/baz-voidrice/.local
+	bin
+1
+d/home/xeoncpu/baz-voidrice
+	.config
+1
+d/home/xeoncpu/baz-voidrice/.config
+	vifm
+27
+d/home/xeoncpu
+	Downloads
+14
+d/home/xeoncpu/Downloads
+	Dunst_gui_v2.1_by_KuLuSz
+2
+d/home/xeoncpu
+	.config
+3
+d/home/xeoncpu/.config
+	dunst
+14
+d/home/xeoncpu/.config/dunst
+	dunstrc
+1
 
 # Right window history (oldest to newest):
-D/home/xeoncpu/.config/polybar
-	config
-3
-D/home/xeoncpu/.config
-	bspwm
-2
 D/home/xeoncpu/.config/bspwm
 	polybar
 2
@@ -160,8 +154,14 @@ D/home/xeoncpu/.config/scripts
 	..
 0
 D/home/xeoncpu
-	baz-voidrice
-11
+	.local
+7
+D/home/xeoncpu/.local
+	bin
+1
+D/home/xeoncpu
+	..
+0
 
 # Command line history (oldest to newest):
 :mkdir media
@@ -184,11 +184,23 @@ ppowermenu.txt
 ppowermenu
 pedconf.sh
 pspotify_rules
+pDunst_gui_v2.1_by_KuLuSz
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/xeoncpu/scripts
+""/home/xeoncpu/.local/share/vifm/Trash/000_BraveSoftware
+""/home/xeoncpu/.local/share/vifm/Trash/000_Dharkael
+""/home/xeoncpu/.local/share/vifm/Trash/000_Thunar
+""/home/xeoncpu/.local/share/vifm/Trash/000_cef_user_data
+""/home/xeoncpu/.local/share/vifm/Trash/000_discord
+""/home/xeoncpu/.local/share/vifm/Trash/000_herbstluftwm
+""/home/xeoncpu/.local/share/vifm/Trash/000_lyrics
+""/home/xeoncpu/.local/share/vifm/Trash/000_spotify
+""/home/xeoncpu/.local/share/vifm/Trash/000_sublime-text-3
+""/home/xeoncpu/.local/share/vifm/Trash/000_transmission-daemon
+""/home/xeoncpu/.local/share/vifm/Trash/000_xfce4
+""/home/xeoncpu/.local/share/vifm/Trash/000_yay
 
 # Directory stack (oldest to newest):
 
@@ -935,3 +947,61 @@ t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200109-1321-22.png
 	/home/xeoncpu/pic-full-200109-1321-22.png
 t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200109-1626-53.png
 	/home/xeoncpu/pic-full-200109-1626-53.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_aio-core.sh
+	/home/xeoncpu/aio-core.sh
+t/home/xeoncpu/.local/share/vifm/Trash/000_jgmenurc
+	/home/xeoncpu/jgmenurc
+t/home/xeoncpu/.local/share/vifm/Trash/000_.xmonad
+	/home/xeoncpu/.xmonad
+t/home/xeoncpu/.local/share/vifm/Trash/000_dwm
+	/home/xeoncpu/dwm
+t/home/xeoncpu/.local/share/vifm/Trash/000_xbm_icons
+	/home/xeoncpu/xbm_icons
+t/home/xeoncpu/.local/share/vifm/Trash/000_.xmobarrc
+	/home/xeoncpu/.xmobarrc
+t/home/xeoncpu/.local/share/vifm/Trash/000_README.md
+	/home/xeoncpu/README.md
+t/home/xeoncpu/.local/share/vifm/Trash/000_LICENSE
+	/home/xeoncpu/baz-voidrice/LICENSE
+t/home/xeoncpu/.local/share/vifm/Trash/001_README.md
+	/home/xeoncpu/baz-voidrice/README.md
+t/home/xeoncpu/.local/share/vifm/Trash/001_aio-core.sh
+	/home/xeoncpu/baz-voidrice/aio-core.sh
+t/home/xeoncpu/.local/share/vifm/Trash/001_gitbeal.sh
+	/home/xeoncpu/baz-voidrice/gitbeal.sh
+t/home/xeoncpu/.local/share/vifm/Trash/001_jgmenurc
+	/home/xeoncpu/baz-voidrice/jgmenurc
+t/home/xeoncpu/.local/share/vifm/Trash/001_.xmonad
+	/home/xeoncpu/baz-voidrice/.xmonad
+t/home/xeoncpu/.local/share/vifm/Trash/001_dwm
+	/home/xeoncpu/baz-voidrice/dwm
+t/home/xeoncpu/.local/share/vifm/Trash/000_themes
+	/home/xeoncpu/baz-voidrice/themes
+t/home/xeoncpu/.local/share/vifm/Trash/001_xbm_icons
+	/home/xeoncpu/baz-voidrice/xbm_icons
+t/home/xeoncpu/.local/share/vifm/Trash/001_.xmobarrc
+	/home/xeoncpu/baz-voidrice/.xmobarrc
+t/home/xeoncpu/.local/share/vifm/Trash/000_BraveSoftware
+	/home/xeoncpu/baz-voidrice/.config/BraveSoftware
+t/home/xeoncpu/.local/share/vifm/Trash/000_Dharkael
+	/home/xeoncpu/baz-voidrice/.config/Dharkael
+t/home/xeoncpu/.local/share/vifm/Trash/000_Thunar
+	/home/xeoncpu/baz-voidrice/.config/Thunar
+t/home/xeoncpu/.local/share/vifm/Trash/000_cef_user_data
+	/home/xeoncpu/baz-voidrice/.config/cef_user_data
+t/home/xeoncpu/.local/share/vifm/Trash/000_discord
+	/home/xeoncpu/baz-voidrice/.config/discord
+t/home/xeoncpu/.local/share/vifm/Trash/000_herbstluftwm
+	/home/xeoncpu/baz-voidrice/.config/herbstluftwm
+t/home/xeoncpu/.local/share/vifm/Trash/000_lyrics
+	/home/xeoncpu/baz-voidrice/.config/lyrics
+t/home/xeoncpu/.local/share/vifm/Trash/000_spotify
+	/home/xeoncpu/baz-voidrice/.config/spotify
+t/home/xeoncpu/.local/share/vifm/Trash/000_sublime-text-3
+	/home/xeoncpu/baz-voidrice/.config/sublime-text-3
+t/home/xeoncpu/.local/share/vifm/Trash/000_transmission-daemon
+	/home/xeoncpu/baz-voidrice/.config/transmission-daemon
+t/home/xeoncpu/.local/share/vifm/Trash/000_xfce4
+	/home/xeoncpu/baz-voidrice/.config/xfce4
+t/home/xeoncpu/.local/share/vifm/Trash/000_yay
+	/home/xeoncpu/baz-voidrice/.config/yay

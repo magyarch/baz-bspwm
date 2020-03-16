@@ -1,17 +1,25 @@
 #!/usr/bin/env sh
 
 # If refreshing bspwm, remove all previous rules to prevent doubling up.
-#bspc rule -r "*"
+bspc rule -r "*"
+
+# [ -e "$PANEL_FIFO" ] && bspc subscribe report > "$PANEL_FIFO" &
+# pgrep -x panel > /dev/null || panel &
+
 
 
 #LAUNCHERS
+killall cleanfullscreen
+cleanfullscreen &
 
 
 #Bspwm configs
 bspc config border_width         2
 bspc config window_gap           10
-bspc config top_padding          25
-bspc config bottom_padding       10
+bspc config top_padding          40
+bspc config bottom_padding       15
+bspc config right_padding        15
+bspc config left_padding         15
 bspc config split_ratio          0.52
 #bspc config borderless_monocle   true
 #bspc config gapless_monocle      true
@@ -49,6 +57,7 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 #bspc monitor  -d "☢️ " "🤬 " "⚒️ " "🍭 " "🎲 " "🎬 " "🔰 "  "🎯 " "📀 "
 #bspc monitor -d "Web " "Chat " "Float " "Edit " "Tor " "Video " "Vbox " "File " "Music "
 #bspc monitor -d " "  " "  " "  " "  " "  " "  " "  " "  " "  " "
+#bspc monitor -d "I " "II " "III " "IV " "V " "VI " "VII " "VIII " "IX " "X "
 #btops &
 
 #Dual monitor
@@ -59,23 +68,21 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 #Application Rules
 #Open applications on specific workspaces
-#bspc rule -a firefox desktop='^1' follow=on
 bspc rule -a firefox desktop='^1' follow=on
 bspc rule -a discord desktop='^2' follow=on
 bspc rule -a TelegramDesktop desktop='^2' follow=on
-bspc rule -a Subl3 desktop='^4' follow=on
+bspc rule -a Subl3 desktop='^3' follow=on
 bspc rule -a Steam desktop='^5' state=floating
-bspc rule -a mpv desktop='^6' state=fullscreen follow=on
+bspc rule -a mpv desktop='^6' state=floating follow=on
 bspc rule -a Vlc desktop='^7' state=fullscreen follow=on
-bspc rule -a Thunar desktop='^8' follow=on
+bspc rule -a Thunar desktop='^4' follow=on
 bspc rule -a Spotify desktop='^9' follow=on
 bspc rule -a VirtualBox Manager state=fullscreen
 bspc rule -a VirtualBox Machine state=fullscreen
 bspc rule -a Ulauncher  border=off
 bspc rule -a burp-StartBurp desktop='^9' state=floating follow=on
-#bspc rule -a st-256color state=floating
-bspc rule -a scratchterm hidden=on sticky=on state=floating rectangle=900x500+540+200
-st -c scratchterm &
+#bspc rule -a scratchterm hidden=on sticky=on state=floating rectangle=900x500+540+200
+#st -c scratchterm &
 
 #Floating apps
 bspc rule -a feh state=floating
@@ -84,14 +91,10 @@ bspc rule -a Pulseaudio-equalizer-gtk  state=floating
 bspc rule -a Gpick state=floating
 bspc rule -a Xfce4-terminal state=floating
 bspc rule -a Lxappearance state=floating
+bspc rule -a pavucontrol floating=on 
 #bspc rule -a Oblogout state=floating
 #bspc rule -a Preferences state=floating follow=on
-#bspc rule -a dialog state=floating follow=on
-#bspc rule -a menu state=floating follow=on
-#bspc rule -a pop-up state=floating follow=on
-#bspc rule -a task_dialog state=floating follow=on
-#bspc rule -a st:nload desktop='^1' state=floating follow=on rectangle=400x400+0+0
-
+bspc rule -a St:calcurse state=floating 
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #find out the name of your monitor with xrandr
@@ -104,7 +107,7 @@ bspc rule -a Lxappearance state=floating
 
 #Spotify fix  --move desktop 9
 sleep 1
-wmctrl -r Spotify -t 9
+wmctrl -r Spotify -g 400x200 -t 9
 exit
 
 

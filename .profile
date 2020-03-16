@@ -8,8 +8,6 @@ export TERMINAL="st"
 export BROWSER="brave"
 export READER="zathura"
 export FILE="vifm"
-export BIB="$HOME/Documents/LaTeX/uni.bib"
-export REFER="$HOME/Documents/referbib"
 export SUDO_ASKPASS="$HOME/.local/bin/tools/dmenupass"
 export NOTMUCH_CONFIG="$HOME/.config/notmuch-config"
 export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
@@ -30,8 +28,8 @@ mpd >/dev/null 2>&1 &
 
 echo "$0" | grep "bash$" >/dev/null && [ -f ~/.bashrc ] && source "$HOME/.bashrc"
 
-# Start graphical server if i3 not already running.
-[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x bspwm >/dev/null && exec startx
+# Start graphical server if bspwm not already running.
+[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x pkill bspwm >/dev/null && exec startx
 
 # Switch escape and caps if tty:
 sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null

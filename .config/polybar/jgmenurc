@@ -1,4 +1,4 @@
-stay_alive          = 0
+stay_alive          = 1
 #hide_on_startup     = 0
 #csv_cmd             = pmenu
 #tint2_look          = 1
@@ -10,7 +10,7 @@ stay_alive          = 0
 
 menu_margin_x       = 10
 menu_margin_y       = 20
-menu_width          = 220
+menu_width          = 140
 #menu_padding_top    = 5
 #menu_padding_right  = 5
 #menu_padding_bottom = 5
@@ -29,7 +29,7 @@ menu_valign         = top
 
 #item_margin_x       = 3
 #item_margin_y       = 3
-item_height         = 32
+item_height         = 24
 #item_padding_x      = 4
 #item_radius         = 1
 #item_border         = 0
@@ -39,7 +39,7 @@ item_height         = 32
 
 font                = Noto Sans, 10
 #font_fallback       = xtg
-icon_size           = 22
+icon_size           = 18
 #icon_text_spacing   = 10
 icon_theme          = Numix-Circle-Arc
 #icon_theme_fallback = xtg
@@ -47,10 +47,10 @@ icon_theme          = Numix-Circle-Arc
 #arrow_string        = ▸
 #arrow_width         = 15
 
-color_menu_bg       = #000000 70
+color_menu_bg       = #c4143834 70
 color_menu_border   = #eeeeee 8
 
-color_norm_bg       = #000000 00
+color_norm_bg       = #c4143834 00
 color_norm_fg       = #eeeeee 100
 
 color_sel_bg        = #ffffff 20

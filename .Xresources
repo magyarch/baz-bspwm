@@ -1,95 +1,99 @@
-! ------------------------------------------------------------------------------
-! URxvt standard arcolinux theme - Reload with xrdb -merge ~/.Xresources
-! ------------------------------------------------------------------------------
+!Xdefaults --
 
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintfull
+!hintmedium hintslight hintfull
+Xft.lcdfilter: lcddefault
+Xcursor.theme: Bibata_Oil
 
+!URxvt ---------------------------------------------------------------------- !
 
-! general settings
-URxvt*saveline:         15000
-URxvt*termName:         rxvt-unicode-256color
-URxvt*urgentOnBell:     false
-URxvt*visualBell:       false
-URxvt*iso14755:         false
-URxvt*iso14755_52:      false
-URxvt*meta8:            false
-URxvt*metaSendsEscape:  true
-URxvt*iconFile:  		/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
+!Fonts --
 
-! appearance
-URxvt*depth:            32
-!URxvt*transparent:      true
-!URxvt*shading:          60
-!URxvt*background:       rgba:0000/0000/0000/0000
-!URxvt*background:       [80]#000000
-URxvt*background:        [70]#000000
-URxvt*foreground:       #F8F8FF
-URxvt*underlineColor:   #4682B4
-URxvt*highlightColor:   #4682B4
-URxvt*throughColor:     Blue
-URxvt*cursorColor:      #c5c8c6
-URxvt*scrollBar:        false
-URxvt*scrollTtyOutput:  false
-URxvt*scrollWithBuffer:  true
+URxvt.font: xft:Curie:size=10,xft:Tewi:size=12
+URxvt.boldFont:
+URxvt.letterSpace: 1
+URxvt.antialias: true
+
+!Main Settings --
+
+URxvt.termname: xterm-256color
+URxvt.iconFile: /usr/share/icons/Papirus/48x48/apps/urxvt.svg
+
+URxvt.cursorUnderline: false
+URxvt.pointerBlank: true
+URxvt.saveLines:    5000
+URxvt.scrollBar:    false
+URxvt.cursorBlink:  true
+URxvt.urgentOnBell: true
+URxvt*scrollTtyOutput: true
+URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
-URxvt*internalBorder:   0
-URxvt*externalBorder:   0
-URxvt*colorIT:      	#87af5f
-URxvt*colorBD:      	#ffffff
-URxvt*colorUL:      	#87afd7
 
+!Extensions --
 
-! colors
-URxvt*color0: #3f3f3f
-URxvt*color1: #ac3c3c
-URxvt*color2: #60b48a
-URxvt*color3: #dfaf8f
-URxvt*color4: #506070
-URxvt*color5: #dc8cc3
-URxvt*color6: #8cd0d3
-URxvt*color7: #dcdccc
-URxvt*color8: #79A9FF
-URxvt*color9: #da6e6e
-URxvt*color10: #c3bf9f
-URxvt*color11: #f0dfaf
-URxvt*color12: #94bff3
-URxvt*color13: #ec93d3
-URxvt*color14: #93e0e3
-URxvt*color15: #ffffff
+URxvt.perl-ext: default,clipboard,url-select,keyboard-select
 
-! fonts
-URxvt*letterSpace: 	    	0
-URxvt*font:                 	xft:Fira Code:style=Bold:pixelsize=14
-URxvt*imFont:               	xft:Inconsolata for Powerline:size=13
-URxvt*boldFont:             	xft:Inconsolata for Powerline:Bold:size=13
-URxvt*italicFont:           	xft:Inconsolata for Powerline:Italic:size=13
-URxvt*boldItalicFont:     		xft:Inconsolata for Powerline:size=13
-! run :.!fc-list | grep <font-name>
+!Tabs --
 
-! perl extensions
-URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,resize-font
-!URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,tabbed
+!URxvt.tabbed.tabbar-fg: 7
+!URxvt.tabbed.tabbar-bg: 0
+!URxvt.tabbed.tab-fg: 7
+!URxvt.tabbed.tab-bg: 0
 
-! macros for clipboard and selection
-URxvt*copyCommand:      xclip -i -selection clipboard
-URxvt*pasteCommand:     xclip -o -selection clipboard
-URxvt*keysym.M-c:       perl:clipboard:copy
-URxvt*keysym.m-v:       perl:clipboard:paste
-URxvt*keysym.M-C-v:     perl:clipboard:paste_escaped
-URxvt*keysym.M-Escape:  perl:keyboard-select:activate
-URxvt*keysym.M-s:       perl:keyboard-select:search
-URxvt*keysym.M-u:       perl:url-select:select_next
-URxvt*resize-font.smaller:	C-Down
-URxvt*resize-font.bigger:	C-Up
-URxvt*urlLauncher:      firefox
-URxvt*underlineURLs:    true
-URxvt*urlButton:        1
-URxvt*geometry: 		90x30
+!URL Launcher --
 
-! tabbed
-URxvt*tabbed.tabbar-fg: 4
-URxvt*tabbed.tabbar-bg: 16
-URxvt*tabbed.tab-fg:    
-URxvt*tabbed.tab-bg:    
-URxvt*buffered:         false
-URxvt*keysym.Control-Shift-C: perl:clipboard:copy
-URxvt*keysym.Control-Shift-V: perl:clipboard:paste
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+URxvt.colorUL: #D9A9A2
+
+!Disable iso14755 --
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!Clipboard --
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+!Control + arrow navigation --
+
+URxvt.keysym.Control-Up:\033[1;5A
+URxvt.keysym.Control-Down:\033[1;5B
+URxvt.keysym.Control-Left:\033[1;5D
+URxvt.keysym.Control-Right:\033[1;5C
+
+!URxvt window --
+
+URxvt*geometry: 80x20
+URxvt.internalBorder: 20
+
+!Colors --
+
+*background:  #121212
+*foreground:  #FFFFFF
+*color0:  #3e3e3e
+*color1:  #dd5a3a
+*color2:  #48a37f
+*color3:  #fe9b3d
+*color4:  #1858a5
+*color5:  #e58da3
+*color6:  #3697b9
+*color7:  #f8e9f2
+*color8:  #4e4e4e
+*color9:  #f0544c
+*color10:  #0bbaa7
+*color11:  #f5b427
+*color12:  #3caed9
+*color13:  #fa96a3
+*color14:  #84c4ee
+*color15:  #ffffff
+
+    
+
