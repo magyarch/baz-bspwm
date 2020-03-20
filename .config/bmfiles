@@ -5,8 +5,8 @@ cfz	~/.zshrc
 cfv	~/.config/nvim/init.vim
 cfp	~/.config/polybar/config
 cfd	~/.Xdefaults
-cfmb	~/.config/ncmpcpp/bindings
-cfmc	~/.config/ncmpcpp/config
+cfmb ~/.config/ncmpcpp/bindings
+cfmc ~/.config/ncmpcpp/config
 cfb	~/.config/bspwm/bspwmrc
-cfs	~/.config/sxhkd/sxhkdrc
-cfsp    ~/.spectrwm.conf
+cfk	~/.config/sxhkd/sxhkdrc
+cfsp ~/.spectrwm.conf

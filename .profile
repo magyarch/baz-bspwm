@@ -5,11 +5,10 @@
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="brave"
+export BROWSER="firefox"
 export READER="zathura"
-export FILE="vifm"
+export FILE="thunar"
 export SUDO_ASKPASS="$HOME/.local/bin/tools/dmenupass"
-export NOTMUCH_CONFIG="$HOME/.config/notmuch-config"
 export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
 
 # less/man colors
@@ -27,6 +26,7 @@ mpd >/dev/null 2>&1 &
 [ ! -f ~/.config/shortcutrc ] && shortcuts >/dev/null 2>&1
 
 echo "$0" | grep "bash$" >/dev/null && [ -f ~/.bashrc ] && source "$HOME/.bashrc"
+
 
 # Start graphical server if bspwm not already running.
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x pkill bspwm >/dev/null && exec startx

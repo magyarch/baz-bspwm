@@ -1,8 +1,8 @@
 #!/bin/sh
 
 setbg &		# Set the background
-sxhkd &	# Bind keys
-#sxhkd -c ~/.config/herbstluftwm/sxhkd/sxhkdrc &
+#sxhkd &	# Bind keys
+sxhkd -c ~/sxhkdrc &
 # Switch to US international with Caps as Mod/Escape
 setxkbmap -option caps:super -variant altgr-intl && killall xcape 2>/dev/null ; xcape -e 'Super_L=Escape' &
 setxkbmap hu &
@@ -14,9 +14,9 @@ unclutter &		# Remove mouse when idle
 picom --config ~/.config/picom.conf &		# xcompmgr for transparency
 dunst &                 # dunst for notifications
 #dwmbar.sh &
-mpdupdate &
+#mpdupdate &
 #dzen2.sh &
-~/.config/polybar/launch.sh &
+#~/.config/polybar/launch.sh &
 #~/scripts/spotify/launchlistener.sh &
 #bmpanel2 --theme=momo &
 #blueberry-tray &
@@ -24,7 +24,7 @@ mpdupdate &
 #xrandr --output HDMI1 --primary --mode 1920x1080 --output LVDS1 --off
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #conky -c $HOME/.config/conky/AC1-System-Bar-LUA.conkyrc &
-
+flameshot &
 
 
 

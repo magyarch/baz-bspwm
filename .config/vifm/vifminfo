@@ -23,124 +23,76 @@ r2
 
 # Left window history (oldest to newest):
 d/home/xeoncpu
-	.config
-3
-d/home/xeoncpu/.config
-	gtk-3.0
-15
-d/home/xeoncpu/.config/gtk-3.0
-	settings.ini
-1
-d/home/xeoncpu/.config
-	gtk-2.0
-14
-d/home/xeoncpu/.config/gtk-2.0
-	gtkrc-2.0
-1
-d/home/xeoncpu/.config
-	gtk-2.0
-14
-d/home/xeoncpu
-	.local
-7
-d/home/xeoncpu/.local
-	bin
-1
-d/home/xeoncpu/.local/bin
-	rofi_run
-15
-d/home/xeoncpu
-	Downloads
-1
-d/home/xeoncpu/Downloads
-	wallhaven-39em6d.png
-4
-d/home/xeoncpu
-	baz-voidrice
-3
-d/home/xeoncpu/baz-voidrice
-	.config
-1
-d/home/xeoncpu/baz-voidrice/.config
-	transmission-daemon
-26
-d/home/xeoncpu/baz-voidrice
-	.local
+	scrot
 5
-d/home/xeoncpu/baz-voidrice/.local
-	bin
-1
-d/home/xeoncpu/baz-voidrice
-	.config
-1
-d/home/xeoncpu/baz-voidrice/.config
-	vifm
-27
+d/home/xeoncpu/scrot
+	..
+0
 d/home/xeoncpu
-	Downloads
-14
-d/home/xeoncpu/Downloads
-	Dunst_gui_v2.1_by_KuLuSz
+	Képek
 2
+d/home/xeoncpu/Képek
+	1.jpg
+3
 d/home/xeoncpu
 	.config
 3
 d/home/xeoncpu/.config
-	dunst
-14
-d/home/xeoncpu/.config/dunst
-	dunstrc
+	sxhkd
+34
+d/home/xeoncpu/.config/sxhkd
+	sxhkdrc
 1
+d/home/xeoncpu
+	Downloads
+1
+d/home/xeoncpu/Downloads
+	Hack_Regular_Nerd_Font_Complete_Mono.ttf
+5
+d/home/xeoncpu
+	Downloads
+1
+d/home/xeoncpu/Downloads
+	Xresources
+6
+d/home/xeoncpu
+	.config
+3
+d/home/xeoncpu/.config
+	sxhkd
+34
+d/home/xeoncpu/.config/sxhkd
+	sxhkdrc
+1
+d/home/xeoncpu
+	scrot
+5
+d/home/xeoncpu/scrot
+	..
+0
+d/home/xeoncpu
+	scrot
+5
+d/home/xeoncpu/scrot
+	..
+0
+d/home/xeoncpu
+	scrot
+5
+d/home/xeoncpu/scrot
+	..
+0
+d/home/xeoncpu
+	.config
+3
+d/home/xeoncpu/.config
+	mpv
+11
+d/home/xeoncpu/.config/mpv
+	mpv.conf
+4
 
 # Right window history (oldest to newest):
-D/home/xeoncpu/.config/bspwm
-	polybar
-2
-D/etc/X11
-	..
-0
-D/home/xeoncpu
-	..
-0
-D/home
-	xeoncpu
-1
-D/
-	home
-4
-D/home
-	xeoncpu
-1
-D/home/xeoncpu
-	Letöltések
-5
-D/home/xeoncpu/Letöltések
-	dotfiles-master-.config-vifm
-5
-D/home/xeoncpu/Letöltések/dotfiles-master-.config-vifm
-	dotfiles-master-.config-vifm
-1
-D/home/xeoncpu/Letöltések/dotfiles-master-.config-vifm/dotfiles-master-.config-vifm
-	..
-0
-D/home/xeoncpu/Letöltések/dotfiles-master-.config-vifm
-	dotfiles-master-.config-vifm
-1
-D/home/xeoncpu/Letöltések/dotfiles-master-.config-vifm/dotfiles-master-.config-vifm
-	.config
-1
-D/home/xeoncpu/Letöltések/dotfiles-master-.config-vifm/dotfiles-master-.config-vifm/.config
-	vifm
-1
-D/home/xeoncpu/Letöltések/dotfiles-master-.config-vifm/dotfiles-master-.config-vifm/.config/vifm
-	scripts
-2
-D/home/xeoncpu/Letöltések/dotfiles-master-.config-vifm/dotfiles-master-.config-vifm/.config/vifm/scripts
-	vifmrun
-4
-D/home/xeoncpu
-	baz-voidrice
-9
 D/home/xeoncpu/baz-voidrice
 	.config
 1
@@ -160,8 +112,56 @@ D/home/xeoncpu/.local
 	bin
 1
 D/home/xeoncpu
+	.config
+3
+D/home/xeoncpu/.config
+	Dharkael
+2
+D/home/xeoncpu/.config/Dharkael
 	..
 0
+D/home/xeoncpu/.config
+	bmdirs
+41
+D/home/xeoncpu
+	spectrwm
+5
+D/home/xeoncpu/spectrwm
+	.config
+1
+D/home/xeoncpu/spectrwm/.config
+	conky
+2
+D/home/xeoncpu/spectrwm/.config/conky
+	conky.conf
+1
+D/home/xeoncpu
+	.fonts
+4
+D/home/xeoncpu/.fonts
+	Hack_Regular_Nerd_Font_Complete_Mono.ttf
+8
+D/home/xeoncpu
+	scrot
+5
+D/home/xeoncpu/scrot
+	..
+0
+D/home/xeoncpu
+	.config
+3
+D/home/xeoncpu/.config
+	bmdirs
+41
+D/home/xeoncpu
+	scrot
+5
+D/home/xeoncpu/scrot
+	..
+0
+D/home/xeoncpu
+	scrot
+5
 
 # Command line history (oldest to newest):
 :mkdir media
@@ -175,6 +175,7 @@ D/home/xeoncpu
 :mkdir Videos 
 :mkdir spotify
 :mkdir scripts
+:mkdir scrot
 
 # Search history (oldest to newest):
 
@@ -189,18 +190,7 @@ pDunst_gui_v2.1_by_KuLuSz
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/xeoncpu/.local/share/vifm/Trash/000_BraveSoftware
-""/home/xeoncpu/.local/share/vifm/Trash/000_Dharkael
-""/home/xeoncpu/.local/share/vifm/Trash/000_Thunar
-""/home/xeoncpu/.local/share/vifm/Trash/000_cef_user_data
-""/home/xeoncpu/.local/share/vifm/Trash/000_discord
-""/home/xeoncpu/.local/share/vifm/Trash/000_herbstluftwm
-""/home/xeoncpu/.local/share/vifm/Trash/000_lyrics
-""/home/xeoncpu/.local/share/vifm/Trash/000_spotify
-""/home/xeoncpu/.local/share/vifm/Trash/000_sublime-text-3
-""/home/xeoncpu/.local/share/vifm/Trash/000_transmission-daemon
-""/home/xeoncpu/.local/share/vifm/Trash/000_xfce4
-""/home/xeoncpu/.local/share/vifm/Trash/000_yay
+""/home/xeoncpu/.local/share/vifm/Trash/000_2020-03-18_09-45.png
 
 # Directory stack (oldest to newest):
 
@@ -1005,3 +995,19 @@ t/home/xeoncpu/.local/share/vifm/Trash/000_xfce4
 	/home/xeoncpu/baz-voidrice/.config/xfce4
 t/home/xeoncpu/.local/share/vifm/Trash/000_yay
 	/home/xeoncpu/baz-voidrice/.config/yay
+t/home/xeoncpu/.local/share/vifm/Trash/001_root:
+	/home/xeoncpu/Downloads/root:
+t/home/xeoncpu/.local/share/vifm/Trash/003_~
+	/home/xeoncpu/Downloads/~
+t/home/xeoncpu/.local/share/vifm/Trash/000_.spectrwm-keys.conf
+	/home/xeoncpu/.spectrwm-keys.conf
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200318-0923-09.png
+	/home/xeoncpu/pic-full-200318-0923-09.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200318-0923-36.png
+	/home/xeoncpu/pic-full-200318-0923-36.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-03-18_09-25.png
+	/home/xeoncpu/scrot/2020-03-18_09-25.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-03-18_09-25_1.png
+	/home/xeoncpu/scrot/2020-03-18_09-25_1.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-03-18_09-45.png
+	/home/xeoncpu/scrot/2020-03-18_09-45.png

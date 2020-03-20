@@ -91,17 +91,11 @@ font-4 = "Iosevka Nerd Font:size=18;0"
 font-5 = "Joy Pixels:scale=11;"
 
 modules-left = cpu-graph mem weather2 xwindow
-modules-center = bspwm2
-modules-right = files term settings wifi app cpu temperature alsa date power
+modules-center = firefox term files app wifi settings 
+modules-right = cpu temperature alsa date power
 
-tray-detached = false
-tray-offset-x = 0
-tray-offset-y = 0
-tray-position = right
-tray-padding = 1
-tray-maxsize = 16
-tray-scale = 1.0
-tray-background = #c4143834
+tray-position = none
+
 
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
@@ -673,6 +667,15 @@ content-background = ${colors.background}
 content-padding = 2
 click-left = "$TERMINAL -e nmtui &"
 click-right = xdo close &
+
+[module/firefox]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+content-padding = 2
+
+click-left = firefox &
 
 
 

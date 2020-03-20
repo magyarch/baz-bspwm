@@ -6,8 +6,12 @@ super + {_,shift + } Return
     {bspwmfloat && $TERMINAL -g 140x40-470-260, thunar}
 
 
+super + Return
+    st -g 70x20
+
+
 super + {_,shift + } d
-    {dmenu_run -i -p 'Search' -nb '#143834' -fn 'JetBrains Mono-12' -w '760' -h '25' -x '574' -y '48' -dim '0.4'
+    {dmenu_run -i -p 'Search' -nb '#143834' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48' -dim '0.4'
 , rofi --show run}
 
 
@@ -42,12 +46,13 @@ super + {_,shift + } c
 super + {_,shift + } w
     {$BROWSER, firefox}
 
+
 super + {_,shift + } p
     {discord, bspwmfloat TelegramDesktop desktop='^2' follow=on rectangle=550x800+1250+200 && telegram-desktop}
 
 
 super + shift + {x,BackSpace,Escape}
-    {prompt "Shutdown computer?" "sudo -A shutdown -h now", prompt "Reboot computer?" "sudo -A shutdown -r now", prompt "Are you sure you would 
+    {prompt "Shutdown computer?" "sudo -A shutdown -h now", prompt "Reboot computer?" "sudo -A shutdown -r now", prompt "Are you sure you would
     like to quit this Xsession" "bspc quit"}
 
 
@@ -57,13 +62,24 @@ super + {_,shift + } b
 
 
 super + Escape
-    pkill -USR1 -x sxhkd 
+    pkill -USR1 -x sxhkd
 
 
 # Close window
 super + q
    xdo close
 
+
+Prior
+  flameshot full -p ~/scrot/ -d 5000
+
+
+super + Prior
+  flameshot gui &
+
+
+super + shift + Prior
+   flameshot screen -r
 
 ###############################
 #     ET CETERA...            #
@@ -87,9 +103,9 @@ super + Scroll_Lock
 #########################
 
 alt + {_,shift + } a
-   {toggleprogram "picom -b", pavucontrol}
+   {toggleprogram "picom -b", bspwmfloat && wmctrl -r pavucontrol -e "0,0,0,600,300" }
 
-    
+
 #########################
 #     SCREENSHOTS       #
 #########################
@@ -104,11 +120,11 @@ shift + Prior
     maimpick
 
 # Record audio or video
-super + Prior
+super + Home
     dmenurecord
 
 # kill active recording
-super + shift + Prior
+super + shift + End
     dmenurecord kill
 
 
@@ -137,12 +153,12 @@ super + F4
     bspc config right_padding 0;\
     bspc config left_padding 0 ;\
     bspc config top_padding 22 ;\
-    bspc config bottom_padding 1    
+    bspc config bottom_padding 1
 
 
-# Restart/rescan wifi/eth networks
+# Pavucontrol float
 super + F5
-    sudo -A systemctl restart NetworkManager
+    pavucontrol
 
 
 # Start cava
@@ -176,8 +192,8 @@ super + F11
 
 
 # Mpv floating
-super + F12
-    mpv --geometry=20%-30+40 --title="mpvfloat" https://www.youtube.com/watch?v=_bOKCbPN3cg&list=RD_bOKCbPN3cg&start_radio=1
+#super + F12
+ #   mpv --geometry=20%-30+40 --title="mpvfloat" https://www.youtube.com/watch?v=_bOKCbPN3cg&list=RD_bOKCbPN3cg&start_radio=1
 
 
 F10
@@ -187,7 +203,10 @@ F11
     amixer set Master 5%+
 
 F12
-   amixer set Master toggle    
+   amixer set Master toggle
+
+
+
 
 
 
@@ -213,7 +232,7 @@ alt + Tab
 
 #Focus selected desktop
 super + Tab
-	bspc desktop -f '^{1-9,10}'    
+	bspc desktop -f '^{1-9,10}'
 
 
 # Focus next/previous window
@@ -308,7 +327,7 @@ super + {_,shift + } f
 
 # Make a windoww sticky/non-sticky
 super + o
-    bspc node -g sticky={on,off}        
+    bspc node -g sticky={on,off}
 
 
 

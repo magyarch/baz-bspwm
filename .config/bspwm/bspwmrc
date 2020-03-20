@@ -27,7 +27,7 @@ bspc config split_ratio          0.52
 #bspc config initial_polarity second_child
 bspc config focus_follows_pointer true
 bspc config external_rules_command $HOME/.config/bspwm/spotify_rules
-bspc config external_rules_command $HOME/.local/bin/float.sh
+#bspc config external_rules_command $HOME/.local/bin/float.sh
 #bspc config external_rules_command $HOME/.config/bspwm/external_rules.sh
 bspc config remove_disabled_monitors true
 bspc config merge_overlapping_monitors true
@@ -72,8 +72,7 @@ bspc rule -a firefox desktop='^1' follow=on
 bspc rule -a discord desktop='^2' follow=on
 bspc rule -a TelegramDesktop desktop='^2' follow=on
 bspc rule -a Subl3 desktop='^3' follow=on
-bspc rule -a Steam desktop='^5' state=floating
-bspc rule -a mpv desktop='^6' state=floating follow=on
+bspc rule -a Steam desktop='^9' state=floating
 bspc rule -a Vlc desktop='^7' state=fullscreen follow=on
 bspc rule -a Thunar desktop='^4' follow=on
 bspc rule -a Spotify desktop='^9' follow=on
@@ -91,24 +90,46 @@ bspc rule -a Pulseaudio-equalizer-gtk  state=floating
 bspc rule -a Gpick state=floating
 bspc rule -a Xfce4-terminal state=floating
 bspc rule -a Lxappearance state=floating
-bspc rule -a pavucontrol floating=on 
+bspc rule -a Pavucontrol state=floating rectangle=800x450+0+0 center=on
+bspc rule -a Thunar:Dialog state=floating center=true
+bspc rule -a URxvt:Newsboat state=floating center=on
+bspc rule -a URxvt:Ranger state=floating center=on
+bspc rule -a URxvt:Pacui state=floating center=on
+bspc rule -a URxvt:Float state=floating
+bspc rule -a URxvt:Draw state=floating
+bspc rule -a Galculator state=floating
 #bspc rule -a Oblogout state=floating
 #bspc rule -a Preferences state=floating follow=on
 bspc rule -a St:calcurse state=floating 
+bspc rule -a URxvt:Newsboat sticky=on state=floating rectangle=1220x650+0+0 center=on
+bspc rule -a URxvt:Ranger sticky=on state=floating rectangle=1220x650+0+0 center=on
+bspc rule -a URxvt:Pacui sticky=on state=floating rectangle=800x450+0+0 center=on
+bspc rule -a URxvt:Float state=floating
+bspc rule -a Sxiv state=floating
+bspc rule -a mpv state=floating sticky=on rectangle=300x180+1060+475
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #find out the name of your monitor with xrandr
 #xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DisplayPort-0)
 #xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DisplayPort-1)
 #xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI1)
+bscp rule -a polybar manage=off
 
 
 
 
 #Spotify fix  --move desktop 9
 sleep 1
-wmctrl -r Spotify -g 400x200 -t 9
+wmctrl -r Spotify -t 9
 exit
+
+# Set Desktop 9 to start with floating windows
+FLOATING_DESKTOP_ID=$(bspc query -D -d '^9')
+bspc subscribe node_manage | while read -a msg ; do
+	desk_id=${msg[2]}
+	wid=${msg[3]}
+	[ "$FLOATING_DESKTOP_ID" = "$desk_id" ] && bspc node "$wid" -t floating
+done
 
 
 #/home/xeoncpu/.config/bspwm/dzen2.sh &

@@ -2,9 +2,11 @@
 
 [ -f "$HOME/.xprofile" ] && . ~/.xprofile
 
-exec bspwm
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources &
 
-#exec spectrwm
+#exec bspwm
+
+exec spectrwm
 
 #exec dwm
 
