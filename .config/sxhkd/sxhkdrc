@@ -3,11 +3,7 @@
 #########################
 
 super + {_,shift + } Return
-    {bspwmfloat && $TERMINAL -g 140x40-470-260, thunar}
-
-
-super + Return
-    st -g 70x20
+    {bspwmfloat && $TERMINAL -g 140x40-470-260, urxvt}
 
 
 super + {_,shift + } d
@@ -256,8 +252,8 @@ ctrl + alt + Down
 
 
 #Rotate desktop
-super + space
-	bspc node @/ --rotate {90,-90}
+#super + space
+#	bspc node @/ --rotate {90,-90}
 
 
 # Focus/swap windows by direction
@@ -296,8 +292,8 @@ super + alt + {_,shift + }{Left,Down,Up,Right}
 
 
 # set the window state
-#super + space
-#	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+super + space
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 
 # Focus parent/brother/first/second for preselection

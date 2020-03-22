@@ -4,9 +4,9 @@
 
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources &
 
-#exec bspwm
+exec bspwm
 
-exec spectrwm
+#exec spectrwm
 
 #exec dwm
 
@@ -15,3 +15,5 @@ exec spectrwm
 #exec herbstluftwm --locked
 
 #exec berry
+
+#exec awesome

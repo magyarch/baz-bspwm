@@ -83,16 +83,14 @@ module-margin-left = 0
 module-margin-right = 0
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "JetBrains Mono=10;0"
-font-1 = "FontAwesome:size=12;0"
-font-2 = "Noto Sans:size=10;0"
-font-3 = "Noto Sans Mono:size=10;0"
-font-4 = "Iosevka Nerd Font:size=18;0"
-font-5 = "Joy Pixels:scale=11;"
+font-0 = "Iosevka Nerd Font:size=12;0"
+font-1 = "JetBrains Mono:size=11;0"
+font-2 = "FontAwesome:size=12;0"
+font-3 = "Joy Pixels:scale=11;"
 
-modules-left = cpu-graph mem weather2 xwindow
-modules-center = firefox term files app wifi settings 
-modules-right = cpu temperature alsa date power
+modules-left = firefox term files app wifi settings cpu-graph mem weather2 xwindow
+modules-center = ewmh 
+modules-right = corona cpu temperature alsa date power
 
 tray-position = none
 
@@ -424,6 +422,15 @@ format-background = ${colors.background}
 format-padding = 2
 interval=18000
 
+[module/corona]
+type = custom/script
+exec = ~/.local/bin/corona
+#label = %name%
+;click-left = bspwmfloat && $TERMINAL -e w3m wttr.in/Sopron
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-padding = 2
+interval=1800
 
 [module/mem]
 type = custom/script

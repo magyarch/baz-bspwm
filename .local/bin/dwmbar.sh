@@ -32,10 +32,18 @@ temp(){
 
 wth(){
   curl -s v2.wttr.in | grep -e "Weather" | sed 's/C,.*/C/g; s/+//g; s/.*\[0m.//g; s/.//2'
+
+}
+
+cor(){
+   curl -s  https://corona-stats.online/hu > ~/.cache/corona | grep "Hungary" ~/.cache/corona | sed "s/\s*//g;s/║//g;s/│/;/g" | awk -F ";" '{print "😷" $3 " ("$9") 💀" $4 " ("$7"%) "}'
+
+
+
 }
 
 while true; do
-     xsetroot -name "$(wth) | $(cpu) | $(temp) | $(vol) | $(mem) | $(dte)"
+	xsetroot -name "$(cor) | $(wth) | $(cpu) | $(temp) | $(vol) | $(mem) | $(dte)"
      sleep $DELAY;    # Update time every ten seconds
 done &
 

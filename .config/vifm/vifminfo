@@ -22,89 +22,77 @@ l2
 r2
 
 # Left window history (oldest to newest):
+d/home/xeoncpu/arcolinux-awesome/etc/skel/.config
+	awesome
+1
+d/home/xeoncpu/arcolinux-awesome/etc/skel
+	.config
+1
+d/home/xeoncpu/arcolinux-awesome/etc
+	skel
+1
+d/home/xeoncpu/arcolinux-awesome
+	etc
+2
 d/home/xeoncpu
-	scrot
+	.config
+3
+d/home/xeoncpu/.config
+	awesome
 5
-d/home/xeoncpu/scrot
-	..
-0
+d/home/xeoncpu
+	Downloads
+1
+d/home/xeoncpu/Downloads
+	wallhaven-39em6d.png
+12
+d/home/xeoncpu
+	.config
+3
+d/home/xeoncpu/.config
+	awesome
+5
+d/home/xeoncpu/.config/awesome
+	rc.lua
+8
+d/home/xeoncpu
+	.local
+8
+d/home/xeoncpu/.local
+	bin
+1
+d/home/xeoncpu/.local/bin
+	dwmbar.sh
+32
 d/home/xeoncpu
 	Képek
 2
 d/home/xeoncpu/Képek
-	1.jpg
-3
+	6.jpg
+8
 d/home/xeoncpu
-	.config
-3
-d/home/xeoncpu/.config
-	sxhkd
-34
-d/home/xeoncpu/.config/sxhkd
-	sxhkdrc
-1
+	Képek
+2
+d/home/xeoncpu/Képek
+	8.jpg
+10
 d/home/xeoncpu
-	Downloads
-1
-d/home/xeoncpu/Downloads
-	Hack_Regular_Nerd_Font_Complete_Mono.ttf
-5
+	Képek
+2
+d/home/xeoncpu/Képek
+	861304-2018-06-06-1144_preview.jpeg
+24
 d/home/xeoncpu
-	Downloads
-1
-d/home/xeoncpu/Downloads
-	Xresources
-6
+	Képek
+16
+d/home/xeoncpu/Képek
+	Womb-of-Consciousness-Flame-Green-1920x1080-HD.jpg
+31
 d/home/xeoncpu
-	.config
-3
-d/home/xeoncpu/.config
-	sxhkd
-34
-d/home/xeoncpu/.config/sxhkd
-	sxhkdrc
-1
-d/home/xeoncpu
-	scrot
-5
-d/home/xeoncpu/scrot
-	..
-0
-d/home/xeoncpu
-	scrot
-5
-d/home/xeoncpu/scrot
-	..
-0
-d/home/xeoncpu
-	scrot
-5
-d/home/xeoncpu/scrot
-	..
-0
-d/home/xeoncpu
-	.config
-3
-d/home/xeoncpu/.config
-	mpv
-11
-d/home/xeoncpu/.config/mpv
-	mpv.conf
-4
+	hfetch.sh
+12
 
 # Right window history (oldest to newest):
-D/home/xeoncpu/baz-voidrice
-	.config
-1
-D/home/xeoncpu/baz-voidrice/.config
-	vifm
-23
-D/home/xeoncpu
-	baz-voidrice
-11
-D/home/xeoncpu/.config/scripts
-	..
-0
 D/home/xeoncpu
 	.local
 7
@@ -160,8 +148,20 @@ D/home/xeoncpu/scrot
 	..
 0
 D/home/xeoncpu
-	scrot
-5
+	.local
+4
+D/home/xeoncpu/.local
+	bin
+1
+D/home/xeoncpu
+	.config
+3
+D/home/xeoncpu/.config
+	bmfiles
+30
+D/home/xeoncpu
+	..
+0
 
 # Command line history (oldest to newest):
 :mkdir media
@@ -190,7 +190,7 @@ pDunst_gui_v2.1_by_KuLuSz
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/xeoncpu/.local/share/vifm/Trash/000_2020-03-18_09-45.png
+""/home/xeoncpu/arcolinux-awesome/etc/skel/.config/awesome
 
 # Directory stack (oldest to newest):
 
@@ -1011,3 +1011,13 @@ t/home/xeoncpu/.local/share/vifm/Trash/000_2020-03-18_09-25_1.png
 	/home/xeoncpu/scrot/2020-03-18_09-25_1.png
 t/home/xeoncpu/.local/share/vifm/Trash/000_2020-03-18_09-45.png
 	/home/xeoncpu/scrot/2020-03-18_09-45.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_star.wars.the.rise.of.skywalker.(2019).hun.1cd.(8127308).zip
+	/home/xeoncpu/Downloads/star.wars.the.rise.of.skywalker.(2019).hun.1cd.(8127308).zip
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.grudge.(2020).hun.1cd.(8128248).zip
+	/home/xeoncpu/Downloads/the.grudge.(2020).hun.1cd.(8128248).zip
+t/home/xeoncpu/.local/share/vifm/Trash/000_Xresources
+	/home/xeoncpu/Downloads/Xresources
+t/home/xeoncpu/.local/share/vifm/Trash/000_Xresources (1)
+	/home/xeoncpu/Downloads/Xresources (1)
+t/home/xeoncpu/.local/share/vifm/Trash/000_Új mappa
+	/home/xeoncpu/Downloads/Új mappa
