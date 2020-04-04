@@ -3,7 +3,7 @@
 #########################
 
 super + {_,shift + } Return
-    {bspwmfloat && $TERMINAL -g 140x40-470-260, urxvt}
+    {bspwmfloat && $TERMINAL -g 140x30-470-260, urxvt}
 
 
 super + {_,shift + } d

@@ -89,7 +89,7 @@ font-2 = "FontAwesome:size=12;0"
 font-3 = "Joy Pixels:scale=11;"
 
 modules-left = firefox term files app wifi settings cpu-graph mem weather2 xwindow
-modules-center = ewmh 
+modules-center = bspwm2 
 modules-right = corona cpu temperature alsa date power
 
 tray-position = none
