@@ -4,7 +4,7 @@
 # Adds `~/.scripts` and all subdirectories to $PATH
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 export EDITOR="nvim"
-export TERMINAL="st"
+export TERMINAL="urxvt"
 export BROWSER="firefox"
 export READER="zathura"
 export FILE="vifm"
@@ -31,5 +31,4 @@ echo "$0" | grep "bash$" >/dev/null && [ -f ~/.bashrc ] && source "$HOME/.bashrc
 # Start graphical server if bspwm not already running.
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x pkill bspwm >/dev/null && exec startx
 
-# Switch escape and caps if tty:
-sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null
+

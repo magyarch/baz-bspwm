@@ -3,11 +3,11 @@
 #########################
 
 super + {_,shift + } Return
-    {bspwmfloat && $TERMINAL -g 140x30-470-260, urxvt}
+    {bspwmfloat && $TERMINAL -g 100x30-420-440, urxvt}
 
 
 super + {_,shift + } d
-    {dmenu_run -i -p 'Search' -nb '#143834' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48' -dim '0.4'
+    {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48' -dim '0.4'
 , rofi --show run}
 
 
@@ -108,7 +108,7 @@ alt + {_,shift + } a
 
 
 # Take screenshot
-Home
+Delete
     maim pic-full-$(date '+%y%m%d-%H%M-%S').png
 
 # Pick screenshot type

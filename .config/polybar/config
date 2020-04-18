@@ -28,8 +28,8 @@ format-offset =
 
 [colors]
 ; Nord theme ============
-background = #c4143834
-foreground = #99d1ce
+background = #2f2b26
+foreground = #c3cdc8
 alert = #ebcb8b
 volume-min = #a3be8c
 volume-med = #ebcb8b
@@ -74,7 +74,7 @@ border-size = 0
 ;border-right-size = 25
 ;border-top-size = 0
 border-bottom-size = 3
-border-color = #79abd2
+border-color = #c3cdc8
 
 padding-left = 1
 padding-right = 1
@@ -136,7 +136,7 @@ border-size = 0
 ;border-right-size = 25
 ;border-top-size = 0
 ;border-bottom-size = 25
-border-color = #00000000
+border-color = #2e8b57
 
 padding-left = 0
 padding-right = 1
@@ -214,7 +214,7 @@ label-focused = %icon%
 label-focused-background = ${colors.background}
 label-focused-underline= #179ae3
 label-focused-padding = 1
-label-focused-foreground = #2195e0
+label-focused-foreground = #2e8b57
 
 label-occupied = %icon%
 label-occupied-padding = 1

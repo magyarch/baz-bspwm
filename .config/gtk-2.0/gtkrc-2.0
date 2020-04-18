@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/xeoncpu/.gtkrc-2.0.mine"
-gtk-theme-name="Solarized-Dark-Blue"
-gtk-icon-theme-name="Sardi-Ghost-Flexible"
+gtk-theme-name="MagyArch-dark"
+gtk-icon-theme-name="Solarized-FLAT-Green"
 gtk-font-name="JetBrains Mono NL Medium 9"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=0
@@ -15,5 +15,5 @@ gtk-enable-event-sounds=1
 gtk-enable-input-feedback-sounds=1
 gtk-xft-antialias=1
 gtk-xft-hinting=1
-gtk-xft-hintstyle="hintslight"
+gtk-xft-hintstyle="hintfull"
 gtk-xft-rgba="rgb"

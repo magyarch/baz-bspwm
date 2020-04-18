@@ -13,7 +13,7 @@ xset r rate 500 30 &	# Speed xrate up
 unclutter &		# Remove mouse when idle
 picom --config ~/.config/picom.conf &		# xcompmgr for transparency
 dunst &                 # dunst for notifications
-dwmbar.sh &
+#dwmbar.sh &
 #mpdupdate &
 #wmname LG3D &
 #slstatus &

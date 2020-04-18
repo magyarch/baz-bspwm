@@ -22,151 +22,148 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/xeoncpu/arcolinux-awesome/etc/skel/.config
-	awesome
-1
-d/home/xeoncpu/arcolinux-awesome/etc/skel
-	.config
-1
-d/home/xeoncpu/arcolinux-awesome/etc
-	skel
-1
-d/home/xeoncpu/arcolinux-awesome
-	etc
-2
-d/home/xeoncpu
-	.config
+d/home/xeoncpu/Letöltések/baz-voidrice/.config/bspwm/scripts
+	move-window
 3
-d/home/xeoncpu/.config
-	awesome
-5
-d/home/xeoncpu
-	Downloads
+d/home/xeoncpu/Letöltések/baz-voidrice/.config/bspwm
+	scripts
 1
-d/home/xeoncpu/Downloads
-	wallhaven-39em6d.png
+d/home/xeoncpu/Letöltések/baz-voidrice/.config
+	bspwm
+3
+d/home/xeoncpu/Letöltések/baz-voidrice
+	.bashrc
 12
 d/home/xeoncpu
 	.config
-3
-d/home/xeoncpu/.config
-	awesome
 5
-d/home/xeoncpu/.config/awesome
-	rc.lua
-8
-d/home/xeoncpu
-	.local
-8
-d/home/xeoncpu/.local
-	bin
+d/home/xeoncpu/.config
+	vifm
+34
+d/home/xeoncpu/.config/vifm
+	colors
 1
-d/home/xeoncpu/.local/bin
-	dwmbar.sh
-32
-d/home/xeoncpu
-	Képek
-2
-d/home/xeoncpu/Képek
-	6.jpg
-8
-d/home/xeoncpu
-	Képek
-2
-d/home/xeoncpu/Képek
-	8.jpg
+d/home/xeoncpu/.config/vifm/colors
+	dracula.vifm
 10
-d/home/xeoncpu
-	Képek
-2
-d/home/xeoncpu/Képek
-	861304-2018-06-06-1144_preview.jpeg
+d/home/xeoncpu/.config/vifm
+	colors
+1
+d/home/xeoncpu/.config/vifm/colors
+	dracula.vifm
+10
+d/home/xeoncpu/.config/vifm
+	colors
+1
+d/home/xeoncpu/.config
+	vifm
+34
+d/home/xeoncpu/.config/vifm
+	colors
+1
+d/home/xeoncpu/.config/vifm/colors
+	dracula.vifm
+10
+d/home/xeoncpu/.config/vifm
+	colors
+1
+d/home/xeoncpu/.config/vifm/colors
+	snowwhite.vifm
 24
+d/home/xeoncpu/.config/vifm
+	colors
+1
+d/home/xeoncpu/.config/vifm/colors
+	snowwhite.vifm
+24
+d/home/xeoncpu/.config/vifm
+	vifmrc
+5
 d/home/xeoncpu
-	Képek
-16
-d/home/xeoncpu/Képek
-	Womb-of-Consciousness-Flame-Green-1920x1080-HD.jpg
-31
+	Letöltések
+4
+d/home/xeoncpu/Letöltések
+	..
+0
 d/home/xeoncpu
-	hfetch.sh
-12
+	Letöltések
+4
+d/home/xeoncpu/Letöltések
+	installer
+1
 
 # Right window history (oldest to newest):
-D/home/xeoncpu
-	.local
-7
-D/home/xeoncpu/.local
-	bin
-1
-D/home/xeoncpu
-	.config
-3
-D/home/xeoncpu/.config
-	Dharkael
-2
-D/home/xeoncpu/.config/Dharkael
-	..
-0
-D/home/xeoncpu/.config
-	bmdirs
-41
-D/home/xeoncpu
-	spectrwm
-5
-D/home/xeoncpu/spectrwm
-	.config
-1
-D/home/xeoncpu/spectrwm/.config
-	conky
-2
-D/home/xeoncpu/spectrwm/.config/conky
-	conky.conf
-1
-D/home/xeoncpu
-	.fonts
-4
-D/home/xeoncpu/.fonts
-	Hack_Regular_Nerd_Font_Complete_Mono.ttf
-8
-D/home/xeoncpu
-	scrot
-5
-D/home/xeoncpu/scrot
-	..
-0
-D/home/xeoncpu
-	.config
-3
-D/home/xeoncpu/.config
-	bmdirs
-41
-D/home/xeoncpu
-	scrot
-5
-D/home/xeoncpu/scrot
-	..
-0
-D/home/xeoncpu
-	.local
-4
-D/home/xeoncpu/.local
-	bin
-1
-D/home/xeoncpu
-	.config
-3
 D/home/xeoncpu/.config
 	bmfiles
 30
+D/home/xeoncpu
+	Videók
+7
+D/home/xeoncpu/Videók
+	The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES
+2
+D/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES
+	the.peanut.butter.falcon.2019.bdrip.x264-drones
+1
+D/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones
+	the.peanut.butter.falcon.2019.bdrip.x264-drones
+1
+D/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones/the.peanut.butter.falcon.2019.bdrip.x264-drones
+	..
+0
+D/home/xeoncpu
+	.config
+4
+D/home/xeoncpu/.config
+	vifm
+29
+D/home/xeoncpu/.config/vifm
+	colors
+1
+D/home/xeoncpu/.config/vifm/colors
+	luke.vifm
+1
+D/home/xeoncpu
+	Letöltések
+19
+D/home/xeoncpu/Letöltések
+	installer
+11
+D/home/xeoncpu/Letöltések/installer
+	MagyArch_test
+2
+D/home/xeoncpu/Letöltések/installer/MagyArch_test
+	index.theme
+10
+D/home/xeoncpu
+	.themes
+14
+D/home/xeoncpu/.themes
+	MagyArch-dark
+1
+D/home/xeoncpu
+	.local
+10
+D/home/xeoncpu/.local
+	bin
+1
+D/home/xeoncpu
+	.fonts
+6
+D/home/xeoncpu/.fonts
+	..
+0
+D/home/xeoncpu
+	.config
+5
+D/home/xeoncpu/.config
+	wallpaper.png
+50
 D/home/xeoncpu
 	..
 0
 
 # Command line history (oldest to newest):
-:mkdir media
-:mkdir dwmbar
-:mkdir .config
 :lstrash
 :mkdir .fonts
 :mkdir Music
@@ -176,21 +173,42 @@ D/home/xeoncpu
 :mkdir spotify
 :mkdir scripts
 :mkdir scrot
+:mkdir Pictures
+:colorscheme molokai
+:colorscheme matrix
+:colorscheme palenight
+:colorscheme g80
+:colorscheme onedark
+:colorscheme astrell
+:colorscheme gruvbox
+:colorscheme semidarkdesert
+:colorscheme reicheltd
+:colorscheme reicheltd-light
+:colorscheme snowhite
+:colorscheme snowwhite
+:colorscheme solarized-dark
 
 # Search history (oldest to newest):
 
 # Prompt history (oldest to newest):
+pwallpapers
+pwallpaper
+pThe.Cranberries-Beneath.the.Skin.Live.in.Paris.v2.mkv
+pThe.Cranberries-Beneath.the.Skin.Live.in.Paris.mkv
 pxmonad2.hs
 ppowermenu.txt
 ppowermenu
 pedconf.sh
 pspotify_rules
 pDunst_gui_v2.1_by_KuLuSz
+pthe.peanut.butter.falcon.2019.bdrip.x264-drones.srt
+pHoney.Boy.2019.REPACK.720p.AMZN.WEB-DL.DDP5.1.H.264-TEPES.srt
+pMagyArch-official-wall.png
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/xeoncpu/arcolinux-awesome/etc/skel/.config/awesome
+""/home/xeoncpu/.local/share/vifm/Trash/000_baz-voidrice
 
 # Directory stack (oldest to newest):
 
@@ -1021,3 +1039,377 @@ t/home/xeoncpu/.local/share/vifm/Trash/000_Xresources (1)
 	/home/xeoncpu/Downloads/Xresources (1)
 t/home/xeoncpu/.local/share/vifm/Trash/000_Új mappa
 	/home/xeoncpu/Downloads/Új mappa
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.nfo
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.nfo
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r00
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r00
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r01
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r01
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r02
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r02
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r03
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r03
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r04
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r04
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r05
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r05
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r06
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r06
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r07
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r07
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r08
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r08
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r09
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r09
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r10
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r10
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r11
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r11
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r12
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r12
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r13
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r13
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r14
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r14
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r15
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r15
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r16
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r16
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r17
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r17
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r18
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r18
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r19
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r19
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r20
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r20
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r21
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r21
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r22
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r22
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r23
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r23
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r24
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r24
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r25
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r25
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r26
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r26
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r27
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r27
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r28
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r28
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r29
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r29
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r30
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r30
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r31
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r31
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r32
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r32
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r33
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r33
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r34
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r34
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r35
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r35
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r36
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r36
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r37
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r37
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.r38
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.r38
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.rar
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.rar
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264-drones.sfv
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones.sfv
+t/home/xeoncpu/.local/share/vifm/Trash/000_The.Invisible.Man.2020.1080p.WEB-DL.H264.AC3-EVO.mkv
+	/home/xeoncpu/Videók/The.Invisible.Man.2020.1080p.WEB-DL.H264.AC3-EVO/The.Invisible.Man.2020.1080p.WEB-DL.H264.AC3-EVO.mkv
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.(2019).hun.1cd.(7997068)
+	/home/xeoncpu/Letöltések/the.peanut.butter.falcon.(2019).hun.1cd.(7997068)
+t/home/xeoncpu/.local/share/vifm/Trash/000_92338528_694097671359600_646431692315164672_n.jpg
+	/home/xeoncpu/Letöltések/92338528_694097671359600_646431692315164672_n.jpg
+t/home/xeoncpu/.local/share/vifm/Trash/000_[Majomparade]Black.Christmas.2019.1080p.BluRay.DD+5.1.x264.HuN-BlacKChristmaS.torrent
+	/home/xeoncpu/Letöltések/[Majomparade]Black.Christmas.2019.1080p.BluRay.DD+5.1.x264.HuN-BlacKChristmaS.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[Majomparade]Gyagyak.a.gatyaban.HUN.720p.WEB-DL.h264-TOXI.torrent
+	/home/xeoncpu/Letöltések/[Majomparade]Gyagyak.a.gatyaban.HUN.720p.WEB-DL.h264-TOXI.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[Majomparade]Szaguldo.nyar.1978.HUN.720p.WEB-DL.H.264-TOXI.torrent
+	/home/xeoncpu/Letöltések/[Majomparade]Szaguldo.nyar.1978.HUN.720p.WEB-DL.H.264-TOXI.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#177603]Jericho_S02_RETAiL_HUN_DVDRip_XviD-HSF.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#177603]Jericho_S02_RETAiL_HUN_DVDRip_XviD-HSF.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#380485]Jericho_2016_S01_WEB-DLRip_x264_HuN-lsl.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#380485]Jericho_2016_S01_WEB-DLRip_x264_HuN-lsl.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#428535]High_Plains_Drifter_1973_720p_BluRay_DTS_x264_HuN-TRiNiTY.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#428535]High_Plains_Drifter_1973_720p_BluRay_DTS_x264_HuN-TRiNiTY.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#584311]E_T_The_Extra_Terrestrial_1982_2xHUN_720p_BluRay__x264-TOXI.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#584311]E_T_The_Extra_Terrestrial_1982_2xHUN_720p_BluRay__x264-TOXI.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_ip.man.4.the.finale.(2019).hun.1cd.(8162830).zip
+	/home/xeoncpu/Letöltések/ip.man.4.the.finale.(2019).hun.1cd.(8162830).zip
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.(2019).hun.1cd.(7997068).zip
+	/home/xeoncpu/Letöltések/the.peanut.butter.falcon.(2019).hun.1cd.(7997068).zip
+t/home/xeoncpu/.local/share/vifm/Trash/000_The.Invisible.Man.2020.1080p.WEB-DL.H264.AC3-EVO
+	/home/xeoncpu/Videók/The.Invisible.Man.2020.1080p.WEB-DL.H264.AC3-EVO
+t/home/xeoncpu/.local/share/vifm/Trash/000_The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES
+	/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES
+t/home/xeoncpu/.local/share/vifm/Trash/000_The.Cranberries-Beneath.the.Skin.Live.in.Paris.v2.mkv
+	/home/xeoncpu/Videók/The.Cranberries-Beneath.the.Skin.Live.in.Paris.v2.mkv
+t/home/xeoncpu/.local/share/vifm/Trash/000_The.Invisible.Man.2020.1080p.WEB-DL.H264.AC3.mkv
+	/home/xeoncpu/Videók/The.Invisible.Man.2020.1080p.WEB-DL.H264.AC3.mkv
+t/home/xeoncpu/.local/share/vifm/Trash/000_falcon.mkv
+	/home/xeoncpu/Videók/falcon.mkv
+t/home/xeoncpu/.local/share/vifm/Trash/000_the.peanut.butter.falcon.2019.bdrip.x264.mkv
+	/home/xeoncpu/Videók/the.peanut.butter.falcon.2019.bdrip.x264.mkv
+t/home/xeoncpu/.local/share/vifm/Trash/000_Goldfinger - 'Here In Your Bedroom' (Quarantine Video)-0cQA6d3adPs.mkv
+	/home/xeoncpu/Goldfinger - 'Here In Your Bedroom' (Quarantine Video)-0cQA6d3adPs.mkv
+t/home/xeoncpu/.local/share/vifm/Trash/000_NOFX - The Decline Live at Red Rocks w_ Baz's Orchestra (Official Video)-oWhy8PCuGsk.webm
+	/home/xeoncpu/NOFX - The Decline Live at Red Rocks w_ Baz's Orchestra (Official Video)-oWhy8PCuGsk.webm
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200408-1314-31.png
+	/home/xeoncpu/pic-full-200408-1314-31.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200410-1954-33.png
+	/home/xeoncpu/pic-full-200410-1954-33.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_USA.invazio.1985.Custom.DVDRip.XviD.Dual_edit.mkv
+	/home/xeoncpu/USA.invazio.1985.Custom.DVDRip.XviD.Dual_edit.mkv
+t/home/xeoncpu/.local/share/vifm/Trash/000_The.Cranberries-Beneath.the.Skin.Live.in.Paris.mkv
+	/home/xeoncpu/Videók/The.Cranberries-Beneath.the.Skin.Live.in.Paris.mkv
+t/home/xeoncpu/.local/share/vifm/Trash/000_USA.invazio.1985.Custom.DVDRip.XviD.Dual.mkv
+	/home/xeoncpu/Videók/USA.invazio.1985.Custom.DVDRip.XviD.Dual.mkv
+t/home/xeoncpu/.local/share/vifm/Trash/000_USA.invazio.1985.mkv
+	/home/xeoncpu/USA.invazio.1985.mkv
+t/home/xeoncpu/.local/share/vifm/Trash/000_USA.invazio.ac3
+	/home/xeoncpu/USA.invazio.ac3
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200413-1105-14.png
+	/home/xeoncpu/pic-full-200413-1105-14.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200413-1124-50.png
+	/home/xeoncpu/pic-full-200413-1124-50.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200413-1644-57.png
+	/home/xeoncpu/pic-full-200413-1644-57.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_KISSKOOL-SIZZLING RED
+	/home/xeoncpu/.themes/KISSKOOL-SIZZLING RED
+t/home/xeoncpu/.local/share/vifm/Trash/000_Material-Magic-Frost
+	/home/xeoncpu/.themes/Material-Magic-Frost
+t/home/xeoncpu/.local/share/vifm/Trash/000_Solarized-Dark-Blue
+	/home/xeoncpu/.themes/Solarized-Dark-Blue
+t/home/xeoncpu/.local/share/vifm/Trash/000_Solarized-Dark-Green
+	/home/xeoncpu/.themes/Solarized-Dark-Green
+t/home/xeoncpu/.local/share/vifm/Trash/000_Solarized-Dark-Green-Numix
+	/home/xeoncpu/.themes/Solarized-Dark-Green-Numix
+t/home/xeoncpu/.local/share/vifm/Trash/000_Solarized-FLAT-Green
+	/home/xeoncpu/.themes/Solarized-FLAT-Green
+t/home/xeoncpu/.local/share/vifm/Trash/000_assets
+	/home/xeoncpu/.themes/assets
+t/home/xeoncpu/.local/share/vifm/Trash/000_cinnamon
+	/home/xeoncpu/.themes/cinnamon
+t/home/xeoncpu/.local/share/vifm/Trash/000_gtk-2.0
+	/home/xeoncpu/.themes/gtk-2.0
+t/home/xeoncpu/.local/share/vifm/Trash/000_gtk-3.0
+	/home/xeoncpu/.themes/gtk-3.0
+t/home/xeoncpu/.local/share/vifm/Trash/000_gtk-3.20
+	/home/xeoncpu/.themes/gtk-3.20
+t/home/xeoncpu/.local/share/vifm/Trash/000_metacity-1
+	/home/xeoncpu/.themes/metacity-1
+t/home/xeoncpu/.local/share/vifm/Trash/000_openbox-3
+	/home/xeoncpu/.themes/openbox-3
+t/home/xeoncpu/.local/share/vifm/Trash/000_unity
+	/home/xeoncpu/.themes/unity
+t/home/xeoncpu/.local/share/vifm/Trash/000_xfwm4
+	/home/xeoncpu/.themes/xfwm4
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-04-14-185023_1920x1080_scrot.png
+	/home/xeoncpu/2020-04-14-185023_1920x1080_scrot.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-04-14-185046_1920x1080_scrot.png
+	/home/xeoncpu/2020-04-14-185046_1920x1080_scrot.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-04-14-194715_1920x1080_scrot.png
+	/home/xeoncpu/2020-04-14-194715_1920x1080_scrot.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-04-15-083453_1920x1080_scrot.png
+	/home/xeoncpu/2020-04-15-083453_1920x1080_scrot.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200414-1203-27.png
+	/home/xeoncpu/pic-full-200414-1203-27.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200414-1916-36.png
+	/home/xeoncpu/pic-full-200414-1916-36.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-0543-58.png
+	/home/xeoncpu/pic-full-200415-0543-58.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-0622-43.png
+	/home/xeoncpu/pic-full-200415-0622-43.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-0654-03.png
+	/home/xeoncpu/pic-full-200415-0654-03.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-0714-11.png
+	/home/xeoncpu/pic-full-200415-0714-11.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-0813-21.png
+	/home/xeoncpu/pic-full-200415-0813-21.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-1317-28.png
+	/home/xeoncpu/pic-full-200415-1317-28.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-1321-26.png
+	/home/xeoncpu/pic-full-200415-1321-26.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-1911-44.png
+	/home/xeoncpu/pic-full-200415-1911-44.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-1918-29.png
+	/home/xeoncpu/pic-full-200415-1918-29.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-2031-47.png
+	/home/xeoncpu/pic-full-200415-2031-47.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-2034-58.png
+	/home/xeoncpu/pic-full-200415-2034-58.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-2039-51.png
+	/home/xeoncpu/pic-full-200415-2039-51.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-2046-33.png
+	/home/xeoncpu/pic-full-200415-2046-33.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_MagyArch_test
+	/home/xeoncpu/.themes/MagyArch_test
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-$(date
+	/home/xeoncpu/pic-full-$(date
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200415-2100-22.png
+	/home/xeoncpu/pic-full-200415-2100-22.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200416-0646-33.png
+	/home/xeoncpu/pic-full-200416-0646-33.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200416-1043-53.png
+	/home/xeoncpu/pic-full-200416-1043-53.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200416-1108-52.png
+	/home/xeoncpu/pic-full-200416-1108-52.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200416-1129-30.png
+	/home/xeoncpu/pic-full-200416-1129-30.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200416-1213-03.png
+	/home/xeoncpu/pic-full-200416-1213-03.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200416-1213-11.png
+	/home/xeoncpu/pic-full-200416-1213-11.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200416-1251-11.png
+	/home/xeoncpu/pic-full-200416-1251-11.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200416-1548-09.png
+	/home/xeoncpu/pic-full-200416-1548-09.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200416-1553-03.png
+	/home/xeoncpu/pic-full-200416-1553-03.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200416-1556-13.png
+	/home/xeoncpu/pic-full-200416-1556-13.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-04-17-092022_1920x1080_scrot.png
+	/home/xeoncpu/2020-04-17-092022_1920x1080_scrot.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-04-17-111145_1920x1080_scrot.png
+	/home/xeoncpu/2020-04-17-111145_1920x1080_scrot.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-04-17-114109_1920x1080_scrot.png
+	/home/xeoncpu/2020-04-17-114109_1920x1080_scrot.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-04-17-145628_1920x1080_scrot.png
+	/home/xeoncpu/2020-04-17-145628_1920x1080_scrot.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_Pictures
+	/home/xeoncpu/Pictures
+t/home/xeoncpu/.local/share/vifm/Trash/000_Abyss-DEEP-Suru_1.5.9
+	/home/xeoncpu/Letöltések/Abyss-DEEP-Suru_1.5.9
+t/home/xeoncpu/.local/share/vifm/Trash/000_KISSKOOL-SIZZLING RED.tar
+	/home/xeoncpu/Letöltések/KISSKOOL-SIZZLING RED.tar
+t/home/xeoncpu/.local/share/vifm/Trash/000_Material-Magic-Frost_1.3.9
+	/home/xeoncpu/Letöltések/Material-Magic-Frost_1.3.9
+t/home/xeoncpu/.local/share/vifm/Trash/000_Nordic-Folders.tar
+	/home/xeoncpu/Letöltések/Nordic-Folders.tar
+t/home/xeoncpu/.local/share/vifm/Trash/000_Nordic-standard-buttons.tar
+	/home/xeoncpu/Letöltések/Nordic-standard-buttons.tar
+t/home/xeoncpu/.local/share/vifm/Trash/000_Nordic.tar
+	/home/xeoncpu/Letöltések/Nordic.tar
+t/home/xeoncpu/.local/share/vifm/Trash/000_Solarized-Dark-Green-Numix_1.9.8
+	/home/xeoncpu/Letöltések/Solarized-Dark-Green-Numix_1.9.8
+t/home/xeoncpu/.local/share/vifm/Trash/000_Solarized-Numix-FLAT-Green_1.9.8
+	/home/xeoncpu/Letöltések/Solarized-Numix-FLAT-Green_1.9.8
+t/home/xeoncpu/.local/share/vifm/Trash/000_USA.invazio.1985.Custom.DVDRip.XviD.Dual-Avalon
+	/home/xeoncpu/Letöltések/USA.invazio.1985.Custom.DVDRip.XviD.Dual-Avalon
+t/home/xeoncpu/.local/share/vifm/Trash/000_6_TT-LFT kérelem 2017.doc
+	/home/xeoncpu/Letöltések/6_TT-LFT kérelem 2017.doc
+t/home/xeoncpu/.local/share/vifm/Trash/000_Abyss-DEEP-Suru_1.5.9.zip
+	/home/xeoncpu/Letöltések/Abyss-DEEP-Suru_1.5.9.zip
+t/home/xeoncpu/.local/share/vifm/Trash/000_Címsor hozzáadása(1).png
+	/home/xeoncpu/Letöltések/Címsor hozzáadása(1).png
+t/home/xeoncpu/.local/share/vifm/Trash/000_Honey.Boy.2019.720p.BluRay.x264-EiDER [IPT].torrent
+	/home/xeoncpu/Letöltések/Honey.Boy.2019.720p.BluRay.x264-EiDER [IPT].torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_KISSKOOL-SIZZLING RED.tar.gz
+	/home/xeoncpu/Letöltések/KISSKOOL-SIZZLING RED.tar.gz
+t/home/xeoncpu/.local/share/vifm/Trash/000_Material-Magic-Frost_1.3.9.zip
+	/home/xeoncpu/Letöltések/Material-Magic-Frost_1.3.9.zip
+t/home/xeoncpu/.local/share/vifm/Trash/000_Material-Magic-Ink_1.3.9.zip
+	/home/xeoncpu/Letöltések/Material-Magic-Ink_1.3.9.zip
+t/home/xeoncpu/.local/share/vifm/Trash/000_Nordic-Folders.tar.xz
+	/home/xeoncpu/Letöltések/Nordic-Folders.tar.xz
+t/home/xeoncpu/.local/share/vifm/Trash/000_Nordic-standard-buttons.tar.xz
+	/home/xeoncpu/Letöltések/Nordic-standard-buttons.tar.xz
+t/home/xeoncpu/.local/share/vifm/Trash/000_Nordic.tar.xz
+	/home/xeoncpu/Letöltések/Nordic.tar.xz
+t/home/xeoncpu/.local/share/vifm/Trash/000_Névtelen terv.png
+	/home/xeoncpu/Letöltések/Névtelen terv.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_Solarized-Dark-Green-Numix_1.9.8.zip
+	/home/xeoncpu/Letöltések/Solarized-Dark-Green-Numix_1.9.8.zip
+t/home/xeoncpu/.local/share/vifm/Trash/000_Solarized-Numix-FLAT-Green_1.9.8.zip
+	/home/xeoncpu/Letöltések/Solarized-Numix-FLAT-Green_1.9.8.zip
+t/home/xeoncpu/.local/share/vifm/Trash/000_The.Rhythm.Section.2020.720p.WEBRip.DD5.1.x264-BDP [IPT].torrent
+	/home/xeoncpu/Letöltések/The.Rhythm.Section.2020.720p.WEBRip.DD5.1.x264-BDP [IPT].torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[Majomparade]Arok.2020.HUN.mHD.Bluray.720p.x264.AC3.5.1-mHD.torrent
+	/home/xeoncpu/Letöltések/[Majomparade]Arok.2020.HUN.mHD.Bluray.720p.x264.AC3.5.1-mHD.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[Majomparade]Hang.'Em.High.1968.BluRay.1080p.x264.DTS-MySiLU.torrent
+	/home/xeoncpu/Letöltések/[Majomparade]Hang.'Em.High.1968.BluRay.1080p.x264.DTS-MySiLU.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[Majomparade]Perfetti.sconosciuti.2016.720p.BluRay.DD5.1.x264.Hun-L77.torrent
+	/home/xeoncpu/Letöltések/[Majomparade]Perfetti.sconosciuti.2016.720p.BluRay.DD5.1.x264.Hun-L77.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[Majomparade]Standing.Up.2013.720p.WEB-DL.DD5.1.H.264.HuN-SaS.torrent
+	/home/xeoncpu/Letöltések/[Majomparade]Standing.Up.2013.720p.WEB-DL.DD5.1.H.264.HuN-SaS.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#94346]Requiem_For_a_Dream_2000_1080p_BluRay_x264_Hun-Optimus.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#94346]Requiem_For_a_Dream_2000_1080p_BluRay_x264_Hun-Optimus.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#97688]The_Godfather_1972_ReadNFO_1080p_BluRay_DTS_x264_Hun-ESiR-arpi.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#97688]The_Godfather_1972_ReadNFO_1080p_BluRay_DTS_x264_Hun-ESiR-arpi.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#97838]Alien_vs_Predator_2004_Bluray_1080p_DTS_HUN_x264-NyTT.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#97838]Alien_vs_Predator_2004_Bluray_1080p_DTS_HUN_x264-NyTT.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#98086]The_Godfather_Part_II_1974_ReadNFO_1080p_BluRay_x264_Hun-ESiR-arpi.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#98086]The_Godfather_Part_II_1974_ReadNFO_1080p_BluRay_x264_Hun-ESiR-arpi.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#99892]King_Kong_2005_Extended_Cut_1080p_HDDVD-BluRay_DTS_x264-TRiNiTY.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#99892]King_Kong_2005_Extended_Cut_1080p_HDDVD-BluRay_DTS_x264-TRiNiTY.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#100766]Groundhog_Day_1993_BluRay_RETAiL_1080p_DTS_HUN_x264-NyTT.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#100766]Groundhog_Day_1993_BluRay_RETAiL_1080p_DTS_HUN_x264-NyTT.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#203780]USA_invazio_1985_Custom_DVDRip_XviD_Dual-Avalon.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#203780]USA_invazio_1985_Custom_DVDRip_XviD_Dual-Avalon.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#214498]Mientras_duermes_2011_720p_BluRay_x264-DON.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#214498]Mientras_duermes_2011_720p_BluRay_x264-DON.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#305043]La_isla_minima_2014_720p_Bluray_DD5_1_x264-EbP.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#305043]La_isla_minima_2014_720p_Bluray_DD5_1_x264-EbP.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#403263]The_Invisible_Guest_2016_720p_BluRay_x264-USURY.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#403263]The_Invisible_Guest_2016_720p_BluRay_x264-USURY.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#479823]Oblivion_2013_Open_Matte_1080p_Hybrid_BluRay_DTS_x264_HuN-CRLS.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#479823]Oblivion_2013_Open_Matte_1080p_Hybrid_BluRay_DTS_x264_HuN-CRLS.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#695329]It_Chapter_Two_2019_1080p_BluRay_DD+7_1_x264_HuN-No1.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#695329]It_Chapter_Two_2019_1080p_BluRay_DD+7_1_x264_HuN-No1.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#716213]Abominable_2019_720p_BluRay_DD5_1_x264_HuN-No1.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#716213]Abominable_2019_720p_BluRay_DD5_1_x264_HuN-No1.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#746387]The_Turning_2020_1080p_BluRay_x264-YOL0W.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#746387]The_Turning_2020_1080p_BluRay_x264-YOL0W.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#746987]Jumanji_The_Next_Level_2019_720p_BluRay_DD5_1_x264_HUN-PTHD.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#746987]Jumanji_The_Next_Level_2019_720p_BluRay_DD5_1_x264_HUN-PTHD.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#747351]The_Lost_Husband_2020_1080p_WEBRip_X264_DD_5_1-EVO.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#747351]The_Lost_Husband_2020_1080p_WEBRip_X264_DD_5_1-EVO.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#747361]We_Summon_The_Darkness_2020_1080p_WEBRip_X264_DD_5_1-EVO.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#747361]We_Summon_The_Darkness_2020_1080p_WEBRip_X264_DD_5_1-EVO.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#747593]Blindness_2008_1080p_BluRay_DTS_x264_HuN-TRiNiTY.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#747593]Blindness_2008_1080p_BluRay_DTS_x264_HuN-TRiNiTY.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#747657]Az_elveszett_kardforgato_2011_BDRip_x264_HuN-BaKeR.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#747657]Az_elveszett_kardforgato_2011_BDRip_x264_HuN-BaKeR.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#748571]Perfetti_sconosciuti_2016_720p_BluRay_DD5_1_x264_Hun-L77.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#748571]Perfetti_sconosciuti_2016_720p_BluRay_DD5_1_x264_Hun-L77.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#748933]Tul_a_baratsagon_2005_Bluray_1080p_DTS_HUN_x264-gyontato.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#748933]Tul_a_baratsagon_2005_Bluray_1080p_DTS_HUN_x264-gyontato.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#749267]Underwater_2020_1080p_BluRay_DD+7_1_x264_HuN-UnDeRwAtEr.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#749267]Underwater_2020_1080p_BluRay_DD+7_1_x264_HuN-UnDeRwAtEr.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#749343]Jojo_Rabbit_2019_1080p_BluRay_DTS_x264_HuN-JoJo.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#749343]Jojo_Rabbit_2019_1080p_BluRay_DTS_x264_HuN-JoJo.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#750241]Sympathy_For_Lady_Vengeance_2005_1080p_BluRay_DTS_x264_Hun-Rabbit.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#750241]Sympathy_For_Lady_Vengeance_2005_1080p_BluRay_DTS_x264_Hun-Rabbit.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#750243]Sympathy_For_Mr_Vengeance_2002_1080p_BluRay_DTS_x264_Hun-Rabbit.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#750243]Sympathy_For_Mr_Vengeance_2002_1080p_BluRay_DTS_x264_Hun-Rabbit.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#750419]Phenomenon_1996_1080p_BluRay_DTS_x264_HUN-L3o.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#750419]Phenomenon_1996_1080p_BluRay_DTS_x264_HUN-L3o.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_[bHUm_#751081]48_Hrs_1982_Bluray_1080p_ENG_HUN_x264-ToPCopZ.torrent
+	/home/xeoncpu/Letöltések/[bHUm_#751081]48_Hrs_1982_Bluray_1080p_ENG_HUN_x264-ToPCopZ.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_honey.boy.(2019).hun.1cd.(8107366).zip
+	/home/xeoncpu/Letöltések/honey.boy.(2019).hun.1cd.(8107366).zip
+t/home/xeoncpu/.local/share/vifm/Trash/000_honeycomb-orange-hexagon-beehive-2560x1080-c2-2f2b26-5f513d-l2-37-443-a-0-f-5.jpg
+	/home/xeoncpu/Letöltések/honeycomb-orange-hexagon-beehive-2560x1080-c2-2f2b26-5f513d-l2-37-443-a-0-f-5.jpg
+t/home/xeoncpu/.local/share/vifm/Trash/000_magyarchlinux_archive.torrent
+	/home/xeoncpu/Letöltések/magyarchlinux_archive.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/000_magyarcslinux-2020.04.08-x86_64_archive.torrent
+	/home/xeoncpu/Letöltések/magyarcslinux-2020.04.08-x86_64_archive.torrent
+t/home/xeoncpu/.local/share/vifm/Trash/001_Solarized-Dark-Blue
+	/home/xeoncpu/Letöltések/baz-voidrice/.themes/Solarized-Dark-Blue
+t/home/xeoncpu/.local/share/vifm/Trash/001_Solarized-Dark-Green
+	/home/xeoncpu/Letöltések/baz-voidrice/.themes/Solarized-Dark-Green
+t/home/xeoncpu/.local/share/vifm/Trash/000_getkeys
+	/home/xeoncpu/Letöltések/baz-voidrice/.config/getkeys
+t/home/xeoncpu/.local/share/vifm/Trash/000_dconf
+	/home/xeoncpu/Letöltések/baz-voidrice/.config/dconf
+t/home/xeoncpu/.local/share/vifm/Trash/000_infoerik.sh
+	/home/xeoncpu/Letöltések/baz-voidrice/.config/bspwm/scripts/infoerik.sh

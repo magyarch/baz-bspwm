@@ -52,7 +52,7 @@ scalar {
          'quarkwm'               => 'QuarkWM',
          'ratpoison'             => 'ratpoison',
          'sawfish'               => 'Sawfish',
-         'scrot-wm'              => 'ScrotWM',
+         'spectrwm'              => 'SpectrWM',
          'scrotwm'               => 'ScrotWM',
          'sithwm'                => 'SithWM',
          'stumpwm'               => 'StumpWM',
