@@ -22,18 +22,15 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/xeoncpu/Letöltések/baz-voidrice/.config/bspwm/scripts
-	move-window
-3
-d/home/xeoncpu/Letöltések/baz-voidrice/.config/bspwm
-	scripts
+d/home/xeoncpu/.config/vifm
+	colors
 1
-d/home/xeoncpu/Letöltések/baz-voidrice/.config
-	bspwm
-3
-d/home/xeoncpu/Letöltések/baz-voidrice
-	.bashrc
-12
+d/home/xeoncpu/.config
+	vifm
+34
+d/home/xeoncpu/.config/vifm
+	vifmrc
+5
 d/home/xeoncpu
 	.config
 5
@@ -44,17 +41,11 @@ d/home/xeoncpu/.config/vifm
 	colors
 1
 d/home/xeoncpu/.config/vifm/colors
-	dracula.vifm
-10
-d/home/xeoncpu/.config/vifm
-	colors
-1
-d/home/xeoncpu/.config/vifm/colors
-	dracula.vifm
-10
-d/home/xeoncpu/.config/vifm
-	colors
-1
+	Default.vifm
+4
+d/home/xeoncpu
+	.config
+5
 d/home/xeoncpu/.config
 	vifm
 34
@@ -62,43 +53,46 @@ d/home/xeoncpu/.config/vifm
 	colors
 1
 d/home/xeoncpu/.config/vifm/colors
-	dracula.vifm
-10
-d/home/xeoncpu/.config/vifm
-	colors
-1
-d/home/xeoncpu/.config/vifm/colors
-	snowwhite.vifm
-24
-d/home/xeoncpu/.config/vifm
-	colors
-1
-d/home/xeoncpu/.config/vifm/colors
-	snowwhite.vifm
-24
-d/home/xeoncpu/.config/vifm
-	vifmrc
+	Default.vifm
+4
+d/home/xeoncpu
+	.config
 5
-d/home/xeoncpu
-	Letöltések
-4
-d/home/xeoncpu/Letöltések
-	..
-0
-d/home/xeoncpu
-	Letöltések
-4
-d/home/xeoncpu/Letöltések
-	installer
+d/home/xeoncpu/.config
+	vifm
+34
+d/home/xeoncpu/.config/vifm
+	colors
 1
+d/home/xeoncpu/.config/vifm/colors
+	Default.vifm
+4
+d/home/xeoncpu
+	.config
+5
+d/home/xeoncpu/.config
+	vifm
+34
+d/home/xeoncpu/.config/vifm
+	colors
+1
+d/home/xeoncpu/.config/vifm/colors
+	Default.vifm
+4
+d/home/xeoncpu
+	.config
+5
+d/home/xeoncpu/.config
+	vifm
+34
+d/home/xeoncpu/.config/vifm
+	colors
+1
+d/home/xeoncpu/.config/vifm/colors
+	Default.vifm
+4
 
 # Right window history (oldest to newest):
-D/home/xeoncpu/.config
-	bmfiles
-30
-D/home/xeoncpu
-	Videók
-7
 D/home/xeoncpu/Videók
 	The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES
 2
@@ -160,15 +154,16 @@ D/home/xeoncpu/.config
 	wallpaper.png
 50
 D/home/xeoncpu
-	..
-0
+	.config
+5
+D/home/xeoncpu/.config
+	bmpanel2
+3
+D/home/xeoncpu
+	baraction.sh
+11
 
 # Command line history (oldest to newest):
-:lstrash
-:mkdir .fonts
-:mkdir Music
-:mkdir .themes
-:mkdir nas
 :mkdir Videos 
 :mkdir spotify
 :mkdir scripts
@@ -177,16 +172,21 @@ D/home/xeoncpu
 :colorscheme molokai
 :colorscheme matrix
 :colorscheme palenight
-:colorscheme g80
 :colorscheme onedark
-:colorscheme astrell
-:colorscheme gruvbox
 :colorscheme semidarkdesert
 :colorscheme reicheltd
 :colorscheme reicheltd-light
 :colorscheme snowhite
 :colorscheme snowwhite
 :colorscheme solarized-dark
+:colorscheme g80
+:colorscheme iceberg
+:colorscheme gruvbox
+:collorscheme ph
+:colorscheme ph
+:colorscheme default
+:colorscheme astrell
+:colorscheme Default
 
 # Search history (oldest to newest):
 
@@ -204,11 +204,15 @@ pDunst_gui_v2.1_by_KuLuSz
 pthe.peanut.butter.falcon.2019.bdrip.x264-drones.srt
 pHoney.Boy.2019.REPACK.720p.AMZN.WEB-DL.DDP5.1.H.264-TEPES.srt
 pMagyArch-official-wall.png
+p.Xresourcesd
+p.Xresources
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/xeoncpu/.local/share/vifm/Trash/000_baz-voidrice
+""/home/xeoncpu/.local/share/vifm/Trash/000_2020-04-17.png
+""/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200418-0700-22.png
+""/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200418-0909-39.png
 
 # Directory stack (oldest to newest):
 
@@ -1413,3 +1417,71 @@ t/home/xeoncpu/.local/share/vifm/Trash/000_dconf
 	/home/xeoncpu/Letöltések/baz-voidrice/.config/dconf
 t/home/xeoncpu/.local/share/vifm/Trash/000_infoerik.sh
 	/home/xeoncpu/Letöltések/baz-voidrice/.config/bspwm/scripts/infoerik.sh
+t/home/xeoncpu/.local/share/vifm/Trash/000_.spectrwm.conf
+	/home/xeoncpu/Letöltések/baz-bspwm/.spectrwm.conf
+t/home/xeoncpu/.local/share/vifm/Trash/002_Solarized-Dark-Blue
+	/home/xeoncpu/Letöltések/baz-bspwm/.themes/Solarized-Dark-Blue
+t/home/xeoncpu/.local/share/vifm/Trash/002_Solarized-Dark-Green
+	/home/xeoncpu/Letöltések/baz-bspwm/.themes/Solarized-Dark-Green
+t/home/xeoncpu/.local/share/vifm/Trash/000_.icons
+	/home/xeoncpu/Letöltések/baz-bspwm/.icons
+t/home/xeoncpu/.local/share/vifm/Trash/000_.uuid
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/.uuid
+t/home/xeoncpu/.local/share/vifm/Trash/000_Artifika-Regular.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Artifika-Regular.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_AvantGarde_LT_Medium.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/AvantGarde_LT_Medium.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_GE_Inspira.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/GE_Inspira.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_GrandHotel-Regular.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/GrandHotel-Regular.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_HNUT.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/HNUT.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_Hack-Regular-Nerd-Font-Complete-Mono.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Hack-Regular-Nerd-Font-Complete-Mono.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_Hack_Regular_Nerd_Font_Complete_Mono.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Hack_Regular_Nerd_Font_Complete_Mono.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_Inked Out.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Inked Out.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_Poky.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Poky.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_Porto.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Porto.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_Quantify Bold.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Quantify Bold.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_STJEDISE.TTF
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/STJEDISE.TTF
+t/home/xeoncpu/.local/share/vifm/Trash/000_STYLBCC_.TTF
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/STYLBCC_.TTF
+t/home/xeoncpu/.local/share/vifm/Trash/000_Starjedi.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Starjedi.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_Starjhol.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Starjhol.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_Starjout.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Starjout.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_Stjldbl1.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Stjldbl1.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_Stya.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Stya.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_Ubuntu.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/Ubuntu.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/000_space age.ttf
+	/home/xeoncpu/Letöltések/baz-bspwm/.fonts/space age.ttf
+t/home/xeoncpu/.local/share/vifm/Trash/001_getkeys
+	/home/xeoncpu/Letöltések/baz-bspwm/.config/getkeys
+t/home/xeoncpu/.local/share/vifm/Trash/000_herbstluftwm
+	/home/xeoncpu/Letöltések/baz-bspwm/.config/herbstluftwm
+t/home/xeoncpu/.local/share/vifm/Trash/001_neofetch
+	/home/xeoncpu/Letöltések/baz-bspwm/.config/neofetch
+t/home/xeoncpu/.local/share/vifm/Trash/000_wall.png
+	/home/xeoncpu/Letöltések/baz-bspwm/.config/wall.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_st-solarized-dark-20180411-041912a.diff
+	/home/xeoncpu/Letöltések/st/st-solarized-dark-20180411-041912a.diff
+t/home/xeoncpu/.local/share/vifm/Trash/000_st
+	/home/xeoncpu/Letöltések/st
+t/home/xeoncpu/.local/share/vifm/Trash/000_2020-04-17.png
+	/home/xeoncpu/2020-04-17.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200418-0700-22.png
+	/home/xeoncpu/pic-full-200418-0700-22.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200418-0909-39.png
+	/home/xeoncpu/pic-full-200418-0909-39.png
