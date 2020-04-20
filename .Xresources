@@ -20,10 +20,10 @@
 *color15:  #cbffff
 
 !! URxvt Appearance
-URxvt.font: xft:JetBrains Mono:pixelsize=12:antialias=true
-URxvt.boldFont: xft:JetBrains Mono:pixelsize=12
-URxvt.italicFont: xft:JetBrains Mono:pixelsize=12
-URxvt.boldItalicfont: xft:JetBrains Mono:pixelsize=12
+URxvt.font: xft:JetBrains Mono:pixelsize=13:antialias=true
+URxvt.boldFont: xft:JetBrains Mono:pixelsize=13:antialias=true
+URxvt.italicFont: xft:JetBrains Mono:pixelsize=13:antialias=true
+URxvt.boldItalicfont: xft:JetBrains Mono:pixelsize=13:antialias=true
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24
