@@ -376,40 +376,7 @@ format-padding = 2
 interval = 1
 format-prefix = "💡 "
 
-[module/volume-brad]
-;https://github.com/jaagr/polybar/wiki/Module:-volume
-type = internal/alsa
-format-volume = "<label-volume>  <bar-volume>"
-format-volume-underline = ${colors.foreground-alt}
 
-label-volume = " "
-label-volume-foreground = ${colors.foreground}
-
-label-muted = muted
-
-bar-volume-width = 10
-bar-volume-foreground-0 = ${colors.third}
-bar-volume-foreground-1 = ${colors.third}
-bar-volume-foreground-2 = ${colors.third}
-bar-volume-foreground-3 = ${colors.third}
-bar-volume-foreground-4 = ${colors.third}
-bar-volume-foreground-5 = ${colors.third}
-bar-volume-foreground-6 = ${colors.third}
-bar-volume-gradient = false
-bar-volume-indicator = ━
-bar-volume-indicator-font = 2
-bar-volume-fill = ━
-bar-volume-fill-font = 2
-bar-volume-empty = ━
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground}
-format-volume-foreground = ${colors.foreground}
-format-volume-background = ${colors.background}
-format-muted-prefix = "  "
-format-muted-prefix-foreground = "#ff0000"
-format-muted-foreground = ${colors.foreground}
-format-muted-background = ${colors.background}
-format-padding = 2
 
 [module/cpu-usage]
 type = custom/script

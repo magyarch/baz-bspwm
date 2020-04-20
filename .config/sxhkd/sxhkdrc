@@ -36,7 +36,7 @@ super + {_,shift + } i
 
 
 super + {_,shift + } c
-    {rofi_run -l, $TERMINAL -g 70x20-16+30 -e calcurse}
+    {power, $TERMINAL -g 70x20-16+30 -e calcurse}
 
 
 super + {_,shift + } w
@@ -77,10 +77,6 @@ super + Prior
 super + shift + Prior
    flameshot screen -r
 
-###############################
-#     ET CETERA...            #
-###############################
-
 
 super + grave
     dmenuunicode
@@ -90,8 +86,14 @@ super + Scroll_Lock
     killall screenkey || screenkey
 
 
-#super + Insert
- #   tdrop -ma -w 1080 -x 350 -h 37% -y 52 $TERMINAL -e htop
+# Record audio or video
+super + Home
+    dmenurecord
+
+# kill active recording
+super + shift + End
+    dmenurecord kill    
+
 
 
 #########################
@@ -115,13 +117,7 @@ Delete
 shift + Prior
     maimpick
 
-# Record audio or video
-super + Home
-    dmenurecord
 
-# kill active recording
-super + shift + End
-    dmenurecord kill
 
 
 #########################
@@ -188,8 +184,8 @@ super + F11
 
 
 # Mpv floating
-#super + F12
- #   mpv --geometry=20%-30+40 --title="mpvfloat" https://www.youtube.com/watch?v=_bOKCbPN3cg&list=RD_bOKCbPN3cg&start_radio=1
+super + F12
+    mpv --geometry=20%-30+40 --title="mpvfloat" https://www.youtube.com/watch?v=_bOKCbPN3cg&list=RD_bOKCbPN3cg&start_radio=1
 
 
 F10
