@@ -8,7 +8,6 @@ alias ka="killall" \
 	SS="sudo systemctl" \
 	f="$FILE" \
 	g="git" \
-	trem="transmission-remote" \
 	e="$EDITOR" \
 	v="$EDITOR" \
 	x="sxiv -ft *" \
@@ -22,7 +21,6 @@ alias ka="killall" \
 	yta="yt -x -f bestaudio/best" \
 	YT="youtube-viewer" \
 	ref="shortcuts >/dev/null; source ~/.config/shortcutrc" \
-	upc="sudo pacman -Syu; pkill -RTMIN+8 i3blocks" \
 	lsp="pacman -Qett --color=always | less" \
 	ffmpeg="ffmpeg -hide_banner"
 

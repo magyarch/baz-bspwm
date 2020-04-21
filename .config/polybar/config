@@ -232,121 +232,6 @@ format-foreground = ${colors.foreground}
 ;format-underline = ${colors.foreground-alt}
 format-padding = 2
 
-[module/memory-ramp]
-type = internal/memory
-
-; Seconds to sleep between updates
-; Default: 1
-interval = 2
-; Available tags:
-;   <label> (default)
-;   <bar-used>
-;   <bar-free>
-;   <ramp-used>
-;   <ramp-free>
-;   <bar-swap-used>
-;   <bar-swap-free>
-;   <ramp-swap-used>
-;   <ramp-swap-free>
-; format = " <bar-used>  <ramp-swap-used>"
-
-format = " <bar-used>"
-
-ramp-swap-used-0 = ▁
-ramp-swap-used-1 = ▂
-ramp-swap-used-2 = ▃
-ramp-swap-used-3 = ▄
-ramp-swap-used-4 = ▅
-ramp-swap-used-5 = ▆
-ramp-swap-used-6 = ▇
-ramp-swap-used-7 = █
-ramp-swap-used-0-foreground = ${colors.foreground}
-ramp-swap-used-1-foreground = ${colors.adapta-lightgreen}
-ramp-swap-used-2-foreground = ${colors.adapta-green}
-ramp-swap-used-3-foreground = ${colors.adapta-yellow}
-ramp-swap-used-4-foreground = ${colors.adapta-red}
-ramp-swap-used-5-foreground = ${colors.adapta-red}
-ramp-swap-used-6-foreground = ${colors.adapta-red}
-ramp-swap-used-7-foreground = ${colors.adapta-red}
-ramp-swap-used-font = 3
-ramp-swap-used-underline = ${colors.foreground-alt}
-
-; Available tokens:
-;   %percentage_used% (default)
-;   %percentage_free%
-;   %gb_used%
-;   %gb_free%
-;   %gb_total%
-;   %mb_used%
-;   %mb_free%
-;   %mb_total%
-;   %percentage_swap_used%
-;   %percentage_swap_free%
-;   %mb_swap_total%
-;   %mb_swap_free%
-;   %mb_swap_used%
-;   %gb_swap_total%
-;   %gb_swap_free%
-;   %gb_swap_used%
-
-label = " %gb_used% / %gb_total%"
-
-
-; Only applies if <bar-used> is used
-
-bar-used-indicator =
-bar-used-width = 10
-bar-used-fill = ━
-bar-used-empty = ━
-bar-used-indicator-foreground = ${colors.foreground-alt}
-bar-used-empty-foreground = ${colors.foreground}
-bar-used-foreground-0 = ${colors.adapta-green}
-bar-used-foreground-1 = ${colors.adapta-yellow}
-bar-used-foreground-2 = ${colors.adapta-red}
-
-
-
-; Only applies if <ramp-used> is used
-ramp-used-0 = ▁
-ramp-used-1 = ▂
-ramp-used-2 = ▃
-ramp-used-3 = ▄
-ramp-used-4 = ▅
-ramp-used-5 = ▆
-ramp-used-6 = ▇
-ramp-used-7 = █
-ramp-used-0-foreground = ${colors.foreground}
-ramp-used-1-foreground = ${colors.foreground}
-ramp-used-2-foreground = ${colors.adapta-lightgreen}
-ramp-used-3-foreground = ${colors.adapta-green}
-ramp-used-4-foreground = ${colors.adapta-yellow}
-ramp-used-5-foreground = ${colors.adapta-yellow}
-ramp-used-6-foreground = ${colors.adapta-red}
-ramp-used-7-foreground = ${colors.adapta-red}
-ramp-used-font = 3
-
-; Only applies if <ramp-free> is used
-ramp-free-0 = ▁
-ramp-free-1 = ▂
-ramp-free-2 = ▃
-ramp-free-3 = ▄
-ramp-free-4 = ▅
-ramp-free-5 = ▆
-ramp-free-6 = ▇
-ramp-free-7 = █
-
-format-background = ${colors.background}
-format-foreground = ${colors.foreground}
-format-underline = ${colors.foreground-alt}
-format-padding = 2
-
-[module/torrent]
-type = custom/script
-exec = ~/.local/bin/statusbar/torrent
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-interval = 20
-#label = "Upload:%output%"
 
 [module/weather2]
 type = custom/script
@@ -410,24 +295,6 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-padding = 2
 
-[module/weather3]
-type = custom/script
-exec = ~/.local/bin/weather
-label = "%output%"
-click-left = $TERMINAL -e w3m wttr.in/Sopron
-interval = 1800
-format-underline = #268bd2
-format-background = ${colors.background}
-format-padding = 2
-
-[module/volume3]
-type = custom/script
-exec = ~/.local/bin/statusbar/volume
-click-left = $TERMINAL -e alsamixer &
-initial = 1
-format-background = ${colors.background}
-format-underline = #268bd2
-format-padding = 2
 
 [module/date2]
 type = custom/script
@@ -672,25 +539,6 @@ format-background = ${colors.background}
 
 ################################################################################
 
-[module/spotify1]
-;https://github.com/NicholasFeldman/dotfiles/blob/master/polybar/.config/polybar/spotify.sh
-type = custom/script
-exec = ~/.config/polybar/scripts/spotify1.sh
-interval = 1
-
-;format = <label>
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-padding = 2
-format-underline = #0f0
-format-prefix = "  "
-format-prefix-foreground = #0f0
-label = %output:0:150%
-
-################################################################################
-
-
-################################################################################
 
 [module/temperature2]
 type = custom/script
@@ -721,39 +569,6 @@ format-padding = 2
 
 ################################################################################
 
-[module/volume]
-;https://github.com/jaagr/polybar/wiki/Module:-volume
-type = internal/volume
-format-volume = "<label-volume>  <bar-volume>"
-
-label-volume = " 🔊 "
-label-volume-foreground = #965fad
-
-label-muted = muted
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #f47f7b
-bar-volume-foreground-1 = #f47f7b
-bar-volume-foreground-2 = #f47f7b
-bar-volume-foreground-3 = #eb5252
-bar-volume-foreground-4 = #eb5252
-bar-volume-foreground-5 = #eb5252
-bar-volume-foreground-6 = #eb5252
-bar-volume-gradient = false
-bar-volume-indicator = 
-bar-volume-indicator-font = 2
-bar-volume-fill = 
-bar-volume-fill-font = 2
-bar-volume-empty = 
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground}
-format-volume-foreground = ${colors.foreground}
-format-volume-background = ${colors.background}
-format-muted-prefix = "  "
-format-muted-prefix-foreground = "#ff0000"
-format-muted-foreground = ${colors.foreground}
-format-muted-background = ${colors.background}
-format-padding = 2
 
 
 [module/alsa]
@@ -811,26 +626,6 @@ bar-empty-foreground = #fff
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
-################################################################################
-
-[module/xkeyboard]
-;https://github.com/jaagr/polybar/wiki/Module:-xkeyboard
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
-format-prefix-background = ${colors.background}
-format-prefix-underline = #3ecfb2
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-
-label-layout = %layout%
-label-layout-underline = #3ecfb2
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.background}
-label-indicator-underline = ${colors.foreground}
 
 ################################################################################
 
