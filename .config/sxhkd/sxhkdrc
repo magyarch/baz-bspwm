@@ -3,7 +3,7 @@
 #########################
 
 super + {_,shift + } Return
-    {bspwmfloat && $TERMINAL -g, st}
+    {bspwmfloat && $TERMINAL, st}
 
 
 super + {_,shift + } d
