@@ -16,5 +16,5 @@ cfu="$EDITOR ~/.config/newsboat/urls" \
 cfn="$EDITOR ~/.config/newsboat/config" \
 cfmb="$EDITOR ~/.config/ncmpcpp/bindings" \
 cfmc="$EDITOR ~/.config/ncmpcpp/config" \
-cfb="$EDITOR ~/.config/.config/bspwmrc" \
+cfb="$EDITOR ~/.config/.config/bspwm/bspwmrc" \
 cfk="$EDITOR ~/.config/sxhkd/sxhkdrc" \
