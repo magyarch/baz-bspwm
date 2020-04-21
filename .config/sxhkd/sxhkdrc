@@ -3,11 +3,11 @@
 #########################
 
 super + {_,shift + } Return
-    {bspwmfloat && $TERMINAL -g 100x30-420-440, urxvt}
+    {bspwmfloat && $TERMINAL -g, st}
 
 
 super + {_,shift + } d
-    {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48' -dim '0.4'
+    {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48' 
 , rofi --show run}
 
 
@@ -31,25 +31,16 @@ super + {_,shift + } i
     {$TERMINAL -e htop, $TERMINAL -e gtop}
 
 
-#super + shift + a
- #   $TERMINAL -e pulsemixer; pkill -RTMIN+10 i3blocks
-
-
 super + {_,shift + } c
     {power, $TERMINAL -g 70x20-16+30 -e calcurse}
 
 
 super + {_,shift + } w
-    {$BROWSER, firefox}
+    {$BROWSER, brave}
 
 
 super + {_,shift + } p
     {discord, bspwmfloat TelegramDesktop desktop='^2' follow=on rectangle=550x800+1250+200 && telegram-desktop}
-
-
-super + shift + {x,BackSpace,Escape}
-    {prompt "Shutdown computer?" "sudo -A shutdown -h now", prompt "Reboot computer?" "sudo -A shutdown -r now", prompt "Are you sure you would
-    like to quit this Xsession" "bspc quit"}
 
 
 # Hide polybar/Reload bspwm
@@ -64,18 +55,6 @@ super + Escape
 # Close window
 super + q
    xdo close
-
-
-Prior
-  flameshot full -p ~/scrot/ -d 5000
-
-
-super + Prior
-  flameshot gui &
-
-
-super + shift + Prior
-   flameshot screen -r
 
 
 super + grave
@@ -101,22 +80,7 @@ super + shift + End
 #########################
 
 alt + {_,shift + } a
-   {toggleprogram "picom -b", bspwmfloat && wmctrl -r pavucontrol -e "0,0,0,600,300" }
-
-
-#########################
-#     SCREENSHOTS       #
-#########################
-
-
-# Take screenshot
-Delete
-    maim pic-full-$(date '+%y%m%d-%H%M-%S').png
-
-# Pick screenshot type
-shift + Prior
-    maimpick
-
+   {toggleprogram "picom -b", pavucontrol}
 
 
 
@@ -148,7 +112,7 @@ super + F4
     bspc config bottom_padding 1
 
 
-# Pavucontrol float
+# Pavucontrol 
 super + F5
     pavucontrol
 
@@ -158,14 +122,13 @@ super + F6
     bspwmfloat && $TERMINAL -e cava
 
 
-# Toggle torrent daemon
+# Take screenshot
 super + F7
-    td-toggle
+    maim pic-full-$(date '+%y%m%d-%H%M-%S').png
 
-
-# Mini menu
+# Pick screenshot type
 super + F8
-    dmenumini
+    maimpick    
 
 
 # Mount a USB drive or Android device
@@ -188,6 +151,10 @@ super + F12
     mpv --geometry=20%-30+40 --title="mpvfloat" https://www.youtube.com/watch?v=_bOKCbPN3cg&list=RD_bOKCbPN3cg&start_radio=1
 
 
+#########################
+# Volume Control        #
+#########################
+
 F10
     amixer set Master 5%-
 
@@ -196,9 +163,6 @@ F11
 
 F12
    amixer set Master toggle
-
-
-
 
 
 
