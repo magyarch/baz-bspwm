@@ -111,7 +111,7 @@ bspc rule -a URxvt:Ranger sticky=on state=floating rectangle=1220x650+0+0 center
 bspc rule -a URxvt:Pacui sticky=on state=floating rectangle=800x450+0+0 center=on
 bspc rule -a URxvt:Float state=floating
 bspc rule -a Sxiv state=floating
-bspc rule -a mpv state=floating sticky=on rectangle=300x180+1060+475
+bspc rule -a mpv state=floating
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #find out the name of your monitor with xrandr

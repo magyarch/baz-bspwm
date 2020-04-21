@@ -7,7 +7,7 @@ super + {_,shift + } Return
 
 
 super + {_,shift + } d
-    {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48' 
+    {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48'
 , rofi --show run}
 
 
@@ -71,7 +71,7 @@ super + Home
 
 # kill active recording
 super + shift + End
-    dmenurecord kill    
+    dmenurecord kill
 
 
 
@@ -112,7 +112,7 @@ super + F4
     bspc config bottom_padding 1
 
 
-# Pavucontrol 
+# Pavucontrol
 super + F5
     pavucontrol
 
@@ -128,7 +128,7 @@ super + F7
 
 # Pick screenshot type
 super + F8
-    maimpick    
+    maimpick
 
 
 # Mount a USB drive or Android device
@@ -148,7 +148,7 @@ super + F11
 
 # Mpv floating
 super + F12
-    mpv --geometry=20%-30+40 --title="mpvfloat" https://www.youtube.com/watch?v=_bOKCbPN3cg&list=RD_bOKCbPN3cg&start_radio=1
+    mpv --geometry=40%+30+30 --title="mpvfloat" https://www.youtube.com/watch?v=_bOKCbPN3cg&list=RD_bOKCbPN3cg&start_radio=1
 
 
 #########################
