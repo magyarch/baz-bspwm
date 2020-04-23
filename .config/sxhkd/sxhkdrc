@@ -3,7 +3,7 @@
 #########################
 
 super + {_,shift + } Return
-    {bspwmfloat && $TERMINAL, st}
+    {$TERMINAL, bspwmfloat && $TERMINAL}
 
 
 super + {_,shift + } d
@@ -40,7 +40,7 @@ super + {_,shift + } w
 
 
 super + {_,shift + } p
-    {discord, bspwmfloat TelegramDesktop desktop='^2' follow=on rectangle=550x800+1250+200 && telegram-desktop}
+    {discord, pcmanfm}
 
 
 # Hide polybar/Reload bspwm
