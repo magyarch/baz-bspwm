@@ -88,9 +88,9 @@ font-1 = "JetBrains Mono:size=11;0"
 font-2 = "FontAwesome:size=12;0"
 font-3 = "Joy Pixels:scale=11;"
 
-modules-left = cpu-graph mem weather2 xwindow
+modules-left = firefox term files wifi settings cpu-graph mem weather2 xwindow
 modules-center = bspwm2
-modules-right = firefox term files app wifi settings cpu temperature alsa date power
+modules-right =  cpu temperature alsa date power
 
 tray-position = none
 
@@ -194,14 +194,7 @@ format-background = ${colors.background}
 ################################################################################
 ################################################################################
 
-[module/term]
-type = custom/text
-content = 
-content-foreground = ${colors.foreground}
-content-background = ${colors.background}
-content-padding = 3
 
-click-left  = st &
 
 
 [module/cpu-graph]
@@ -426,23 +419,7 @@ format-prefix-foreground = #eeba30
 
 ################################################################################
 
-[module/app]
-type = custom/text
-content = ""
-content-foreground = ${colors.foreground}
-content-background = ${colors.background}
-content-padding = 2
-click-left = rofi -modi run,drun -show drun -location 1 -xoffset 1450 -yoffset 23 -line-padding 4 -columns 1 -width 15 -lines 20 -padding 15 -hide-scrollbar -show-icons -drun-icon-theme
-click-right = jgmenu_run >/dev/null 2>&1 &
 
-[module/wifi]
-type = custom/text
-content = 
-content-foreground = ${colors.foreground}
-content-background = ${colors.background}
-content-padding = 2
-click-left = "$TERMINAL -e nmtui &"
-click-right = xdo close &
 
 [module/firefox]
 type = custom/text
@@ -477,15 +454,7 @@ format-background = ${colors.background}
 format-padding = 2
 label = %percentage_used%%
 
-[module/power]
-type = custom/text
-content = 
-content-foreground = ${colors.foreground}
-content-background = ${colors.background}
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-content-padding = 2
-click-left = ~/.local/bin/power
+
 
 [module/uparch]
 type = custom/script
@@ -640,6 +609,35 @@ format-padding = 2
 #       New modules            #
 ################################
 
+[module/term]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+content-padding = 3
+
+click-left  = urxvt &
+
+
+[module/app]
+type = custom/text
+content = ""
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+content-padding = 2
+click-left = rofi -modi run,drun -show drun -location 1 -xoffset 1450 -yoffset 23 -line-padding 4 -columns 1 -width 15 -lines 20 -padding 15 -hide-scrollbar -show-icons -drun-icon-theme
+click-right = jgmenu_run >/dev/null 2>&1 &
+
+
+[module/wifi]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+content-padding = 2
+click-left = "$TERMINAL -e nmtui &"
+click-right = xdo close &
+
 [module/settings]
 type = custom/text
 content = ""
@@ -650,15 +648,6 @@ content-padding = 2
 click-left  = lxappearance &
 
 
-[module/web]
-type = custom/text
-content = ""
-content-foreground = ${colors.foreground}
-content-background = ${colors.background}
-content-padding = 2
-
-click-left  = firefox &
-
 [module/files]
 type = custom/text
 content = ""
@@ -666,7 +655,18 @@ content-foreground = ${colors.foreground}
 content-background = ${colors.background}
 content-padding = 2
 
-click-left  = thunar &
+click-left  = pcmanfm &
+
+
+[module/power]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+content-padding = 2
+click-left = ~/.local/bin/power
 
 ###############################################################################
 # vim:ft=dosini
