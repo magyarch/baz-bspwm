@@ -1,4 +1,4 @@
-#########################
+#######################
 # SUPER + KEYS #
 #########################
 
@@ -7,7 +7,7 @@ super + {_,shift + } Return
 
 
 super + {_,shift + } d
-    {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Medium-12' -w '760' -h '22' -x '574' -y '48'
+    {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48'
 , rofi --show run}
 
 
@@ -16,7 +16,7 @@ super + {_,shift + } r
 
 
 super + {_,shift + } e
-    {bspwmfloat && $TERMINAL -e $FILE, subl3}
+    {dbind, subl3}
 
 
 super + {_,shift + } m
@@ -41,6 +41,11 @@ super + {_,shift + } w
 
 super + {_,shift + } p
     {discord, pcmanfm}
+
+
+# Wallpaper changer(you need some .jpg or .png in your Pictures folder)
+super + {_,shift + } a
+    {wal.sh, $TERMINAL -e ncspot}
 
 
 # Hide polybar/Reload bspwm
