@@ -55,10 +55,14 @@ super + {_,shift + } b
 super + Escape
     pkill -USR1 -x sxhkd
 
+# Fullscreen
+super + f
+  bspc node -t \~fullscreen
+
 
 # Close window
 super + q
-   xdo close
+   bspc node -c
 
 # emojimenu "get a menu of emojis to copy"
 super + grave
@@ -142,8 +146,7 @@ super + F11
 
 # Mpv floating
 super + F12
-    mpv --geometry=40%+30+30 --title="mpvfloat" https://www.youtube.com/watch?v=_bOKCbPN3cg&list=RD_bOKCbPN3cg&start_radio=1
-
+    mpv --geometry=40%+30+30 --title="mpvfloat"
 
 
 # Volume Control
@@ -183,34 +186,9 @@ super + Tab
 	bspc desktop -f '^{1-9,10}'
 
 
-# Focus next/previous window
-ctrl + alt + Left
-	bspc node --focus west
-
-
-# Focus next/previous window
-ctrl + alt + Right
-	bspc node --focus east
-
-
-# Focus Up window
-ctrl +alt + Up
-	bspc node --focus north
-
-
-# Focus Down window
-ctrl + alt + Down
-	bspc node --focus south
-
-
 # Focus/swap windows by direction
 super + {_,shift + }{h,j,k,l}
 	bspc node --{focus,swap} {west,south,north,east}
-
-
-# Focus/swap windows by direction
-ctrl + super + {Left,Down,Up,Right}
-	bspc node --{focus} {west,south,north,east}
 
 
 # Flip layout vertically/horizontally
@@ -261,11 +239,6 @@ super + ctrl + {_,shift +}{1-9}
 # Cancel preselection
 super + ctrl + space
 	bspc node --presel-dir cancel
-
-
-#Toggle pseudo tiling of window/Toggle fullscreen
-super + {_,shift + } f
-    {bspfullscreen &, bspc node --state \~pseudo_tiled, bspc node focused.tiled -t floating || bspc node focused.floating -t tiled}
 
 
 # Make a windoww sticky/non-sticky
