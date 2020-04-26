@@ -1,44 +1,43 @@
-#######################
-# SUPER + KEYS #
-#########################
+
+# Bspwm keybinds
 
 super + {_,shift + } Return
     {$TERMINAL, bspwmfloat && $TERMINAL}
 
-
+# Dmenu2 and rofi(window switcher, application launcher)
 super + {_,shift + } d
     {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48'
 , rofi --show run}
 
-
+# Tui filemanager and same command wirh sudo
 super + {_,shift + } r
    {$TERMINAL -n $FILE -c $FILE -e $FILE, $TERMINAL -n $FILE -c $FILE -e sudo $FILE}
 
-
+# Application show binds/default editor
 super + {_,shift + } e
     {dbind, subl3}
 
-
+# dmenu manual search, spotify
 super + {_,shift + } m
     {dman, spotify}
 
-
+# News, tui music player
 super + {_,shift + } n
     {$TERMINAL -e newsboat, bspwmfloat && $TERMINAL -g 76x30-15-20 -e ncmpcpp}
 
-
+# Htop,gtop system monitor
 super + {_,shift + } i
     {$TERMINAL -e htop, $TERMINAL -e gtop}
 
-
+# S,R,lock script,calendar app
 super + {_,shift + } c
     {power, $TERMINAL -g 70x20-16+30 -e calcurse}
 
-
+# Default web browser firfox,and brave
 super + {_,shift + } w
     {$BROWSER, brave}
 
-
+# Chat client, gui filemanager
 super + {_,shift + } p
     {discord, pcmanfm}
 
@@ -52,7 +51,7 @@ super + {_,shift + } a
 super + {_,shift + } b
     {polybar-msg cmd toggle, ~/.config/bspwm/bspwmrc &}
 
-
+# Reload sxhkd
 super + Escape
     pkill -USR1 -x sxhkd
 
@@ -61,11 +60,11 @@ super + Escape
 super + q
    xdo close
 
-
+# emojimenu "get a menu of emojis to copy"
 super + grave
     dmenuunicode
 
-
+# Kill screenkey
 super + Scroll_Lock
     killall screenkey || screenkey
 
@@ -80,19 +79,14 @@ super + shift + End
 
 
 
-#########################
-# ALT + KEYS            #
-#########################
-
+# ALT + KEYS
+# On/off transparency, pavucontrol
 alt + {_,shift + } a
    {toggleprogram "picom -b", pavucontrol}
 
 
-
-#########################
-#     FUNCTION KEYS     #
-#########################
-
+# FUNCTION KEYS
+# Increase padding +40
 super + F1
     bspc config right_padding 40;\
     bspc config left_padding 40 ;\
@@ -100,7 +94,7 @@ super + F1
     bspc config bottom_padding 40
 
 
-# Restart bspwm
+# Edit important conf files with sublime editor
 super + F2
   edconf.sh
 
@@ -109,7 +103,7 @@ super + F2
 super + F3
     displayselect
 
-
+# Decrease padding 0
 super + F4
     bspc config right_padding 0;\
     bspc config left_padding 0 ;\
@@ -117,12 +111,7 @@ super + F4
     bspc config bottom_padding 1
 
 
-# Pavucontrol
-super + F5
-    pavucontrol
-
-
-# Start cava
+# Start cava if you installed it
 super + F6
     bspwmfloat && $TERMINAL -e cava
 
@@ -156,24 +145,22 @@ super + F12
     mpv --geometry=40%+30+30 --title="mpvfloat" https://www.youtube.com/watch?v=_bOKCbPN3cg&list=RD_bOKCbPN3cg&start_radio=1
 
 
-#########################
-# Volume Control        #
-#########################
 
+# Volume Control
+# Decrease volume -5
 F10
     amixer set Master 5%-
 
+# Increase volume +5
 F11
     amixer set Master 5%+
 
+# Mute volume
 F12
    amixer set Master toggle
 
 
-
-#########################
-# BSPWM LAYOUT KEYS     #
-#########################
+# BSPWM LAYOUT KEYS
 
 
 #Focus selected desktop FOR QWERTY KEYBOARDS
@@ -214,11 +201,6 @@ ctrl +alt + Up
 # Focus Down window
 ctrl + alt + Down
 	bspc node --focus south
-
-
-#Rotate desktop
-#super + space
-#	bspc node @/ --rotate {90,-90}
 
 
 # Focus/swap windows by direction

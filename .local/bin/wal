@@ -4,6 +4,6 @@ DIR="/home/$USER/Képek/"
 
 WAL="$(ls $DIR/*.jpg | shuf -n1)"
 
-cat $WAL > /home/$USER/.config/wallpaper.png
+cat $WAL > ~/.config/wallpaper.png
 
-feh --bg-scale /home/$USER/.config/wallpaper.png
+feh --bg-scale ~/.config/wallpaper.png

@@ -60,7 +60,7 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 #bspc monitor -d " "  " "  " "  " "  " "  " "  " "  " "  " "  " "
 #bspc monitor -d "I " "II " "III " "IV " "V " "VI " "VII " "VIII " "IX " "X "
 
-# I you use this then download btops from aur.
+# If you use this then download btops from aur.
 #btops &
 
 #Dual monitor
@@ -84,7 +84,7 @@ bspc rule -a VirtualBox Machine state=fullscreen
 bspc rule -a Ulauncher  border=off
 bspc rule -a burp-StartBurp desktop='^9' state=floating follow=on
 
-# For sratchpad in bspwm
+# For sratchpad in bspwm/scripts in .local/bin
 #bspc rule -a scratchterm hidden=on sticky=on state=floating rectangle=900x500+540+200
 #st -c scratchterm &
 
@@ -100,16 +100,10 @@ bspc rule -a Thunar:Dialog state=floating center=true
 bspc rule -a URxvt:Newsboat state=floating center=on
 bspc rule -a URxvt:Ranger state=floating center=on
 bspc rule -a URxvt:Pacui state=floating center=on
-bspc rule -a URxvt:Float state=floating
-bspc rule -a URxvt:Draw state=floating
 bspc rule -a Galculator state=floating
 #bspc rule -a Oblogout state=floating
 #bspc rule -a Preferences state=floating follow=on
 bspc rule -a St:calcurse state=floating
-bspc rule -a URxvt:Newsboat sticky=on state=floating rectangle=1220x650+0+0 center=on
-bspc rule -a URxvt:Ranger sticky=on state=floating rectangle=1220x650+0+0 center=on
-bspc rule -a URxvt:Pacui sticky=on state=floating rectangle=800x450+0+0 center=on
-bspc rule -a URxvt:Float state=floating
 bspc rule -a Sxiv state=floating
 bspc rule -a mpv state=floating
 
@@ -128,14 +122,8 @@ sleep 1
 wmctrl -r Spotify -t 9
 exit
 
-# Set Desktop 9 to start with floating windows
-FLOATING_DESKTOP_ID=$(bspc query -D -d '^9')
-bspc subscribe node_manage | while read -a msg ; do
-	desk_id=${msg[2]}
-	wid=${msg[3]}
-	[ "$FLOATING_DESKTOP_ID" = "$desk_id" ] && bspc node "$wid" -t floating
-done
 
 
-#/home/xeoncpu/.config/bspwm/dzen2.sh &
+# for dzen panel
+#/home/$USER/.config/bspwm/dzen2.sh &
 

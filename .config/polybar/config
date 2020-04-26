@@ -89,8 +89,8 @@ font-2 = "FontAwesome:size=12;0"
 font-3 = "Joy Pixels:scale=11;"
 
 modules-left = firefox term files wifi settings cpu-graph mem weather2 xwindow
-modules-center = bspwm2
-modules-right =  cpu temperature alsa date power
+modules-center = ewmh
+modules-right = kernel cpu temperature alsa date power
 
 tray-position = none
 
@@ -108,24 +108,7 @@ scroll-down = bspwm-deskprev
 ################################################################################
 ################################################################################
 
-[module/bspwm]
-type = internal/bspwm
-enable-click = true
-enable-scroll = true
-reverse-scroll = true
-pin-workspaces = true
 
-ws-icon-0 = 1;☢️
-ws-icon-1 = 2;🤬
-ws-icon-2 = 3;⚒️
-ws-icon-3 = 4;🍭
-ws-icon-4 = 5;🎲
-ws-icon-5 = 6;🎬
-ws-icon-6 = 7;🔰
-ws-icon-7 = 8;📀
-ws-icon-8 = 9;🎯
-ws-icon-9 = 10;🗃️
-;ws-icon-default = " "
 
 [module/bspwm2]
 type = internal/bspwm
@@ -239,7 +222,6 @@ interval=18000
 type = custom/script
 exec = ~/.local/bin/corona
 #label = %name%
-;click-left = bspwmfloat && $TERMINAL -e w3m wttr.in/Sopron
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-padding = 2
@@ -372,7 +354,7 @@ format = <label-state>
 label-monitor = %name%
 
 label-active = 
-label-active-foreground = #468499
+label-active-foreground = #2e8b57
 label-active-background = ${colors.background}
 label-active-underline= ${colors.foreground}
 label-active-padding = 2
@@ -484,16 +466,7 @@ interval = 1
 
 ################################################################################
 
-[module/release]
-type = custom/script
-exec = (lsb_release -d | awk {'print $2'} ;echo " "; lsb_release -r | awk {'print $2'}) | tr -d '\n'
-interval = 6000
 
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-prefix = " 🏬 "
-format-prefix-foreground = #62FF00
-format-underline = #62FF00
 
 ################################################################################
 
