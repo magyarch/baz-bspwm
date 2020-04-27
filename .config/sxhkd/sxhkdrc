@@ -202,7 +202,7 @@ super + shift + a
 
 
 # Expand tiled space
-alt + shift + {h,j,k,l}
+alt + ctrl + {h,j,k,l}
 	bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
 
 
