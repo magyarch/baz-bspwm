@@ -5,9 +5,9 @@ super + {_,shift + } Return
     {$TERMINAL, bspwmfloat && $TERMINAL}
 
 # Dmenu2 and rofi(window switcher, application launcher)
-super + {_,shift + } d
-    {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48'
-, rofi --show run}
+super + {_,shift +} d
+    {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48',rofi_run -r}
+
 
 # Tui filemanager and same command wirh sudo
 super + {_,shift + } r
@@ -42,11 +42,6 @@ super + {_,shift + } p
     {discord, pcmanfm}
 
 
-# Wallpaper changer(you need some .jpg or .png in your Pictures folder)
-super + {_,shift + } a
-    {wal.sh, $TERMINAL -e ncspot}
-
-
 # Hide polybar/Reload bspwm
 super + {_,shift + } b
     {polybar-msg cmd toggle, ~/.config/bspwm/bspwmrc &}
@@ -60,9 +55,15 @@ super + f
   bspc node -t \~fullscreen
 
 
-# Close window
-super + q
-   bspc node -c
+# Close and kill
+super + {_,shift + }q
+	bspc node -{c,k}
+
+
+# Quit/restart bspwm
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
 
 # emojimenu "get a menu of emojis to copy"
 super + grave
@@ -85,8 +86,12 @@ super + shift + End
 
 # ALT + KEYS
 # On/off transparency, pavucontrol
-alt + {_,shift + } a
-   {toggleprogram "picom -b", pavucontrol}
+alt + a
+   bspwmfloat && pavucontrol
+
+alt + b
+   toggleprogram "picom -b"
+
 
 
 # FUNCTION KEYS
@@ -191,9 +196,9 @@ super + {_,shift + }{h,j,k,l}
 	bspc node --{focus,swap} {west,south,north,east}
 
 
-# Flip layout vertically/horizontally
-super + {_,shift + }a
-	bspc node @/ --flip {vertical,horizontal}
+# Flip layout
+super + shift + a
+	bspc node @/ -R 90
 
 
 # Expand tiled space
@@ -211,12 +216,12 @@ super + bracket{left,right}
 	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
 
 
-# Move floating window
-super + alt + {_,shift + }{Left,Down,Up,Right}
-	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
+# Move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}}
 
 
-# set the window state
+# Set the window state
 super + space
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
