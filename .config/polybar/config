@@ -88,11 +88,20 @@ font-1 = "JetBrains Mono:size=11;0"
 font-2 = "FontAwesome:size=12;0"
 font-3 = "Joy Pixels:scale=11;"
 
-modules-left = firefox term files wifi settings cpu-graph mem weather2 xwindow
-modules-center = ewmh
-modules-right = kernel cpu temperature alsa date power
+modules-left = firefox term files wifi settings  mem weather2 xwindow
+modules-center = bspwm2
+modules-right = cpu-graph temperature alsa date power 
 
-tray-position = none
+#tray-position = none
+
+tray-detached = false
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 2
+tray-maxsize = 20
+tray-scale = 1.0
+tray-position = right
+tray-background = ${colors.background}
 
 
 scroll-up = bspwm-desknext
@@ -473,11 +482,9 @@ interval = 1
 [module/sep]
 ; alternative separator
 type = custom/text
-content = 
+content = " "
 content-foreground = ${colors.foreground}
 content-background =  ${colors.background}
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
 
 ################################################################################
 
@@ -608,7 +615,7 @@ content = 
 content-foreground = ${colors.foreground}
 content-background = ${colors.background}
 content-padding = 2
-click-left = "$TERMINAL -e nmtui &"
+click-left = "$TERMINAL -e nmtui"
 click-right = xdo close &
 
 [module/settings]
