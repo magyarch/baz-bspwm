@@ -95,8 +95,15 @@ alt + b
 
 
 # FUNCTION KEYS
-# Increase padding +40
+
+
 super + F1
+    zathura $HOME/.local/share/Magyarchlinux_welcome.pdf
+
+
+
+# Increase padding +40
+super + F5
     bspc config right_padding 40;\
     bspc config left_padding 40 ;\
     bspc config top_padding 40 ;\
