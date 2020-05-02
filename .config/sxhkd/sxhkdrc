@@ -15,7 +15,7 @@ super + {_,shift + } r
 
 # Application show binds/default editor
 super + {_,shift + } e
-    {dbind, subl3}
+    {show_keys.sh, subl3}
 
 # dmenu manual search, spotify
 super + {_,shift + } m
