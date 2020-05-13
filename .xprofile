@@ -19,7 +19,7 @@ sleep 1s && ~/.config/polybar/launch.sh &
 #xrandr --output HDMI1 --primary --mode 1920x1080 --output LVDS1 --off
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 feh --no-fehbg --bg-scale ~/.config/wallpaper.png &
-zathura $HOME/.local/share/Magyarchlinux_welcome.pdf &
+zathura ~/.local/bin/Magyarch-bspwm.pdf &
 
 
 
