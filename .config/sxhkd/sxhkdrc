@@ -2,7 +2,7 @@
 # Bspwm keybinds
 
 super + {_,shift + } Return
-    {$TERMINAL, bspwmfloat && $TERMINAL}
+    {$TERMINAL, bspwmfloat && $TERMINAL -g 110x30}
 
 # Dmenu2 and rofi(window switcher, application launcher)
 super + {_,shift +} d
@@ -23,7 +23,7 @@ super + {_,shift + } m
 
 # News, tui music player
 super + {_,shift + } n
-    {$TERMINAL -e newsboat, bspwmfloat && $TERMINAL -g 76x30-15-20 -e ncmpcpp}
+    {$TERMINAL -e newsboat, bspwmfloat && $TERMINAL -g 110x30 -e ncmpcpp}
 
 # Htop,gtop system monitor
 super + {_,shift + } i

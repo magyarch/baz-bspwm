@@ -27,7 +27,7 @@ format-margin =
 format-offset =
 
 [colors]
-; Nord theme ============
+; MagyArch theme ============
 background = #2f2b26
 foreground = #c3cdc8
 alert = #ebcb8b
@@ -90,7 +90,7 @@ font-3 = "Joy Pixels:scale=11;"
 
 modules-left = firefox term files wifi settings  mem weather2 xwindow
 modules-center = bspwm2
-modules-right = cpu-graph temperature alsa date power 
+modules-right = cpu-graph temperature alsa date power
 
 #tray-position = none
 
@@ -227,14 +227,6 @@ format-background = ${colors.background}
 format-padding = 2
 interval=18000
 
-[module/corona]
-type = custom/script
-exec = ~/.local/bin/corona
-#label = %name%
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-padding = 2
-interval=1800
 
 [module/mem]
 type = custom/script
