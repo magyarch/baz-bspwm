@@ -17,7 +17,7 @@ compositing-underline = over
 compositing-border = over
 
 ; Define fallback values used by all module formats
-format-foreground = #FF0000
+format-foreground = #c83737
 format-background = #00FF00
 format-underline =
 format-overline =
@@ -28,9 +28,9 @@ format-offset =
 
 [colors]
 ; MagyArch theme ============
-background = #2f2b26
-foreground = #c3cdc8
-alert = #ebcb8b
+background = #c3cdc8
+foreground = #2f2b26
+alert = #fff68f
 volume-min = #a3be8c
 volume-med = #ebcb8b
 volume-max = #bf616a
@@ -48,7 +48,7 @@ text = #99d1ce
 monitor = ${env:MONITOR:DisplayPort-0}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 24
+height = 23
 offset-x = 0
 offset-y = 0
 radius = 0.0
@@ -69,11 +69,11 @@ override-redirect = true
 ; See the Messaging wiki page for more details.
 enable-ipc = true
 
-border-size = 0
+#border-size = 0
 ;border-left-size = 25
 ;border-right-size = 25
 ;border-top-size = 0
-border-bottom-size = 3
+#border-bottom-size = 3
 border-color = #c3cdc8
 
 padding-left = 1
@@ -88,9 +88,9 @@ font-1 = "JetBrains Mono:size=11;0"
 font-2 = "FontAwesome:size=12;0"
 font-3 = "Joy Pixels:scale=11;"
 
-modules-left = firefox term files wifi settings  mem weather2 xwindow
+modules-left = firefox term files wifi lxappearance help  mem weather2 xwindow
 modules-center = bspwm2
-modules-right = cpu-graph temperature alsa date power
+modules-right = cpu-graph temperature pavolume date power
 
 #tray-position = none
 
@@ -139,7 +139,7 @@ format = <label-state> <label-mode>
 
 label-focused = %icon%
 label-focused-background = ${colors.background}
-label-focused-underline= #179ae3
+#label-focused-underline= #179ae3
 label-focused-padding = 1
 label-focused-foreground = #2e8b57
 
@@ -149,6 +149,7 @@ label-occupied-background = ${colors.background}
 
 label-urgent = %icon%
 label-urgent-padding = 1
+label-urgent-foreground = #ffffff
 
 label-empty = %icon%
 label-empty-foreground = ${colors.foreground}
@@ -176,8 +177,8 @@ label-private-foreground = ${colors.foreground}
 ;label-separator-padding = 10
 ;label-separator-foreground = #ffb52a
 
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
+#format-foreground = ${colors.foreground}
+#format-background = ${colors.background}
 
 
 ################################################################################
@@ -186,6 +187,14 @@ format-background = ${colors.background}
 ################################################################################
 ################################################################################
 
+[module/help]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+content-padding = 2
+
+click-left = zathura $HOME/.local/share/Magyarch-bspwm.pdf &
 
 
 
@@ -257,8 +266,8 @@ warn-temperature = 75
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 
-label = %temperature%
-label-warn = %temperature%
+label = %temperature-c%
+label-warn = %temperature-c%
 label-warn-foreground = #fd0073
 ;label-warn-background = ${colors.background}
 
@@ -514,7 +523,7 @@ format-padding = 2
 
 [module/alsa]
 type = internal/alsa
-format-volume = <ramp-volume> <label-volume>
+format-volume = <ramp-volume> 
 format-muted =  0%
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -610,7 +619,7 @@ content-padding = 2
 click-left = "$TERMINAL -e nmtui"
 click-right = xdo close &
 
-[module/settings]
+[module/lxappearance]
 type = custom/text
 content = ""
 content-foreground = ${colors.foreground}
