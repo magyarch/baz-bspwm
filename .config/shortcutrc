@@ -1,10 +1,10 @@
 # vim: filetype=sh
 alias h="cd ~/ && ls -a" \
-d="cd ~/Documents && ls -a" \
-D="cd ~/Downloads && ls -a" \
-m="cd ~/Music && ls -a" \
-pp="cd ~/Pictures && ls -a" \
-vv="cd ~/Videos && ls -a" \
+d="cd ~/Dokumentumok && ls -a" \
+D="cd ~/Letöltések && ls -a" \
+m="cd ~/Zenék && ls -a" \
+pp="cd ~/Képek && ls -a" \
+vv="cd ~/Videők && ls -a" \
 cf="cd ~/.config && ls -a" \
 lb="cd ~/.local/bin && ls -a" \
 mn="cd /mnt && ls -a" \
