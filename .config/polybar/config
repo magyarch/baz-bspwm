@@ -28,8 +28,8 @@ format-offset =
 
 [colors]
 ; MagyArch theme ============
-background = #c3cdc8
-foreground = #2f2b26
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
 alert = #fff68f
 volume-min = #a3be8c
 volume-med = #ebcb8b
@@ -73,8 +73,8 @@ enable-ipc = true
 ;border-left-size = 25
 ;border-right-size = 25
 ;border-top-size = 0
-#border-bottom-size = 3
-border-color = #c3cdc8
+border-bottom-size = 3
+border-color = #2e8b57
 
 padding-left = 1
 padding-right = 1
@@ -98,7 +98,7 @@ tray-detached = false
 tray-offset-x = 0
 tray-offset-y = 0
 tray-padding = 2
-tray-maxsize = 20
+tray-maxsize = 22
 tray-scale = 1.0
 tray-position = right
 tray-background = ${colors.background}
@@ -187,14 +187,6 @@ label-private-foreground = ${colors.foreground}
 ################################################################################
 ################################################################################
 
-[module/help]
-type = custom/text
-content = 
-content-foreground = ${colors.foreground}
-content-background = ${colors.background}
-content-padding = 2
-
-click-left = zathura $HOME/.local/share/Magyarch-bspwm.pdf &
 
 
 
@@ -229,8 +221,7 @@ format-padding = 2
 
 [module/weather2]
 type = custom/script
-exec = $HOME/.local/bin/statusbar/weather
-click-left = bspwmfloat && $TERMINAL -e w3m wttr.in/Sopron
+exec = $HOME/.local/bin/statusbar/weather 
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-padding = 2
@@ -326,17 +317,7 @@ label = Cpu %percentage:3%%
 
 ################################################################################
 
-[module/date]
-;https://github.com/jaagr/polybar/wiki/Module:-date
-type = custom/script
-exec = ~/.local/bin/statusbar/clock
-click-left = bspwmfloat && $TERMINAL -g 70x20-16+30 -e calcurse &
-click-right = ~/.local/bin/calcursekill
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-padding = 2
-format-prefix = " 📅  "
-interval=30
+
 
 #################################################################
 
@@ -408,22 +389,6 @@ format-prefix-foreground = #eeba30
 ################################################################################
 
 
-
-################################################################################
-
-
-
-[module/firefox]
-type = custom/text
-content = 
-content-foreground = ${colors.foreground}
-content-background = ${colors.background}
-content-padding = 2
-
-click-left = firefox &
-
-
-
 [module/cpu]
 type = internal/cpu
 interval = 2
@@ -462,23 +427,6 @@ click-right = xdo close &
 
 ################################################################################
 
-[module/pavolume]
-type = custom/script
-tail = true
-label = %output%
-exec = $HOME/.local/bin/statusbar/volume &
-click-right = bspwmfloat && exec pavucontrol
-format-foreground = ${colors.foreground}
-format-prefix-foreground = #8d0000
-format-background = ${colors.background}
-format-padding = 2
-interval = 1
-
-################################################################################
-
-
-
-################################################################################
 
 [module/sep]
 ; alternative separator
@@ -514,7 +462,7 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix = " "
 format-prefix-foreground = #C15D3E
-format-underline = #C15D3E
+#format-underline = #C15D3E
 format-padding = 2
 
 ################################################################################
@@ -534,7 +482,7 @@ format-muted-foreground = ${colors.foreground}
 format-muted-background = ${colors.background}
 format-padding = 2
 
-click-right = pavucontrol &
+click-left = pavucontrol &
 
 ################################################################################
 
@@ -586,9 +534,19 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-padding = 2
 
-#################################
-#       New modules            #
-################################
+#########################################################################
+#       Clickable modules            #
+######################################################################
+
+[module/firefox]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+content-padding = 2
+
+click-left = firefox &
+
 
 [module/term]
 type = custom/text
@@ -648,6 +606,43 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 content-padding = 2
 click-left = ~/.local/bin/power
+
+
+[module/help]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+content-padding = 2
+
+click-left = zathura $HOME/.local/share/Magyarch-bspwm.pdf &
+
+
+
+[module/pavolume]
+type = custom/script
+tail = true
+label = %output%
+exec = $HOME/.local/bin/statusbar/volume &
+click-left = bspwmfloat && exec pavucontrol
+format-foreground = ${colors.foreground}
+format-prefix-foreground = #8d0000
+format-background = ${colors.background}
+format-padding = 2
+interval = 1
+
+
+[module/date]
+;https://github.com/jaagr/polybar/wiki/Module:-date
+type = custom/script
+exec = ~/.local/bin/statusbar/clock
+click-left = bspwmfloat && $TERMINAL -g 70x20-16+30 -e calcurse &
+click-right = ~/.local/bin/calcursekill
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-padding = 2
+format-prefix = " 📅  "
+interval=30
 
 ###############################################################################
 # vim:ft=dosini
