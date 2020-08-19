@@ -45,7 +45,7 @@ text = #99d1ce
 ################################################################################
 
 [bar/mainbar-bspwm]
-monitor = ${env:MONITOR:DisplayPort-0}
+monitor = ${env:MONITOR:LVDS-1}
 ;monitor-fallback = HDMI1
 width = 100%
 height = 23
@@ -70,27 +70,27 @@ override-redirect = true
 enable-ipc = true
 
 #border-size = 0
-;border-left-size = 25
-;border-right-size = 25
+;border-left-size = 0
+i;border-right-size = 0
 ;border-top-size = 0
 border-bottom-size = 3
 border-color = #2e8b57
 
-padding-left = 1
-padding-right = 1
+padding-left = 2
+padding-right = 0
 
-module-margin-left = 0
+module-margin-left = 2
 module-margin-right = 0
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "Iosevka Nerd Font:size=12;0"
-font-1 = "JetBrains Mono:size=11;0"
-font-2 = "FontAwesome:size=12;0"
-font-3 = "Joy Pixels:scale=11;"
+font-1 = "JetBrains Mono:size=10;0"
+font-2 = "FontAwesome:size=11;0"
+font-3 = "Joy Pixels:scale=10;"
 
-modules-left = firefox term files wifi lxappearance help  mem weather2 xwindow
-modules-center = bspwm2
-modules-right = cpu-graph temperature pavolume date power
+modules-left = ewmh xwindow
+modules-center = date
+modules-right = battery ctemp cpu-graph mem weather2 pavolume wifi help power
 
 #tray-position = none
 
@@ -104,8 +104,8 @@ tray-position = right
 tray-background = ${colors.background}
 
 
-scroll-up = bspwm-desknext
-scroll-down = bspwm-deskprev
+# scroll-up = bspwm-desknext
+#scroll-down = bspwm-deskprev
 
 
 
@@ -119,20 +119,20 @@ scroll-down = bspwm-deskprev
 
 
 
-[module/bspwm2]
+[module/bspwm]
 type = internal/bspwm
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
-ws-icon-7 = 8;
-ws-icon-8 = 9;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
 ws-icon-9 = 10;
-;ws-icon-default = 
+;ws-icon-default = 
 
 
 format = <label-state> <label-mode>
@@ -221,11 +221,11 @@ format-padding = 2
 
 [module/weather2]
 type = custom/script
-exec = $HOME/.local/bin/statusbar/weather 
+exec = $HOME/.local/bin/statusbar/weather
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-padding = 2
-interval=18000
+tail = true
 
 
 [module/mem]
@@ -270,19 +270,6 @@ ramp-foreground = ${colors.foreground}
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-padding = 2
-
-
-[module/date2]
-type = custom/script
-exec = date '+%Y/%m/%d %H:%M:%S'
-click-left = $TERMINAL -g 70x20-16+30 -e calcurse
-click-right = ~/.scripts/other/calcursekill
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-padding = 2
-format-prefix = " :date: "
-interval=30
-
 
 
 
@@ -422,7 +409,7 @@ format-prefix-foreground = ${colors.foreground}
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-padding = 2
-click-left = "bspwmfloat && $TERMINAL -e bash pacui &"
+click-left = $TERMFLOAT -e bash pacui &
 click-right = xdo close &
 
 ################################################################################
@@ -438,16 +425,27 @@ content-background =  ${colors.background}
 ################################################################################
 
 
-[module/temperature2]
+[module/ctemp]
 type = custom/script
-exec = ~/.config/polybar/scripts/tempcores.sh
+exec = sensors | awk  '/^Tdie:/ {print $2}'
 interval = 2
 format-padding = 2
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-underline = #C1B93E
-format-prefix-foreground = #C1B93E
-label =  %output:0:150:%
+;format-underline = #C1B93E
+format-prefix-foreground = #c3cdc8
+label =   %output%
+
+[module/battery]
+type = custom/script
+exec = acpi -b | awk '{print $3 $4}'
+format-padding = 2
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+label = %output%
+
+
+
 
 ################################################################################
 
@@ -471,7 +469,7 @@ format-padding = 2
 
 [module/alsa]
 type = internal/alsa
-format-volume = <ramp-volume> 
+format-volume = <ramp-volume>
 format-muted =  0%
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -486,18 +484,7 @@ click-left = pavucontrol &
 
 ################################################################################
 
-[module/weather]
-type = custom/script
-interval = 10
-format = <label>
-format-prefix = " "
-format-prefix-foreground = #3EC13F
-format-underline = #3EC13F
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-padding = 2
-exec = python -u ~/.config/polybar/scripts/weather.py
-tail = true
+
 
 ################################################################################
 
@@ -574,7 +561,7 @@ content = 
 content-foreground = ${colors.foreground}
 content-background = ${colors.background}
 content-padding = 2
-click-left = "$TERMINAL -e nmtui"
+click-left = bspwmfloat && $TERMFLOAT -e nmtui
 click-right = xdo close &
 
 [module/lxappearance]
@@ -605,7 +592,8 @@ content-background = ${colors.background}
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 content-padding = 2
-click-left = ~/.local/bin/power
+
+click-left = power
 
 
 [module/help]
@@ -624,7 +612,7 @@ type = custom/script
 tail = true
 label = %output%
 exec = $HOME/.local/bin/statusbar/volume &
-click-left = bspwmfloat && exec pavucontrol
+click-left = exec pavucontrol
 format-foreground = ${colors.foreground}
 format-prefix-foreground = #8d0000
 format-background = ${colors.background}
@@ -636,13 +624,25 @@ interval = 1
 ;https://github.com/jaagr/polybar/wiki/Module:-date
 type = custom/script
 exec = ~/.local/bin/statusbar/clock
-click-left = bspwmfloat && $TERMINAL -g 70x20-16+30 -e calcurse &
-click-right = ~/.local/bin/calcursekill
+click-left = bspwmfloat && $TERMFLOAT -g 70x20-620+30 -e calcurse
+click-right = killall -9 calcurse &
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-padding = 2
 format-prefix = " 📅  "
 interval=30
+
+
+[module/twitch]
+interval = 0
+format = <label>
+type = custom/script
+exec = python -u ~/polybar_twitch/polybar_twitch.py
+format-prefix = ""
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+tail = true
+
 
 ###############################################################################
 # vim:ft=dosini

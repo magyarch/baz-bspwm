@@ -1,8 +1,9 @@
 
+
 # Bspwm keybinds
 
 super + {_,shift + } Return
-    {$TERMINAL, bspwmfloat && $TERMINAL -g 110x30}
+    {$TERMINAL, $TERMFLOAT -g 110x30}
 
 # Dmenu2 and rofi(window switcher, application launcher)
 super + {_,shift +} d
@@ -11,7 +12,7 @@ super + {_,shift +} d
 
 # Tui filemanager and same command wirh sudo
 super + {_,shift + } r
-   {$TERMINAL -n $FILE -c $FILE -e $FILE, $TERMINAL -n $FILE -c $FILE -e sudo $FILE}
+   {$TERMINAL -e $FILE, $TERMINAL -e sudo $FILE}
 
 # Application show binds/default editor
 super + {_,shift + } e
