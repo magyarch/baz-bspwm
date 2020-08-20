@@ -30,6 +30,7 @@ format-offset =
 ; MagyArch theme ============
 background = ${xrdb:background}
 foreground = ${xrdb:foreground}
+foreground-alt = ${xrdb:green}
 alert = #fff68f
 volume-min = #a3be8c
 volume-med = #ebcb8b
@@ -139,9 +140,9 @@ format = <label-state> <label-mode>
 
 label-focused = %icon%
 label-focused-background = ${colors.background}
-#label-focused-underline= #179ae3
+label-focused-underline= ${colors.foreground-alt}
 label-focused-padding = 1
-label-focused-foreground = #2e8b57
+label-focused-foreground = ${colors.foreground-alt}
 
 label-occupied = %icon%
 label-occupied-padding = 1
@@ -332,9 +333,9 @@ format = <label-state>
 label-monitor = %name%
 
 label-active = 
-label-active-foreground = #2e8b57
+label-active-foreground = ${colors.foreground-alt}
 label-active-background = ${colors.background}
-label-active-underline= ${colors.foreground}
+label-active-underline= ${colors.foreground-alt}
 label-active-padding = 2
 
 label-occupied = 
@@ -624,7 +625,7 @@ interval = 1
 ;https://github.com/jaagr/polybar/wiki/Module:-date
 type = custom/script
 exec = ~/.local/bin/statusbar/clock
-click-left = bspwmfloat && $TERMFLOAT -g 70x20-620+30 -e calcurse
+click-left = $TERMFLOAT -g 70x20-620+30 -e calcurse
 click-right = killall -9 calcurse &
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
@@ -633,15 +634,7 @@ format-prefix = " 📅  "
 interval=30
 
 
-[module/twitch]
-interval = 0
-format = <label>
-type = custom/script
-exec = python -u ~/polybar_twitch/polybar_twitch.py
-format-prefix = ""
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-tail = true
+
 
 
 ###############################################################################

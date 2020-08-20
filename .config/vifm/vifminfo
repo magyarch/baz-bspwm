@@ -1,14 +1,26 @@
 # You can edit this file by hand, but it's recommended not to do that.
 
 # Marks:
+'H
+	/home/xeoncpu/
+	..
+1597808385
 'a
 	/home/xeoncpu
 	Music
 1577726319
+'b
+	/home/xeoncpu/bin/
+	..
+1597809535
 'h
 	/home/xeoncpu/
 	..
-1578311917
+1597809535
+'k
+	/home/xeoncpu/.config
+	..
+1597809463
 
 # Bookmarks:
 
@@ -22,146 +34,302 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/xeoncpu/.config/vifm
-	colors
+d/usr/share/doc/alacritty/example
+	alacritty.yml
 1
-d/home/xeoncpu/.config
-	vifm
-34
-d/home/xeoncpu/.config/vifm
-	vifmrc
-5
+d/usr/share/doc/alacritty
+	example
+1
+d/usr/share/doc
+	alacritty
+4
+d/usr/share
+	doc
+22
+d/usr
+	share
+8
+d/
+	home
+4
+d/home
+	xeoncpu
+1
 d/home/xeoncpu
 	.config
-5
-d/home/xeoncpu/.config
-	vifm
-34
-d/home/xeoncpu/.config/vifm
-	colors
-1
-d/home/xeoncpu/.config/vifm/colors
-	Default.vifm
-4
-d/home/xeoncpu
-	.config
-5
-d/home/xeoncpu/.config
-	vifm
-34
-d/home/xeoncpu/.config/vifm
-	colors
-1
-d/home/xeoncpu/.config/vifm/colors
-	Default.vifm
-4
-d/home/xeoncpu
-	.config
-5
-d/home/xeoncpu/.config
-	vifm
-34
-d/home/xeoncpu/.config/vifm
-	colors
-1
-d/home/xeoncpu/.config/vifm/colors
-	Default.vifm
-4
-d/home/xeoncpu
-	.config
-5
-d/home/xeoncpu/.config
-	vifm
-34
-d/home/xeoncpu/.config/vifm
-	colors
-1
-d/home/xeoncpu/.config/vifm/colors
-	Default.vifm
-4
-d/home/xeoncpu
-	.config
-5
-d/home/xeoncpu/.config
-	vifm
-34
-d/home/xeoncpu/.config/vifm
-	colors
-1
-d/home/xeoncpu/.config/vifm/colors
-	Default.vifm
-4
-
-# Right window history (oldest to newest):
-D/home/xeoncpu/Videók
-	The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES
 2
-D/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES
-	the.peanut.butter.falcon.2019.bdrip.x264-drones
+d/home/xeoncpu/.config
+	alacritty
 1
-D/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones
-	the.peanut.butter.falcon.2019.bdrip.x264-drones
+d/home/xeoncpu/.config/alacritty
+	alacritty.yml
 1
-D/home/xeoncpu/Videók/The.Peanut.Butter.Falcon.2019.BDRip.x264-DRONES/the.peanut.butter.falcon.2019.bdrip.x264-drones/the.peanut.butter.falcon.2019.bdrip.x264-drones
+d/home/xeoncpu/.config
+	sxhkd
+18
+d/home/xeoncpu/.config/sxhkd
+	sxhkdrc
+1
+d/home/xeoncpu
+	Letöltések
+4
+d/home/xeoncpu/Letöltések
+	config
+3
+d/home/xeoncpu
+	.config
+2
+d/home/xeoncpu/.config
+	user-dirs.dirs
+31
+d/home/xeoncpu
+	.local
+4
+d/home/xeoncpu/.local
+	bin
+1
+d/home/xeoncpu
+	.config
+2
+d/home/xeoncpu/.config
+	bspwm
+3
+d/home/xeoncpu
+	.local
+4
+d/home/xeoncpu/.local
+	bin
+1
+d/home/xeoncpu/.local/bin
+	cmds
+1
+d/home/xeoncpu/.local/bin/cmds
+	dmenurecord
+5
+d/home/xeoncpu
+	Letöltések
+13
+d/home/xeoncpu/Letöltések
+	dmenurecord
+6
+d/home/xeoncpu
+	.config
+2
+d/home/xeoncpu/.config
+	sxiv
+24
+d/home/xeoncpu
+	baz-bspwm
+18
+d/home/xeoncpu/baz-bspwm
+	.config
+1
+d/home/xeoncpu/baz-bspwm/.config
+	sxhkd
+17
+d/home/xeoncpu/baz-bspwm
+	.local
+4
+d/home/xeoncpu/baz-bspwm/.local
+	bin
+1
+d/home/xeoncpu/baz-bspwm/.local/bin
 	..
 0
-D/home/xeoncpu
-	.config
-4
-D/home/xeoncpu/.config
-	vifm
-29
-D/home/xeoncpu/.config/vifm
-	colors
+d/home/xeoncpu/baz-bspwm/.local
+	bin
 1
-D/home/xeoncpu/.config/vifm/colors
-	luke.vifm
+d/home/xeoncpu/baz-bspwm
+	.config
+1
+d/home/xeoncpu/baz-bspwm/.config
+	sxhkd
+17
+d/home/xeoncpu/baz-bspwm/.config/sxhkd
+	sxhkdrc
+1
+d/home/xeoncpu/baz-bspwm/.config
+	rofi
+16
+d/home/xeoncpu/baz-bspwm
+	.local
+4
+d/home/xeoncpu/baz-bspwm/.local
+	bin
+1
+d/home/xeoncpu/baz-bspwm/.local/bin
+	wal
+26
+d/home/xeoncpu
+	baz-bspwm
+9
+d/home/xeoncpu/baz-bspwm
+	.config
+1
+d/home/xeoncpu/baz-bspwm/.config
+	sxhkd
+17
+d/home/xeoncpu/baz-bspwm/.config/sxhkd
+	sxhkdrc
+1
+d/home/xeoncpu
+	.local
+4
+d/home/xeoncpu/.local
+	bin
+1
+d/home/xeoncpu/.local/bin
+	wal
+29
+
+# Right window history (oldest to newest):
+D/home/xeoncpu
+	Letöltések
+4
+D/home/xeoncpu/Letöltések
+	alacritty.yml
 1
 D/home/xeoncpu
 	Letöltések
-19
+12
 D/home/xeoncpu/Letöltések
-	installer
-11
-D/home/xeoncpu/Letöltések/installer
-	MagyArch_test
-2
-D/home/xeoncpu/Letöltések/installer/MagyArch_test
-	index.theme
-10
-D/home/xeoncpu
-	.themes
-14
-D/home/xeoncpu/.themes
-	MagyArch-dark
+	.Xresources
 1
 D/home/xeoncpu
+	baz-bspwm
+17
+D/home/xeoncpu/baz-bspwm
+	.xinitrc
+15
+D/home/xeoncpu
+	.config
+2
+D/home/xeoncpu/.config
+	alacritty
+2
+D/home/xeoncpu/.config/alacritty
+	alacritty.yml
+1
+D/home/xeoncpu
+	Letöltések
+4
+D/home/xeoncpu/Letöltések
+	..
+0
+D/home/xeoncpu
+	Letöltések
+12
+D/home/xeoncpu/Letöltések
+	power
+7
+D/home/xeoncpu
 	.local
-10
+4
+D/home/xeoncpu/.local
+	bin
+1
+D/home/xeoncpu/.local/bin
+	power
+22
 D/home/xeoncpu/.local
 	bin
 1
 D/home/xeoncpu
-	.fonts
+	Letöltések
+12
+D/home/xeoncpu/Letöltések
+	dmenurecord
 6
-D/home/xeoncpu/.fonts
+D/home/xeoncpu
+	baz-bspwm
+17
+D/home/xeoncpu/baz-bspwm
+	.config
+1
+D/home/xeoncpu/baz-bspwm/.config
+	shortcutrc
+25
+D/home/xeoncpu/baz-bspwm
+	.local
+4
+D/home/xeoncpu/baz-bspwm/.local
+	share
+2
+D/home/xeoncpu/baz-bspwm/.local/share
+	applications
+1
+D/home/xeoncpu/baz-bspwm/.local/share/applications
 	..
 0
+D/home/xeoncpu/baz-bspwm/.local/share
+	applications
+1
+D/home/xeoncpu/baz-bspwm/.local
+	share
+2
+D/home/xeoncpu/baz-bspwm
+	.Xresources
+8
+D/home/xeoncpu
+	baz-bspwm
+17
+D/home/xeoncpu/baz-bspwm
+	.Xresources
+8
+D/home/xeoncpu
+	Letöltések
+4
+D/home/xeoncpu/Letöltések
+	config
+4
+D/home/xeoncpu
+	baz-bspwm
+9
+D/home/xeoncpu/baz-bspwm
+	.config
+1
+D/home/xeoncpu/baz-bspwm/.config
+	bspwm
+2
+D/home/xeoncpu
+	magyarch-spectrwm
+10
+D/home/xeoncpu/magyarch-spectrwm
+	.local
+4
+D/home/xeoncpu/magyarch-spectrwm/.local
+	bin
+1
+D/home/xeoncpu/magyarch-spectrwm/.local/bin
+	wallpapers
+6
+D/home/xeoncpu/magyarch-spectrwm/.local/bin/wallpapers
+	..
+0
+D/home/xeoncpu/magyarch-spectrwm/.local/bin
+	wallpapers
+6
 D/home/xeoncpu
 	.config
-5
+2
 D/home/xeoncpu/.config
-	wallpaper.png
-50
+	sxhkd
+23
+D/home/xeoncpu/.config/sxhkd
+	sxhkdrc
+1
 D/home/xeoncpu
-	.config
-5
-D/home/xeoncpu/.config
-	bmpanel2
-3
-D/home/xeoncpu
-	baraction.sh
-11
+	magyarch-spectrwm
+10
+D/home/xeoncpu/magyarch-spectrwm
+	.local
+4
+D/home/xeoncpu/magyarch-spectrwm/.local
+	bin
+1
+D/home/xeoncpu/magyarch-spectrwm/.local/bin
+	wal
+23
 
 # Command line history (oldest to newest):
 :mkdir Videos 
@@ -187,6 +355,7 @@ D/home/xeoncpu
 :colorscheme default
 :colorscheme astrell
 :colorscheme Default
+:mkdir alacritty
 
 # Search history (oldest to newest):
 
@@ -206,13 +375,12 @@ pHoney.Boy.2019.REPACK.720p.AMZN.WEB-DL.DDP5.1.H.264-TEPES.srt
 pMagyArch-official-wall.png
 p.Xresourcesd
 p.Xresources
+pdmenurecord
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/xeoncpu/.local/share/vifm/Trash/000_2020-04-17.png
-""/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200418-0700-22.png
-""/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200418-0909-39.png
+""/home/xeoncpu/magyarch-spectrwm/.local/bin/wal
 
 # Directory stack (oldest to newest):
 
@@ -1485,3 +1653,15 @@ t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200418-0700-22.png
 	/home/xeoncpu/pic-full-200418-0700-22.png
 t/home/xeoncpu/.local/share/vifm/Trash/000_pic-full-200418-0909-39.png
 	/home/xeoncpu/pic-full-200418-0909-39.png
+t/home/xeoncpu/.local/share/vifm/Trash/000_baz-bspwm
+	/home/xeoncpu/baz-bspwm
+t/home/xeoncpu/.local/share/vifm/Trash/000_dmenurecord
+	/home/xeoncpu/Letöltések/dmenurecord
+t/home/xeoncpu/.local/share/vifm/Trash/001_dmenurecord
+	/home/xeoncpu/.local/bin/cmds/dmenurecord
+t/home/xeoncpu/.local/share/vifm/Trash/000_dman
+	/home/xeoncpu/baz-bspwm/.local/bin/dman
+t/home/xeoncpu/.local/share/vifm/Trash/000_dmenufm
+	/home/xeoncpu/baz-bspwm/.local/bin/dmenufm
+t/home/xeoncpu/.local/share/vifm/Trash/000_dmenufm-open
+	/home/xeoncpu/baz-bspwm/.local/bin/dmenufm-open

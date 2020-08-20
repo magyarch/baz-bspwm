@@ -100,10 +100,10 @@ bspc rule -a Lxappearance state=floating
 bspc rule -a Pavucontrol state=floating 
 bspc rule -a Pcmanfm:Dialog state=floating center=true
 bspc rule -a URxvt:Newsboat state=floating center=on
-bspc rule -a URxvt:Ranger state=floating center=on
-bspc rule -a URxvt state=floating center=on
+bspc rule -a URxvt:ncmpcpp state=floating center=on
+bspc rule -a URxvt state=floating 
 bspc rule -a Galculator state=floating
-bspc rule -a URxvt:calcurse state=floating
+bspc rule -a $TERMFLOAT:calcurse state=floating rectangle=70x20-620+30
 bspc rule -a Sxiv state=floating
 bspc rule -a mpv state=floating
 

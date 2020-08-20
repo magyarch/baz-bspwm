@@ -32,7 +32,7 @@ super + {_,shift + } i
 
 # S,R,lock script,calendar app
 super + {_,shift + } c
-    {power, $TERMINAL -g 70x20-16+30 -e calcurse}
+    {power, $TERMFLOAT -g 70x20-16+30 -e calcurse}
 
 # Default web browser brave and firefox
 super + {_,shift + } w
@@ -70,13 +70,13 @@ super + grave
 super + Scroll_Lock
     killall screenkey || screenkey
 
-# Record and stream 
+# Record and stream
 super + {KP_Home,KP_End}
     {dmenurecord, live.sh}
 
 # Kill recording and stream
-super + shift + x 
-    killall ffmpeg   
+super + shift + x
+    killall ffmpeg
 
 #################################################
            # ALT + KEYS#
@@ -89,7 +89,6 @@ alt + {a,b}
 ##############################################
         # FUNCTION KEYS#
 #############################################
-
 # Open help doc
 super + F1
     zathura ~/.local/bin/Magyarch-bspwm.pdf
@@ -99,7 +98,7 @@ super + {F2,F3,F11}
   {edconf.sh,displayselect,ducksearch}
 
 # Decrease padding 0
-super + {F4,F5}
+super + {F6,F7}
     {bspc config right_padding 0;\
     bspc config left_padding 0 ;\
     bspc config top_padding 22 ;\
@@ -108,8 +107,12 @@ super + {F4,F5}
     bspc config top_padding 40 ;\
     bspc config bottom_padding 40}
 
+# Change background
+super + F8
+    wal
+
 # Take and pick screenshot
-super + {F7,F8}
+super + {F4,F5}
     {maim pic-full-$(date '+%y%m%d-%H%M-%S').png,maimpick}
 
 # Mount and umount a USB drive or Android device
