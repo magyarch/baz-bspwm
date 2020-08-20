@@ -96,16 +96,13 @@ bspc rule -a VirtualBox Machine state=fullscreen
 bspc rule -a qView state=floating
 bspc rule -a Pulseaudio-equalizer-gtk  state=floating
 bspc rule -a Gpick state=floating
-#bspc rule -a Xfce4-terminal state=floating
 bspc rule -a Lxappearance state=floating
-bspc rule -a Pavucontrol state=floating rectangle=800x450+0+0 center=on
+bspc rule -a Pavucontrol state=floating 
 bspc rule -a Pcmanfm:Dialog state=floating center=true
 bspc rule -a URxvt:Newsboat state=floating center=on
 bspc rule -a URxvt:Ranger state=floating center=on
 bspc rule -a URxvt state=floating center=on
 bspc rule -a Galculator state=floating
-#bspc rule -a Oblogout state=floating
-#bspc rule -a Preferences state=floating follow=on
 bspc rule -a URxvt:calcurse state=floating
 bspc rule -a Sxiv state=floating
 bspc rule -a mpv state=floating
@@ -120,14 +117,4 @@ bspc rule -a polybar manage=off
 bspc rule -a Screenkey manage=off
 
 
-
-#Spotify fix  --move desktop 9
-#sleep 1
-#wmctrl -r Spotify -t 9
-#exit
-
-
-
-# for dzen panel
-#/home/$USER/.config/bspwm/dzen2.sh &
-
+###########END####################################################################
