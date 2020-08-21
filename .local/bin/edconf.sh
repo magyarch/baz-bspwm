@@ -10,11 +10,8 @@ bash
 bspwm
 profile
 vifm
-xinitrc
 polybar
-st
 sxhkd
-vim
 xprofile
 quit")
 
@@ -39,20 +36,11 @@ case "$choice" in
 	vifm)
 		choice="$HOME/.config/vifm/vifmrc"
 	;;
-	xinitrc)
-		choice="$HOME/.xinitrc"
-	;;
 	polybar)
 		choice="$HOME/.config/polybar/config"
 	;;
-	st)
-		choice="$HOME/st/config.h"
-	;;
 	sxhkd)
 		choice="$HOME/.config/sxhkd/sxhkdrc"
-	;;
-	vim)
-		choice="$HOME/.vimrc"
 	;;
 	xprofile)
 		choice="$HOME/.xprofile"
