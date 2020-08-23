@@ -172,7 +172,7 @@ super + ctrl + {h,j,k,l}
 	bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
 
 # Increase/decrease window gap on focused desktop
-super + bracket{left,right}
+super + alt + {Left,Right}
 	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
 
 # Move a floating window
@@ -211,7 +211,6 @@ super + space
 ##########################################################################################
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>END>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ##########################################################################################
-
 
 
 
