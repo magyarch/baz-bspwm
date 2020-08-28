@@ -128,12 +128,8 @@ super + F12
 ###########################################
 
 # Decrease volume -5
-F10
-    amixer set Master 5%-
-
-# Increase volume +5
-F11
-    amixer set Master 5%+
+alt + {Up,Down}
+    {amixer set Master 5%+,amixer set Master 5%-}
 
 # Mute volume
 F12
