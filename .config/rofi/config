@@ -43,6 +43,9 @@ rofi.fuzzy:  true
 rofi.scroll-method:  1
 rofi.window-format:  {t}
 
+rofi.me-select-entry: MouseSecondary
+rofi.me-accept-entry: MousePrimary
+
 rofi.fixed-num-lines:                true
 rofi.terminal:                       $TERMINAL
 rofi.ssh-client:                     ssh

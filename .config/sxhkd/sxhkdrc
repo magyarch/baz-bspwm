@@ -44,11 +44,11 @@ super + {_,shift + } p
 
 # Hide polybar/Reload bspwm
 super + {_,shift + } b
-    {polybar-msg cmd toggle, $HOME/.config/bspwm/bspwmrc}
+    {polybar-msg cmd toggle, $HOME/.config/bspwm/bspwmrc ;\notify-send "A konfigurációs fájl újratöltődik."}
 
 # Reload sxhkd
 super + {_,shift + } Escape
-    {pkill -USR1 -x sxhkd, $HOME/.config/polybar/launch.sh}
+    {pkill -USR1 -x sxhkd ;\notify-send "Sxhkd újratölt.", $HOME/.config/polybar/launch.sh ;\notify-send "Polybar újraindult."}
 
 # Fullscreen
 super + f
@@ -140,12 +140,16 @@ F12
 ###########################################
 
 #Focus selected desktop FOR QWERTY KEYBOARDS
-super + {1-9,0}
-	bspc desktop -f '^{1-9,10}'
+#super + {1-9,0}
+#	bspc desktop -f '^{1-9,10}'
 
 #Move window to selected desktop FOR QWERTY KEYBOARDS
-super + shift + {1-9,0}
-    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
+#super + shift + {1-9,0}
+ #   id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+  bspc {desktop -f,node -d} '^{1-9,10}'; desktop=$(bspc query -D --names -d); notify-send $desktop --urgency=low -t 350;    
 
 #Focus selected desktop
 alt + Tab
@@ -199,9 +203,17 @@ super + ctrl + space
 super + o
     bspc node -g sticky={on,off}
 
-# Set the window state
-super + space
-    bspc node -t {floating,tiled,fullscreen}
+# Hide window
+super + v
+  bspc node -g hidden
+
+# Unhide window
+super + shift + v
+  bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
+
+# Close windows with mouse button 2 
+button2
+  bspc node pointed -c  
 
 
 ##########################################################################################
