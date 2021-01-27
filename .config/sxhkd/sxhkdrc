@@ -135,6 +135,11 @@ alt + {Up,Down}
 F12
    amixer set Master toggle
 
+
+# Sratchpad
+F1 
+  tdrop -ma -w 50% -h 50% -y 25% -x 25%  alacritty --class=tdrop -t tdrop    
+
 ##########################################
          # BSPWM LAYOUT KEYS
 ###########################################
