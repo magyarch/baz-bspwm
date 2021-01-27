@@ -137,8 +137,8 @@ F12
 
 
 # Sratchpad
-F1 
-  tdrop -ma -w 50% -h 50% -y 25% -x 25%  alacritty --class=tdrop -t tdrop    
+F1
+  tdrop -ma -w 50% -h 50% -y 25% -x 25%  alacritty --class=tdrop -t tdrop
 
 ##########################################
          # BSPWM LAYOUT KEYS
@@ -154,19 +154,28 @@ F1
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-  bspc {desktop -f,node -d} '^{1-9,10}'; desktop=$(bspc query -D --names -d); notify-send $desktop --urgency=low -t 350;    
+  bspc {desktop -f,node -d} '^{1-9,10}'; desktop=$(bspc query -D --names -d); notify-send $desktop --urgency=low -t 350;
 
 #Focus selected desktop
 alt + Tab
 	bspc desktop -f '^{1-9,10}'
 
 #Focus selected desktop
-super + Tab
-	bspc desktop -f '^{1-9,10}'
+#super + Tab
+#	bspc desktop -f '^{1-9,10}'
 
 # Focus/swap windows by direction
 super + {_,shift + }{h,j,k,l}
 	bspc node --{focus,swap} {west,south,north,east}
+
+# Focus history with tab
+super + Tab
+  bspc wm -h off; \
+  bspc node older.local --focus || ( \
+    bspc wm -h on; \
+    bspc node newest.local --focus; \
+  ); \
+  bspc wm -h on 
 
 # Expand tiled space
 alt + ctrl + {h,j,k,l}
@@ -216,9 +225,9 @@ super + v
 super + shift + v
   bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
 
-# Close windows with mouse button 2 
+# Close windows with mouse button 2
 button2
-  bspc node pointed -c  
+  bspc node pointed -c
 
 
 ##########################################################################################
