@@ -91,7 +91,7 @@ alt + {a,b}
 #############################################
 # Open help doc
 super + F1
-    zathura ~/.local/bin/Magyarch-bspwm.pdf
+    zathura ~/.local/share/Magyarch-bspwm.pdf
 
 # Edit conf files,select display,search the net
 super + {F2,F3,F11}
@@ -113,7 +113,7 @@ super + F8
 
 # Take and pick screenshot
 super + {F4,F5}
-    {maim pic-full-$(date '+%y%m%d-%H%M-%S').png,maimpick}
+     {maim ~/Képek/Képernyőképek/`date +%Y-%m-%d_%H:%M:%S`.png,maimpick}
 
 # Mount and umount a USB drive or Android device
 super + {F9,F10}
