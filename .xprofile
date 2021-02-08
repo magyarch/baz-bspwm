@@ -11,9 +11,9 @@ mpdupdate &
 (sleep 1s && ~/.config/polybar/launch.sh) &
 #conky &
 #blueberry-tray &
+nm-applet &
 #xrandr --output LVDS1 --mode 1366x768 --output HDMI1 --mode 1920x1080 --right-of LVDS1 &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-xwallpaper --no-randr /usr/share/backgrounds/magyarch/wallpaper.png &
 zathura ~/.local/share/Magyarch-bspwm.pdf &
 
 
