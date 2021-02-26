@@ -5,7 +5,7 @@ sxhkd &	# Bind keys
 xsetroot -cursor_name left_ptr &
 xset r rate 500 30 &	# Speed xrate up
 unclutter &		# Remove mouse when idle
-picom --experimental-backends --inactive-opacity 1.00 --opacity-rule "80:class_g = 'URxvt'" --blur-background-exclude "class_g = 'slop'" -cCGfF -o 0.70 -O 0.028 -I 0.028 -t 0 -l 0 -r 7 -D2 -m 1.00 &	# transparency
+(sleep 1s && picom --experimental-backends --inactive-opacity 1.00  --opacity-rule "80:class_g = 'rofi'" --blur-background-exclude n:a:slop -cCGfF -o 0.70 -O 0.028 -I 0.028 -t 0 -l 0 -r 7 -D2 -m 1.00) &	# transparency
 dunst &                 # dunst for notifications
 mpdupdate &
 (sleep 1s && ~/.config/polybar/launch.sh) &
@@ -14,7 +14,9 @@ mpdupdate &
 nm-applet &
 #xrandr --output LVDS1 --mode 1366x768 --output HDMI1 --mode 1920x1080 --right-of LVDS1 &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-zathura ~/.local/share/Magyarch-bspwm.pdf &
+#zathura ~/.local/share/Magyarch-bspwm.pdf &
+sleep 2s && notify-send 'Nyomja meg a Super+F1-et a használati utasításért.' -t 10000 &
+
 
 
 

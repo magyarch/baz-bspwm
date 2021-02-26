@@ -3,11 +3,11 @@
 
 # Main and float terminal
 super + {_,shift + } Return
-    {$TERMINAL, $TERMFLOAT -g 110x30}
+    {$TERMINAL, bspwmfloat && $TERMINAL}
 
 # Dmenu2 and rofi(window switcher, application launcher)
 super + {_,shift +} d
-    {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Medium-12' -w '760' -h '24' -x '574' -y '48',rofi_run -r}
+    {dmenu_run -i -p 'Search' -nb '#2f2b26' -sb '#2e8b57' -fn 'JetBrains Mono Nerd Font:pixelsize=14' -w '760' -h '24' -x '604' -y '48' -o '0.9', rofi_run -r}
 
 
 # Tui filemanager and same command with sudo
@@ -24,19 +24,19 @@ super + {_,shift + } m
 
 # News, tui music player
 super + {_,shift + } n
-    {$TERMINAL -e newsboat, $TERMFLOAT -g 110x30 -e ncmpcpp}
+    {bspc rule -a \* -o state=floating rectangle=870x550+500+270 && alacritty -e newsboat, tdrop -ma -w 50% -h 50% -y 25% -x 25%  alacritty --class=tdrop -t tdrop -e ncmpcpp}
 
 # Htop,gtop system monitor
 super + {_,shift + } i
-    {$TERMINAL -e htop, $TERMINAL -e gtop}
+    {$TERMINAL -e htop, yt}
 
 # S,R,lock script,calendar app
 super + {_,shift + } c
-    {power, $TERMFLOAT -g 70x20-16+30 -e calcurse}
+    {rofi_run -l, rofi_run -w}
 
 # Default web browser brave and firefox
 super + {_,shift + } w
-    {$BROWSER, firefox}
+    {$BROWSER, rofi_run -b}
 
 # Chat client, gui filemanager
 super + {_,shift + } p
@@ -58,9 +58,9 @@ super + f
 super + {_,shift + } q
 	bspc node -{c,k}
 
-# Quit/restart bspwm
-super + alt + {q,r}
-	bspc {quit,wm -r}
+# Aliasrc show/share files
+super + {_,shift + } a
+   {alias.sh, share.sh}
 
 # emojimenu "get a menu of emojis to copy"
 super + grave
@@ -113,15 +113,12 @@ super + F8
 
 # Take and pick screenshot
 super + {F4,F5}
-     {maim ~/Képek/Képernyőképek/`date +%Y-%m-%d_%H:%M:%S`.png,maimpick}
+     {maim -d 6 ~/Képek/Képernyőképek/$(date +%Y-%m-%d_%H:%M:%S).png,maimpick}
 
 # Mount and umount a USB drive or Android device
 super + {F9,F10}
     {dmenumount,dmenuumount}
 
-# Mpv floating
-super + F12
-    mpv --geometry=40%+30+30 --title="mpvfloat"
 
 ###########################################
         # Volume Control
@@ -144,13 +141,6 @@ F1
          # BSPWM LAYOUT KEYS
 ###########################################
 
-#Focus selected desktop FOR QWERTY KEYBOARDS
-#super + {1-9,0}
-#	bspc desktop -f '^{1-9,10}'
-
-#Move window to selected desktop FOR QWERTY KEYBOARDS
-#super + shift + {1-9,0}
- #   id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
@@ -159,10 +149,6 @@ super + {_,shift + }{1-9,0}
 #Focus selected desktop
 alt + Tab
 	bspc desktop -f '^{1-9,10}'
-
-#Focus selected desktop
-#super + Tab
-#	bspc desktop -f '^{1-9,10}'
 
 # Focus/swap windows by direction
 super + {_,shift + }{h,j,k,l}
@@ -175,7 +161,7 @@ super + Tab
     bspc wm -h on; \
     bspc node newest.local --focus; \
   ); \
-  bspc wm -h on 
+  bspc wm -h on
 
 # Expand tiled space
 alt + ctrl + {h,j,k,l}
@@ -204,10 +190,6 @@ super + ctrl + {e,r,t,y}
 # Preselect the splitting area for next window on leaf/parent
 super + ctrl + {u,i,o,p}
 	bspc node --presel-dir \~{west,south,north,east}
-
-# Define splitting ratio for next window on leaf/parent
-super + ctrl + {_,shift +}{1-9}
-	bspc node {_,@/} --presel-ratio 0.{1-9}
 
 # Cancel preselection
 super + ctrl + space

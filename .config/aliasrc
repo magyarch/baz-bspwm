@@ -17,9 +17,9 @@ alias ka="killall" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
-	yt="youtube-dl --add-metadata -i -o '%(upload_date)s-%(title)s.%(ext)s'" \
+	#yt="youtube-dl --add-metadata -i -o '%(upload_date)s-%(title)s.%(ext)s'" \
 	yta="yt -x -f bestaudio/best" \
-	YT="youtube-viewer" \
+	#YT="youtube-viewer" \
 	ref="shortcuts >/dev/null; source ~/.config/shortcutrc" \
 	lsp="pacman -Qett --color=always | less" \
 	ffmpeg="ffmpeg -hide_banner"
@@ -197,7 +197,8 @@ ex ()
 
 #[[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 
-neofetch
+#neofetch
+cowsay "CSATLAKOZZ HOZZÁNK !" && cowsay "IRATKOZZ FEL !"
 
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" # Use neovim for vim if present.
 
