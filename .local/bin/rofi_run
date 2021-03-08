@@ -34,7 +34,7 @@ EOF
 }
 
 if (( $# == 0 )); then
-	rofi -modi run,drun -show drun -eh 1 -line-padding 3 -columns 2 -padding 50 -hide-scrollbar -show-icons -drun-icon-theme "Paper"
+	rofi -modi run,drun -show drun -eh 1 -line-padding 3 -columns 2 -padding 50 -hide-scrollbar -show-icons -drun-icon-theme "oomox-baloon"
 else
 	for arg in "$@"; do
 		case $arg in
@@ -67,7 +67,7 @@ else
 				;;
 			-l|--logout)
 				if grep -q 'startx' $HOME/.*profile; then
-					ANS="$(rofi -sep "|" -dmenu -i -p 'System' -width 20 -hide-scrollbar -line-padding 4 -padding 20 -lines 3 <<< " Logout| Reboot| Shutdown")"
+					ANS="$(rofi -sep "|" -dmenu -i -p 'System' -width 20 -hide-scrollbar -line-padding 4 -padding 20 -lines 3 <<< " Logout| Reboot| Shutdown")"
 				else
 					ANS="$(rofi -sep "|" -dmenu -i -p 'System' -width 20 -hide-scrollbar -line-padding 4 -padding 15 -lines 3 <<< " Logout| Reboot| Shutdown")"
 				fi
