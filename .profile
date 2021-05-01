@@ -1,14 +1,13 @@
 #!/bin/sh
 # Profile file. Runs on login.
 
-# Add `~/.local/bin` and all subdirectories to $PATH
+# Adds `~/.scripts` and all subdirectories to $PATH
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 export EDITOR="nvim"
 export TERMINAL="alacritty"
-export TERMFLOAT="urxvt"
 export BROWSER="brave"
 export READER="zathura"
-export FILE="vifm"
+export FILE="pcmanfm"
 export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
 
 # less/man colors
@@ -38,5 +37,6 @@ else
     export SCREENSHOTS="$(xdg-user-dir PICTURES)/screenshots"
     [ ! -d $SCREENSHOTS ] && mkdir -p $SCREENSHOTS >/dev/null 2>&1
 fi
+
 
 
