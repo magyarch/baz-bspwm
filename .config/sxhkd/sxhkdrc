@@ -16,7 +16,7 @@ super + {_,shift + } r
 
 # Show keys with rofi/default gui editor
 super + {_,shift + } e
-    {show_keys.sh, subl3}
+    {show_keys.sh, subl}
 
 # Switch tile and monocle layoutand simple flip layout
 super + {_,shift + } m
