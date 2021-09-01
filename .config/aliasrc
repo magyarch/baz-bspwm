@@ -2,16 +2,25 @@
 
 alias ka="killall"
 alias mkd="mkdir -pv"
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -vI"
 alias p="sudo pacman"
 alias SS="sudo systemctl"
 alias f="$FILE"
-alias g="git"
-alias gc="git clone"
 alias e="$EDITOR"
 alias v="$EDITOR"
+alias z="zathura"
 alias x="sxiv -ft *"
 alias sdn="sudo shutdown -h now"
 alias diff="diff --color=auto"
+alias q="exit"
+
+#chmod +x
+alias ch="sudo chmod +x "
+
+#Delete [Important - use carefully]
+alias delete="sudo rm -rf "
 
 #list
 alias ls='ls --color=auto'
