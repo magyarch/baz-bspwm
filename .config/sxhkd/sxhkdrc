@@ -16,7 +16,7 @@ super + {_,shift + } r
 
 # Show keys with rofi/default gui editor
 super + {_,shift + } e
-    {show_keys.sh, subl}
+    {show_keys.sh, bresize}
 
 # Switch tile and monocle layoutand simple flip layout
 super + {_,shift + } m
@@ -85,6 +85,16 @@ super + shift + x
 # On/off transparency, pavucontrol
 alt + {a,b}
    {pavucontrol,toggleprogram "picom -b"}
+
+# Tiled space resizing
+alt + h
+    shrinkx.sh
+alt + l
+    expandx.sh
+alt + k
+    shrinky.sh
+alt + j
+    expandy.sh
 
 ##############################################
         # FUNCTION KEYS#
@@ -162,14 +172,6 @@ super + Tab
     bspc node newest.local --focus; \
   ); \
   bspc wm -h on
-
-# Expand tiled space
-alt + ctrl + {h,j,k,l}
-	bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
-
-# Contract tiled space
-super + ctrl + {h,j,k,l}
-	bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
 
 # Increase/decrease window gap on focused desktop
 super + alt + {Left,Right}
