@@ -28,8 +28,8 @@ format-offset =
 
 [colors]
 ; MagyArch theme ============
-background = #2f2b26
-;background = ${xrdb:background}
+;background = #2f2b26
+background = ${xrdb:background}
 foreground = ${xrdb:foreground}
 foreground-alt = ${xrdb:green}
 alert = #bf616a
@@ -59,8 +59,8 @@ width = 100%
 height = 23
 offset-x = 0
 offset-y = 0
-radius = 8.0
-fixed-center = false
+radius = 1.0
+fixed-center = true
 bottom = false
 ;separator = |
 
@@ -95,11 +95,11 @@ font-0 = "JetBrains Mono Nerd Font:pixelsize=11;2"
 font-1 = "FontAwesome:pixelsize=11;2"
 font-2 = "Joy Pixels:scale=11;1"
 
-modules-left = jgmenu ewmh
-modules-center = cpu-graph2
-modules-right = discord itemp sep mem sep weather sep date sep pavolume sep help sep powermenu
+modules-left = date sep discord
+modules-center = ewmh  
+modules-right = itemp sep mem sep weather sep pavolume sep help sep powermenu
 
-tray-position = none
+tray-position = right
 
 tray-detached = false
 tray-offset-x = 0
