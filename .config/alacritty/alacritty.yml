@@ -29,7 +29,7 @@ font:
     # family: Iosevka NF
     # family: Hack NF
     # family: SpaceMono NF
-    style: Medium
+    style: Regular
   bold:
     # family: mononoki Nerd Font
     # family: agave Nerd Font

@@ -1,4 +1,11 @@
 # Magyarch bspwm keybinds
+# Add focused window to a tabbed instance in given direction
+super + t; {h,j,k,l}
+    tabc add $(bspc query -N -n focused) $(bspc query -N -n {west,south,north,east})
+
+# Remove one tab from tabbed
+super + t; r
+    tabc remove-child $(bspc query -N -n focused)
 
 
 # Main and float terminal
@@ -16,7 +23,7 @@ super + {_,shift + } r
 
 # Show keys with rofi/default gui editor
 super + {_,shift + } e
-    {show_keys.sh, bresize}
+    {show_keys.sh, subl}
 
 # Switch tile and monocle layoutand simple flip layout
 super + {_,shift + } m
@@ -212,7 +219,6 @@ super + shift + v
 # Close windows with mouse button 2
 button2
   bspc node pointed -c
-
 
 ##########################################################################################
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>END>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

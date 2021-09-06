@@ -95,9 +95,9 @@ font-0 = "JetBrains Mono Nerd Font:pixelsize=11;2"
 font-1 = "FontAwesome:pixelsize=11;2"
 font-2 = "Joy Pixels:scale=11;1"
 
-modules-left = date sep discord
-modules-center = ewmh  
-modules-right = itemp sep mem sep weather sep pavolume sep help sep powermenu
+modules-left = weather sep date sep  discord
+modules-center = ewmh
+modules-right = itemp sep mem sep pavolume sep help sep powermenu
 
 tray-position = right
 
