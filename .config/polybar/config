@@ -82,7 +82,7 @@ enable-ipc = true
 ;border-right-size = 0
 ;border-top-size = 0
 ;border-bottom-size = 3
-;border-color = #2e8b57
+border-color = #2e8b57
 
 padding-left = 1
 padding-right = 0

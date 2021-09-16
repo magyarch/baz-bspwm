@@ -5,9 +5,9 @@ sxhkd &	# Bind keys
 xsetroot -cursor_name left_ptr &
 xset r rate 400 30 &	# Speed xrate up
 unclutter &		# Remove mouse when idle
-(sleep 1s && picom --experimental-backends --inactive-opacity 1.00  --opacity-rule "80:class_g = 'rofi'" --blur-background-exclude n:a:slop -cCGfF -o 0.70 -O 0.028 -I 0.028 -t 0 -l 0 -r 7 -D2 -m 1.00) &	# transparency
+(sleep 1s && picom --experimental-backends --shadow-exclude-reg '1920+0-0' --inactive-opacity 1.00  --opacity-rule "80:class_g = 'rofi'" --blur-background-exclude n:a:slop -cCGfF -o 0.70 -O 0.028 -I 0.028 -t 0 -l 0 -r 7 -D2 -m 1.00) &	# transparency
 dunst &                 # dunst for notifications
-mpdupdate &
+#mpdupdate &
 (sleep 1s && ~/.config/polybar/launch.sh) &
 #conky &
 #blueberry-tray &

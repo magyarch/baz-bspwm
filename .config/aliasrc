@@ -13,10 +13,9 @@ alias v="vifmrun"
 alias z="zathura"
 alias x="sxiv -ft *"
 alias sdn="sudo shutdown -h now"
+alias sr="sudo reboot"
 alias diff="diff --color=auto"
 alias q="exit"
-alias wcam="mpv --demuxer-lavf-o=video_size=1280x720,input_format=mjpeg av://v4l2:/dev/video0 --profile=low-latency --untimed"
-alias setc="v4l2-ctl --set-fmt-video=width=1280,height=720
 
 #chmod +x
 alias ch="sudo chmod +x "
@@ -65,9 +64,8 @@ alias merge="xrdb -merge ~/.Xresources"
 alias pacman='sudo pacman --color auto'
 alias update='sudo pacman -Syyu'
 
-# yay as aur helper - updates everything
-alias pksyua="paru -Syu --noconfirm"
-alias upall="paru -Syu --noconfirm"
+# paru as aur helper - updates everything
+alias upall="paru -Syu"
 
 #ps
 alias psa="ps auxf"
@@ -140,9 +138,7 @@ alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 #receive the key of a developer
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
-#shutdown or reboot
-alias ssn="sudo shutdown now"
-alias sr="sudo reboot"
+
 
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
