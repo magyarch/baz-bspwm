@@ -11,7 +11,7 @@
     horizontal_padding = 8
     frame_width = 3
     #frame_color = "#2f2b26"
-    frame_color = "#141414"
+    frame_color = "#2e8b57"
 
     # Define a color for the separator.
     # possible values are:
@@ -26,7 +26,7 @@
 
     idle_threshold = 120
     #font = Monospace 14
-    font = JetBrains Mono Medium 14
+    font = JetBrains Mono Nerd Font 14
     line_height = 0
     markup = full
 
@@ -77,19 +77,19 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#2f2b26"
+    background = "#1a1a1a"
     foreground = "#928374"
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#2f2b26"
+    background = "#1a1a1a"
     foreground = "#ebdbb2"
     timeout = 5
 
 [urgency_critical]
-    background = "#2f2b26"
+    background = "#800000"
     foreground = "#ebdbb2"
     frame_color = "#fabd2f"
     timeout = 0
