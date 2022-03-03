@@ -37,7 +37,7 @@ case "$choice" in
 		choice="$HOME/.config/vifm/vifmrc"
 	;;
 	polybar)
-		choice="$HOME/.config/polybar/config"
+		choice="$HOME/.config/polybar/config.ini"
 	;;
 	sxhkd)
 		choice="$HOME/.config/sxhkd/sxhkdrc"

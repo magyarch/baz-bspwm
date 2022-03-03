@@ -11,7 +11,7 @@
     horizontal_padding = 8
     frame_width = 3
     #frame_color = "#2f2b26"
-    frame_color = "#2e8b57"
+    frame_color = "#141414"
 
     # Define a color for the separator.
     # possible values are:
@@ -26,7 +26,7 @@
 
     idle_threshold = 120
     #font = Monospace 14
-    font = JetBrains Mono Nerd Font 14
+    font = JetBrains Mono ExtraBold Nerd Font 14
     line_height = 0
     markup = full
 
@@ -89,7 +89,7 @@
     timeout = 5
 
 [urgency_critical]
-    background = "#800000"
+    background = "#1a1a1a"
     foreground = "#ebdbb2"
     frame_color = "#fabd2f"
     timeout = 0

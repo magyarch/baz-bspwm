@@ -20,11 +20,17 @@ setopt interactive_comments
 stty stop undef					# Disable ctrl-s to freeze terminal.
 zle_highlight=('paste:none')	# No highlighting after paste
 unsetopt BEEP					# beeping is annoying
+unsetopt nomatch
 
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
+
+autoload -Uz bracketed-paste-magic
+zle -N bracketed-paste bracketed-paste-magic
+autoload -Uz url-quote-magic
+zle -N self-insert url-quote-magic
 
 # Colors
 autoload -Uz colors && colors
@@ -53,7 +59,7 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey '^[[P' delete-char
 bindkey '^H' backward-kill-word
-bindkey "^p" up-line-or-beginning-search 
+bindkey "^p" up-line-or-beginning-search
 bindkey "^n" down-line-or-beginning-search
 bindkey "^k" up-line-or-beginning-search
 bindkey "^j" down-line-or-beginning-search
