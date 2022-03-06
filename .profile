@@ -6,9 +6,13 @@ export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="brave"
+#export BROWSER="braverun"
 export READER="zathura"
 export FILE="vifmrun"
 export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
+#export GDK_SCALE=2
+#export GDK_DPI_SCALE=0.5
+
 
 # less/man colors
 export LESS=-R

@@ -13,6 +13,7 @@ dunst &                 # dunst for notifications
 #conky &
 blueberry-tray &
 nm-applet &
+#xrandr --primary --output DP-0 --dpi 156 --mode 3840x2160 --rate 60 --pos 0x0  &
 #xrandr --output LVDS1 --mode 1366x768 --output HDMI1 --mode 1920x1080 --right-of LVDS1 &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #zathura ~/.local/share/Magyarch-bspwm.pdf &
