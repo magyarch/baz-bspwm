@@ -143,7 +143,7 @@ super + {F9,F10}
 
 # Decrease volume -5
 alt + {Up,Down}
-    {amixer set Master 5%+,amixer set Master 5%-}
+    {pamixer --allow-boost -i 1,pamixer --allow-boost -d 1}
 
 # Mute volume
 F12
@@ -216,9 +216,6 @@ super + v
 super + shift + v
   bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
 
-# Close windows with mouse button 2
-button2
-  bspc node pointed -c
 
 ##########################################################################################
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>END>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
