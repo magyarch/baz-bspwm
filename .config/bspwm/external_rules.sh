@@ -1,5 +1,4 @@
 #!/bin/bash
-
 bspc query -N -n .leaf.local.\!automatic >/dev/null && exit
 master_area="${BSPWMMASTER:-west}" west="@/1" east="@/2" north="$west" south="$east"
 case "$master_area" in
@@ -16,4 +15,3 @@ if [ $localnodect -gt 1 ]; then
 else
     echo "private=on split_dir=${stack_area}"
 fi
-

@@ -1,11 +1,4 @@
-# Magyarch bspwm keybinds
-# Add focused window to a tabbed instance in given direction
-super + t; {h,j,k,l}
-    tabc add $(bspc query -N -n focused) $(bspc query -N -n {west,south,north,east})
-
-# Remove one tab from tabbed
-super + t; r
-    tabc remove-child $(bspc query -N -n focused)
+################## Magyarch bspwm keybinds #######################################
 
 
 # Main and float terminal
@@ -25,7 +18,7 @@ super + {_,shift + } r
 super + {_,shift + } e
     {show_keys.sh, subl}
 
-# Switch tile and monocle layoutand simple flip layout
+# Switch tile and monocle layout and simple flip layout
 super + {_,shift + } m
     {bspc desktop -l next, bspc node @/ -R 90}
 
@@ -103,6 +96,14 @@ alt + k
 alt + j
     expandy.sh
 
+# Dwm based layout
+alt + space
+    bspc config external_rules_command $HOME/.config/bspwm/external_rules.sh && masterlayout.sh    
+
+# To change layouts
+alt + {f,n,s}
+  ~/.config/bspwm/config_scheme.sh {first_child,longest_side,spiral}    
+
 ##############################################
         # FUNCTION KEYS#
 #############################################
@@ -147,7 +148,7 @@ alt + {Up,Down}
 
 # Mute volume
 F12
-   amixer set Master toggle
+   pamixer --toggle-mute
 
 
 # Sratchpad
@@ -161,7 +162,7 @@ F1
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-  bspc {desktop -f,node -d} '^{1-9,10}'; desktop=$(bspc query -D --names -d); notify-send $desktop --urgency=low -t 350;
+  bspc {desktop -f,node -d} '^{1-9,10}' --follow; desktop=$(bspc query -D --names -d); notify-send $desktop --urgency=low -t 350;
 
 #Focus selected desktop
 alt + Tab
