@@ -84,10 +84,10 @@ bspc rule -a VirtualBox Machine state=fullscreen
 bspc rule -a qView state=floating
 bspc rule -a Pulseaudio-equalizer-gtk  state=floating
 bspc rule -a Gpick state=floating
-bspc rule -a Lxappearance state=floating center=true rectangle=1470x850+500+270
-bspc rule -a Pavucontrol state=floating center=true rectangle=1470x850+500+270
+bspc rule -a Lxappearance state=floating center=true
+bspc rule -a Pavucontrol state=floating center=true
 bspc rule -a Pcmanfm:Dialog state=floating
-bspc rule -a Alacritty:newsboat state=floating center=true rectangle=1470x850+500+270
+bspc rule -a Alacritty:newsboat state=floating center=true
 bspc rule -a URxvt state=floating
 bspc rule -a Alacritty:calcurse state=floating center=true
 bspc rule -a Sxiv state=floating center=true
