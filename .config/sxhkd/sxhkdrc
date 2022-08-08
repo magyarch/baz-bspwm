@@ -84,7 +84,7 @@ super + shift + x
 
 # On/off transparency, pavucontrol
 alt + {a,b}
-   {pavucontrol,toggleprogram "picom -b"}
+   {pavucont0rol,toggleprogram "picom -b"}
 
 # Tiled space resizing
 alt + h
@@ -194,8 +194,8 @@ super + space
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # Focus parent/brother/first/second for preselection
-super + ctrl + {e,r,t,y}
-	bspc node --focus @{parent,brother,first,second}
+super + ctrl + t
+    wmctrl -x -a "tabbed" || tabbed alacritty --embed
 
 # Preselect the splitting area for next window on leaf/parent
 super + ctrl + {u,i,o,p}
@@ -217,6 +217,10 @@ super + v
 super + shift + v
   bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
 
+super + shift + {Left,Down,Up,Right}
+    dir={west,south,north,east}; \
+    bspc node -s "$dir.local" --follow \
+        || bspc node -m "$dir" --follow
 
 ##########################################################################################
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>END>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

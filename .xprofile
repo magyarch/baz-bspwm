@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#export GDK_SCALE=2
+export GDK_SCALE=2
 # #setbg &		# Set the background
 # sxhkd -c ~/.config/wmderland/sxhkdrc &	# Bind keys
  sxhkd &
@@ -21,8 +21,8 @@ dunst &                 # dunst for notifications
 # #conky -c ~/.config/conky/conky.conkyrc &
 #redshift -l 47.162495:19.503304 -t 6000:3600 -g 0.8 -m randr -v &
 #~/.config/nimdow/nimdowstatus &
-feh --bg-fill --randomize ~/.local/bin/wallpapers/Future/*
-
+#feh --bg-fill --randomize ~/.local/bin/wallpapers/Future/*
+#xrandr --output HDMI-0 --auto --rotate left --scale 2x2 --output DP-0 --auto --left-of HDMI-0 &
 
 
 
