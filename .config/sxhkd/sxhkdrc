@@ -7,7 +7,7 @@ super + {_,shift + } Return
 
 # Dmenu2 and rofi(window switcher, application launcher)
 super + {_,shift +} d
-    {dmenu_run -i -p 'Search' -nb '#1a1a1a' -sb '#2e8b57' -fn 'JetBrains Mono Nerd Font:size=14' -w '1460' -h '54' -x '1304' -y '88' -o '0.7', rofi_run -r}
+    {dmenu_run -i -c -g 1 -l 10 -p 'Search' -nb '#1a1a1a' -sb '#2e8b57' -fn 'JetBrains Mono Nerd Font:size=14', rofi_run -r}
 
 
 # Tui filemanager and same command with sudo
@@ -28,7 +28,7 @@ super + {_,shift + } n
 
 # Htop,gtop system monitor
 super + {_,shift + } i
-    {$TERMINAL -e htop, yt}
+    {$TERMINAL -e htop, picsound}
 
 # S,R,lock script,calendar app
 super + {_,shift + } c
@@ -98,11 +98,11 @@ alt + j
 
 # Dwm based layout
 alt + space
-    bspc config external_rules_command $HOME/.config/bspwm/external_rules.sh && masterlayout.sh    
+    bspc config external_rules_command $HOME/.config/bspwm/external_rules.sh && masterlayout.sh
 
 # To change layouts
 alt + {f,n,s}
-  ~/.config/bspwm/config_scheme.sh {first_child,longest_side,spiral}    
+  ~/.config/bspwm/config_scheme.sh {first_child,longest_side,spiral}
 
 ##############################################
         # FUNCTION KEYS#
