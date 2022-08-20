@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export GDK_SCALE=2
+#export GDK_SCALE=2
 # #setbg &		# Set the background
 # sxhkd -c ~/.config/wmderland/sxhkdrc &	# Bind keys
  sxhkd &
