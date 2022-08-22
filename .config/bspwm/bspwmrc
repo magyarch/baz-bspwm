@@ -27,7 +27,7 @@ bspc config single_monocle        true  # use monocle layout if there is only 1 
 bspc config automatic_scheme alternate
 bspc config center_pseudo_tiled   true
 #bspc config initial_polarity second_child
-bspc config initial_polarity first_child|second_child
+bspc config initial_polarity first_child
 bspc config focus_follows_pointer false
 #bspc config external_rules_command $HOME/.config/bspwm/spotify_rules
 #b#spc config external_rules_command $HOME/.local/bin/float.sh
@@ -51,7 +51,7 @@ bspc config focused_border_color $(awk '$1 ~ "green" { print $2 }' ~/.Xresources
 #bspc config urgent_border_color $(awk '$1 ~ "$color8" { print $2 }' ~/.Xresources)
 
 
-# Single monitor
+# Single monitor choice
 #bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 #bspc monitor  -d "☢️ " "🤬 " "⚒️ " "🍭 " "🎲 " "🎬 " "🔰 "  "🎯 " "📀 "
 #bspc monitor -d "Web " "Chat " "Edit " "Music " "Tor " "Video " "Vbox " "File " "Float "
@@ -59,7 +59,7 @@ bspc monitor -d ""  ""  ""  ""  ""  ""  ""  ""  ""  "
 #bspc monitor -d "I" "II" "III" "IV" "V" "VI" "VII" "VIII" "IX" "X"
 
 
-# Dual monitor
+# Dual monitor example
 #bspc monitor LVDS1 -d 1 2 3 4
 #bspc monitor DP3 -d  5 6 7 8 9
 
