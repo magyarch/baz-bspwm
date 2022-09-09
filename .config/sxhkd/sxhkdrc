@@ -3,7 +3,7 @@
 
 # Main and float terminal
 super + {_,shift + } Return
-    {$TERMINAL, bspwmfloat && $TERMINAL}
+    {$TERMINAL, scpad}
 
 # Dmenu2 and rofi(window switcher, application launcher)
 super + {_,shift +} d
@@ -24,7 +24,7 @@ super + {_,shift + } m
 
 # News, tui music player
 super + {_,shift + } n
-    {bspwmfloat && $TERMINAL -e newsboat, bspwmfloat && $TERMINAL -e ncmpcpp}
+    {bspwmfloat && $TERMINAL -e newsboat, scpad_ncmpcpp}
 
 # Htop,gtop system monitor
 super + {_,shift + } i
@@ -207,7 +207,7 @@ super + ctrl + space
 
 # Make a windoww sticky/non-sticky
 super + o
-    bspc node -g sticky={on,off}
+    bspc node -g locked={on,off}
 
 # Hide window
 super + v

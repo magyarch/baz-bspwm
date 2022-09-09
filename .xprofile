@@ -1,14 +1,18 @@
 #!/bin/sh
 
+# for hidpi 4k
+#xrandr --dpi 144
 #export GDK_SCALE=2
+# ---------------------------------------------
+
 # #setbg &		# Set the background
-# sxhkd -c ~/.config/wmderland/sxhkdrc &	# Bind keys
+# sxhkd -c ~/.config/bspwm/sxhkdrc &	# Bind keys
  sxhkd &
  xsetroot -cursor_name left_ptr &
  xset r rate 400 30 &	# Speed xrate up
  unclutter &		# Remove mouse when idle
  xset s off -dpms &
-(sleep 1s && picom --experimental-backends --shadow-exclude-reg '1920+0-0' --inactive-opacity 1.00  --opacity-rule "85:class_g ='urxvt'" --opacity-rule "80:class_g = 'rofi'" --opacity-rule "90:class_g = 'Alacritty'" --blur-background-exclude n:a:slop -cCGfF -o 0.70 -O 0.028 -I 0.028 -t 0 -l 0 -r 7 -D2 -m 1.00) &	# transparency
+#(sleep 1s && picom --experimental-backends --shadow-exclude-reg '1920+0-0' --inactive-opacity 1.00  --opacity-rule "85:class_g ='urxvt'" --opacity-rule "80:class_g = 'rofi'" --opacity-rule "90:class_g = 'Alacritty'" --blur-background-exclude n:a:slop -cCGfF -o 0.70 -O 0.028 -I 0.028 -t 0 -l 0 -r 7 -D2 -m 1.00) &	# transparency
 dunst &                 # dunst for notifications
 # #mpdupdate &
  (sleep 1s && ~/.config/polybar/launch.sh) &
@@ -17,12 +21,12 @@ dunst &                 # dunst for notifications
  nm-applet &
  /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # #zathura ~/.local/share/Magyarch-bspwm.pdf &
-# sleep 2s && notify-send 'Nyomja meg a Super+F1-et a használati utasításért.' -t 10000 &
+ sleep 2s && notify-send 'Nyomja meg a Super+F1-et a használati utasításért.' -t 10000 &
 # #conky -c ~/.config/conky/conky.conkyrc &
 #redshift -l 47.162495:19.503304 -t 6000:3600 -g 0.8 -m randr -v &
 #~/.config/nimdow/nimdowstatus &
 #feh --bg-fill --randomize ~/.local/bin/wallpapers/Future/*
-#xrandr --output HDMI-0 --auto --rotate left --scale 2x2 --output DP-0 --auto --left-of HDMI-0 &
+picom -b --config ~/.config/picom.conf --experimental-backends &
 
 
 

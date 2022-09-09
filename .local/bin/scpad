@@ -1,0 +1,12 @@
+#!/bin/sh
+
+id=$(xdotool search --class scpad);
+if [ -z "$id" ]; then
+    alacritty --class scpad,scpad;
+else
+        if [ ! -f /tmp/scpad ]; then
+                touch /tmp/scpad && xdo hide "$id"
+        elif [ -f /tmp/scpad ]; then
+                rm /tmp/scpad && xdo show "$id"
+        fi
+fi

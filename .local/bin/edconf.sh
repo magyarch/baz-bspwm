@@ -15,7 +15,7 @@ sxhkd
 xprofile
 quit")
 
-choice=$(echo -e "${options[@]}" | rofi -dmenu -i -no-custom -p 'Edit a config file: ')
+choice=$(echo -e "${options[@]}" | dmenu -i -c -g 1 -l 20 -nb '#1a1a1a' -sb '#9872bf' -fn 'JetBrains Mono Nerd Font:size=14' -p 'Edit a config file: ')
 
 case "$choice" in
 	quit)
