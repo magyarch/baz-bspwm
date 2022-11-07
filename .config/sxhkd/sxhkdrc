@@ -7,7 +7,7 @@ super + {_,shift + } Return
 
 # Dmenu2 and rofi(window switcher, application launcher)
 super + {_,shift +} d
-    {dmenu_run -i -c -g 1 -l 10 -p 'Search' -nb '#1a1a1a' -sb '#2e8b57' -fn 'JetBrains Mono Nerd Font:size=14', rofi_run -r}
+    {dmenu_run -i -c -g 1 -l 10 -p 'Search' -nb '#000000' -sb '#947cc3' -fn 'JetBrains Mono Nerd Font:size=14', rofi_run -r}
 
 
 # Tui filemanager and same command with sudo
@@ -32,7 +32,7 @@ super + {_,shift + } i
 
 # S,R,lock script,calendar app
 super + {_,shift + } c
-    {rofi_run -l, rofi_run -w}
+    {power, rofi_run -w}
 
 # Default web browser brave and firefox
 super + {_,shift + } w

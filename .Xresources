@@ -4,7 +4,7 @@
 
 !! Colorscheme
 
-*background:  #1a1a1a
+*background:  #000000
 *foreground:  #c3cdc8
  black:       #313539
  red:         #c63737
@@ -13,6 +13,7 @@
  blue:        #314ad0
  magenta:     #b30ad0
  cyan:        #32d0fc
+ purple:      #947cc3
  white:       #c3cdc8
 
 

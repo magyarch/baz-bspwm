@@ -52,14 +52,14 @@ font:
     # family: Hack NF
     # family: SpaceMono NF
     style: Regular
-  size: 11
+  size: 12
   offset:
     x: -1
     y: -1
   glyph_offset:
     x: 0
     y: 0
-  use_thin_strokes: false
+      #  use_thin_strokes: false
   debug:
     persistent_logging: false
 draw_bold_text_with_bright_colors: false
@@ -69,7 +69,7 @@ colors:
   name: Vacuous 2
   author: hal
   primary:
-    background: "#1a1a1a"
+    background: "#000000"
     foreground: "#c3cdc8"
   cursor:
     text: "#101010"
