@@ -6,8 +6,8 @@ margin-bottom = 0
 
 [settings]
 ;https://github.com/jaagr/polybar/wiki/Configuration#application-settings
-#throttle-output = 5
-#throttle-output-for = 10
+throttle-output = 5
+throttle-output-for = 10
 #throttle-input-for = 30
 screenchange-reload = true
 compositing-background = over
@@ -28,23 +28,20 @@ format-offset =
 
 [colors]
 ; MagyArch theme ============
-;background = #2f2b26
-background = #000000
+background = #7a2f2b26
+;background = ${xrdb:background}
 foreground = ${xrdb:foreground}
-foreground-alt = #947cc3
+foreground-alt = ${xrdb:green}
 alert = #bf616a
 adapta-red = #FF5252
 adapta-yellow = #C9BC0E
 adapta-lightgreen = #4DB6AC
 adapta-green = #009688
-volume-min = #947cc3
-format-padding = 1
+volume-min = #a3be8c
 volume-med = #ebcb8b
 volume-max = #bf616a
 text = #99d1ce
 ; =======================
-
-
 
 
 ################################################################################
@@ -54,19 +51,16 @@ text = #99d1ce
 ################################################################################
 
 [bar/mainbar-bspwm]
-monitor = ${env:MONITOR:DP-0}
+monitor = ${env:MONITOR:DisplayPort-0}
 ;monitor-fallback = HDMI1
-width = 100%
-height = 30
-offset-x = 0
-offset-y = 1
+width = 95%
+height = 23
+offset-x = 47
+offset-y = 10
 radius = 1.0
-fixed-center = true
+fixed-center = false
 bottom = false
 ;separator = |
-
-dpi-x = 192
-dpi-y = 192
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -81,40 +75,42 @@ override-redirect = true
 ; See the Messaging wiki page for more details.
 enable-ipc = true
 
-;border-size = 2
+border-size = 2
 ;border-left-size = 2
 ;border-right-size = 0
 ;border-top-size = 0
 ;border-bottom-size = 3
 border-color = #2e8b57
 
-padding-left = 0
+padding-left = 1
 padding-right = 0
 
 module-margin-left = 0
 module-margin-right = 0
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "JetBrains Mono Nerd Font:pixelsize=11;3"
-font-1 = "FontAwesome:pixelsize=11;3"
-font-2 = "Joy Pixels:scale=11;3"
+font-0 = "JetBrains Mono:pixelsize=11;1"
+font-1 = "FontAwesome:pixelsize=11;1"
+font-2 = "Joy Pixels:scale=11;1"
 
-modules-left = arrow7 weather arrow4 date arrow3 dashboard arrow6
-modules-center = ewmh
-modules-right = arrow1 atemp arrow2 mem arrow3 pavolume arrow4 power arrow5
+modules-left = jgmenu bspwm 
+modules-center = cpu-graph2
+modules-right = discord itemp sep mem sep weather sep date sep pavolume sep help sep powermenu
+
+#tray-position = none
 
 tray-detached = false
 tray-offset-x = 0
 tray-offset-y = 0
 tray-padding = 2
-tray-maxsize = 64
+tray-maxsize = 22
 tray-scale = 1.0
 tray-position = right
-tray-background = #947cc3
+tray-background = ${colors.background}
 
-;tray-radius = 8.0
-; scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
+
+# scroll-up = bspwm-desknext
+#scroll-down = bspwm-deskprev
 
 
 ################################################################################
@@ -198,48 +194,42 @@ format-background = ${colors.background}
 ################################################################################
 
 
-[module/volume]
-;https://github.com/jaagr/polybar/wiki/Module:-volume
-type = internal/volume
-format-volume = "<label-volume>  <bar-volume>"
-
-label-volume = " "
-label-volume-foreground = #000000
-label-muted = muted
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #000000
-bar-volume-foreground-1 = #000000
-bar-volume-foreground-2 = #000000
-bar-volume-foreground-3 = #000000
-bar-volume-foreground-4 = #000000
-bar-volume-foreground-5 = #000000
-bar-volume-foreground-6 = #000000
-bar-volume-gradient = false
-bar-volume-indicator = 
-bar-volume-indicator-font = 2
-bar-volume-fill = 
-bar-volume-fill-font = 2
-bar-volume-empty = 
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground}
-format-volume-foreground = ${colors.foreground}
-format-volume-background = #947cc3
-format-muted-prefix = "  "
-format-muted-prefix-foreground = "#ff0000"
-format-muted-foreground = ${colors.foreground}
-format-muted-background = ${colors.background}
 
 
-
-
+[module/cpu-graph]
+type = internal/cpu
+interval = 0.08
+;format = " <ramp-coreload>"
+format = " <ramp-coreload>"
+format-margin = 0
+ramp-coreload-0 = ▁
+ramp-coreload-0-foreground = ${colors.foreground}
+ramp-coreload-1 = ▂
+ramp-coreload-1-foreground = ${colors.foreground}
+ramp-coreload-2 = ▃
+ramp-coreload-2-foreground = #d3ffce
+ramp-coreload-3 = ▄
+ramp-coreload-3-foreground = #5ac18e
+ramp-coreload-4 = ▅
+ramp-coreload-4-foreground = #fff68f
+ramp-coreload-5 = ▆
+ramp-coreload-5-foreground = #fff68f
+ramp-coreload-6 = ▇
+ramp-coreload-6-foreground = #ff4040
+ramp-coreload-7 = █
+ramp-coreload-7-foreground = #ff4040
+ramp-coreload-font = 3
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+;format-underline = ${colors.foreground-alt}
+format-padding = 0
 
 
 [module/weather]
 type = custom/script
-exec = weather
+exec = $HOME/.local/bin/statusbar/weather
 format-foreground = ${colors.foreground}
-format-background = #947cc3
+format-background = ${colors.background}
 format-padding = 0
 tail = true
 
@@ -247,17 +237,17 @@ tail = true
 [module/mem]
 type = custom/script
 exec = ~/.local/bin/statusbar/memory
-format-foreground = #2e8b57
-format-background = #c3cdc8
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
 format-padding = 1
 interval = 1
-format-prefix = "💡"
+format-prefix = "💡 "
 
 
 
 [module/cpu-usage]
 type = custom/script
-exec = cpu
+exec = ~/.local/bin/cpu
 label = "%output%"
 interval = 10
 format-prefix = "💻 "
@@ -351,23 +341,23 @@ label-active = 
 label-active-foreground = ${colors.foreground-alt}
 label-active-background = ${colors.background}
 label-active-underline= ${colors.foreground-alt}
-label-active-padding = 1
+label-active-padding = 2
 
 label-occupied = 
 label-occupied-foreground = #f37575
 label-occupied-background = ${colors.background}
-label-occupied-padding = 1
+label-occupied-padding = 2
 
 label-urgent = 
 label-urgent-foreground = ${colors.alert}
 label-urgent-background = ${colors.background}
 label-urgent-underline = ${colors.alert}
-label-urgent-padding = 1
+label-urgent-padding = 2
 
 
 label-empty = 
 label-empty-foreground = ${colors.foreground}
-label-empty-padding = 1
+label-empty-padding = 2
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -428,14 +418,14 @@ content-background =  ${colors.background}
 ########################################################################
 [module/atemp]
 type = custom/script
-exec = sensors | awk  '/^Tctl:/ {print $2}'
+exec = sensors | awk  '/^Tdie:/ {print $2}'
 interval = 2
-format-padding = 1
+format-padding = 2
 format-foreground = ${colors.foreground}
-format-background = ${colors.foreground-alt}
+format-background = ${colors.background}
 ;format-underline = #C1B93E
 format-prefix-foreground = #c3cdc8
-label = 🌡️ %output%
+label =   %output%
 
 
 # INTEL cpu temperature module/hőmmérséklet jelző modul intel processzorokhoz
@@ -463,14 +453,6 @@ format-background = ${colors.background}
 label = %output%
 
 
-[module/dashboard]
-type = custom/script
-exec = echo "%{A1:bash $HOME/.config/eww/scripts/launch_dashboard:}📊%{A}"
-format-foreground = #c3cdc8
-format-background = #947cc3
-format-padding = 1
-
-
 # Uptime/Bekapcsolás óta eltelt idő
 ################################################################################
 
@@ -493,17 +475,16 @@ format-padding = 2
 ###################################################
 [module/alsa]
 type = internal/alsa
-format-volume = <ramp-volume> <label-volume>
-format-muted = 🔇 muted
-ramp-volume-0 = 🔈
-ramp-volume-1 = 🔉
-ramp-volume-2 = 🔊
-ramp-volume-foreground = #947cc3
-ramp-volume-background = #947cc3
+format-volume = <ramp-volume>
+format-muted =  0%
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = ${colors.foreground}
+ramp-volume-background = ${colors.background}
 format-muted-foreground = ${colors.foreground}
-format-muted-background = #947cc3
-format-padding = 1
-
+format-muted-background = ${colors.background}
+format-padding = 2
 
 click-left = pavucontrol &
 
@@ -539,11 +520,9 @@ format-background = ${colors.background}
 
 [module/xwindow]
 type = internal/xwindow
-;label =  %title:0:30:...% 
-label = %title%
-label-maxlen = 30
-format-foreground = #c3cdc8
-format-background = #947cc3
+label = [ %title:0:20:...% ]
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
 format-padding = 1
 
 #########################################################################
@@ -612,8 +591,8 @@ click-left  = pcmanfm &
 [module/power]
 type = custom/text
 content = 
-content-foreground = #000000
-content-background = #c3cdc8
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
 content-padding = 1
 
 click-left = power
@@ -636,7 +615,7 @@ content-foreground = ${colors.foreground}
 content-background = ${colors.background}
 content-padding = 1
 
-click-left = xmenu.sh
+click-left = xmenu.sh 
 
 
 [module/pavolume]
@@ -647,7 +626,7 @@ exec = $HOME/.local/bin/statusbar/volume &
 click-left = exec pavucontrol
 format-foreground = ${colors.foreground}
 format-prefix-foreground = #8d0000
-format-background = #947cc3
+format-background = ${colors.background}
 format-padding = 1
 interval = 1
 
@@ -658,8 +637,8 @@ type = custom/script
 exec = ~/.local/bin/statusbar/clock
 click-left = $TERMFLOAT -g 70x20-620+30 -e calcurse
 click-right = killall -9 calcurse &
-format-foreground = #000000
-format-background = #c3cdc8
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
 format-padding = 1
 format-prefix = " 📅 "
 interval=30
@@ -667,53 +646,37 @@ interval=30
 [module/arrow1]
 type = custom/text
 content = "%{T2} %{T-}"
-content-font = 2
-content-foreground = #947cc3
-content-background = 
+content-font = 1
+content-foreground = #d76666
+content-background =
 
 [module/arrow2]
 type = custom/text
 content = "%{T2} %{T-}"
-content-font = 2
-content-foreground = #c3cdc8
-content-background = #947cc3
+content-font = 1
+content-foreground = #668bd7
+content-background = #d76666
 
 [module/arrow3]
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #947cc3
-content-background = #c3cdc8
+content-foreground = #66d76a
+content-background = #668bd7
 
 [module/arrow4]
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #c3cdc8
-content-background = #947cc3
+content-foreground = #2e8b57
+content-background = #66d76a
 
 [module/arrow5]
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #947cc3
-content-background = #c3cdc8
-
-
-[module/arrow6]
-type = custom/text
-content = "%{T2} %{T-}"
-content-font = 2
-content-foreground = #000000
-content-background = #947cc3
-
-
-[module/arrow7]
-type = custom/text
-content = "%{T2} %{T-}"
-content-font = 2
-content-foreground = #947cc3
-content-background = #000000
+content-foreground = #668bd7
+content-background = #2e8b57
 
 
 [module/cpu-graph2]
@@ -742,7 +705,7 @@ ramp-coreload-font = 3
 format-background = ${colors.background}
 format-foreground = ${colors.foreground}
 ;format-underline = ${colors.foreground-alt}
-format-padding = 1
+format-padding = 3
 
 
 
@@ -771,7 +734,7 @@ label-separator-foreground = ${colors.foreground}
 menu-0-0 = discord
 menu-0-0-exec = discord &
 menu-0-1 = close & kill
-menu-0-1-exec = bspc node -c | bspc node -k
+menu-0-1-exec = bspc node -c | bspc node -k 
 
 format-background = ${colors.background}
 format-foreground = ${colors.foreground}
@@ -815,29 +778,20 @@ label-separator = |
 label-separator-foreground = ${colors.foreground}
 
 #menu-0-0 = 
-#menu-0-0-exec =
+#menu-0-0-exec = 
 menu-0-0 = 
 menu-0-0-exec = systemctl reboot
-menu-0-1 = 
+menu-0-1 = 
 menu-0-1-exec = pkill bspwm
 menu-0-2 = 
 menu-0-2-exec = systemctl poweroff
 
 
-format-background = #c3cdc8
-format-foreground = #008080
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
 ;format-underline = ${colors.foreground-alt}
-format-padding = 3
+format-padding = 1
 
-
-[module/color-switch]
-type = custom/text
-
-content = 
-content-foreground = ${colors.foreground-alt}
-content-background = ${colors.background}
-
-click-left = ~/.config/polybar/scripts/style-switch.sh &
 
 
 
