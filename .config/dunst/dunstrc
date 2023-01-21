@@ -284,7 +284,7 @@
     # dunst will attempt to calculate an appropriate dpi value for each monitor
     # using the resolution and physical size. This might be useful in setups
     # where there are multiple screens with very different dpi values.
-    per_monitor_dpi = 144
+    per_monitor_dpi = 144 
 
 
 #[urgency_low]
@@ -314,7 +314,7 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#000000"
+    background = "#282a36"
     #foreground = "#848b92"
     foreground = "#fcf7e2"
     frame_color = "#27292c"
@@ -323,7 +323,7 @@
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#000000"
+    background = "#282a36"
     #foreground = "#7693ac"
     foreground = "#dffebe"
     frame_color = "#27292c"
@@ -332,7 +332,7 @@
     #icon = /path/to/icon
 
 [urgency_critical]
-    background = "#000000"
+    background = "#282a36"
     #foreground = "#b05655"
     foreground = "#d27c7b"
     frame_color = "#27292c"

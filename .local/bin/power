@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DIALOG_RESULT=$(echo -e 'Quit bspwm\nHibernate\nReboot\nPoweroff' | dmenu -i -c -g 1 -l 20 -nb '#1a1a1a' -sb '#947cc3' -fn 'JetBrains Mono Nerd Font:size=12' -p 'System')
+DIALOG_RESULT=$(echo -e 'Quit bspwm\nHibernate\nReboot\nPoweroff' | dmenu -i -c -g 1 -l 20 -nb '#282a36' -sb '#bd93f9' -fn 'JetBrains Mono Nerd Font:size=11' -p 'System')
 
 case $DIALOG_RESULT in
         "Quit bspwm" ) bspc quit ;;
