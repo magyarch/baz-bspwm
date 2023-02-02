@@ -68,7 +68,6 @@ draw_bold_text_with_bright_colors: false
 colors:
   name: Vacuous 2
   author: hal
-  colors:
   primary:
     background: '#282a36'
     foreground: '#f8f8f2'

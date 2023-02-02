@@ -142,10 +142,12 @@ bspc rule -a Pavucontrol state=floating rectangle=1880x1000+940+500
 bspc rule -a Pcmanfm:Dialog state=floating
 bspc rule -a Alacritty:Alacritty:News state=floating rectangle=1880x1000+940+500
 bspc rule -a Alacritty:Alacritty:Music state=floating rectangle=1880x1000+940+500
-#bspc rule -a Alacritty:Alacritty:FM state=floating rectangle=1880x1000+940+500
+bspc rule -a com.github.neithern.g4music state=floating rectangle=1380x1300+1280+450 border=off
 bspc rule -a Alacritty:Alacritty:scratchpad state=floating rectangle=1880x1000+940+500
+bspc rule -a bauh state=floating rectangle=1880x1000+940+500
 bspc rule -a Sxiv state=floating rectangle=1880x1000+940+500
 bspc rule -a mpv state=floating rectangle=1880x1000+940+500
+bspc rule -a xdg-desktop-portal-gnome state=floating rectangle=1880x1000+940+500
 
 # Manage apps
 bspc rule -a polybar manage=off

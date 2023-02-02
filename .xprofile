@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # for hidpi 4k
-#xrandr --dpi 192
-#export GDK_SCALE=2
+xrandr --dpi 192
+export GDK_SCALE=2
 # ---------------------------------------------
 
  setbg &		# Set the background

@@ -7,7 +7,7 @@ super + {_,shift + } Return
 
 # Dmenu2 and rofi(window switcher, application launcher)
 super + {_,shift +} d
-    {dmenu_run -i -c -g 1 -l 10 -p 'Search' -nb '#000000' -sb '#947cc3' -fn 'JetBrains Mono Nerd Font:size=12', rofi -show drun}
+    {dmenu_run -i -c -g 1 -l 10 -p 'Search' -nb '#282a36' -sb '#947cc3' -fn 'JetBrains Mono Nerd Font:size=12', rofi -show drun}
 
 
 # Tui filemanager and same command with sudo
@@ -32,7 +32,7 @@ super + {_,shift + } i
 
 # S,R,lock script,calendar app
 super + {_,shift + } c
-    {power, rofi_run -w}
+    {code, eww open --toggle powermenu}
 
 # Default web browser brave and firefox
 super + {_,shift + } w
@@ -59,8 +59,8 @@ super + {_,shift + } q
 	bspc node -{c,k}
 
 # Aliasrc show/share files
-super + {_,shift + } a
-   {alias.sh, share.sh}
+#super + {_,shift + } a
+ #  {code, share.sh}
 
 # emojimenu "get a menu of emojis to copy"
 super + grave
@@ -116,14 +116,16 @@ super + {F2,F3,F11}
   {edconf.sh,displayselect,ducksearch}
 
 # Decrease padding 0
-super + {F6,F7}
+super + {_,shift + }a
     {bspc config right_padding 0;\
     bspc config left_padding 0 ;\
-    bspc config top_padding 22 ;\
-    bspc config bottom_padding 1,bspc config right_padding 40;\
-    bspc config left_padding 40 ;\
+    bspc config top_padding 0 ;\
+    bspc config window_gap 0 ;\
+    bspc config bottom_padding 0,bspc config right_padding 5;\
+    bspc config left_padding 5 ;\
     bspc config top_padding 40 ;\
-    bspc config bottom_padding 40}
+    bspc config window_gap 25 ;\
+    bspc config bottom_padding 5}
 
 # Change background
 super + F8
@@ -153,8 +155,7 @@ F12
 
 # Sratchpad
 F1
-  tdrop -ma -w 50% -h 50% -y 25% -x 25%  alacritty --class=tdrop -t tdrop
-
+  code
 ##########################################
          # BSPWM LAYOUT KEYS
 ###########################################
@@ -193,12 +194,12 @@ super + {Left,Down,Up,Right}
 super + space
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
-# Focus parent/brother/first/second for preselection
+# Tabbed mode
 super + ctrl + t
     wmctrl -x -a "tabbed" || tabbed alacritty --embed
 
 # Preselect the splitting area for next window on leaf/parent
-super + ctrl + {u,i,o,p}
+super + ctrl + {Left,Down,Up,Right}
 	bspc node --presel-dir \~{west,south,north,east}
 
 # Cancel preselection
@@ -217,6 +218,7 @@ super + v
 super + shift + v
   bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
 
+# Swap windows
 super + shift + {Left,Down,Up,Right}
     dir={west,south,north,east}; \
     bspc node -s "$dir.local" --follow \
