@@ -25,8 +25,5 @@ xdotool search --onlyvisible --name "$1" windowunmap \
     || xdotool search --name "$1" windowmap \
     || $entry &
 
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
 
 
