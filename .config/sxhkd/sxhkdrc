@@ -32,7 +32,7 @@ super + {_,shift + } i
 
 # S,R,lock script,calendar app
 super + {_,shift + } c
-    {code, eww open --toggle powermenu}
+    {power, eww open --toggle powermenu}
 
 # Default web browser brave and firefox
 super + {_,shift + } w
