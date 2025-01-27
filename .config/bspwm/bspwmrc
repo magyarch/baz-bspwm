@@ -7,65 +7,17 @@ bspc rule -r "*"
 # LAUNCHERS
 killall cleanfullscreen
 cleanfullscreen &
-#wal -i "$HOME/.local/bin/wallpapers/Future"
-#source "$HOME/.cache/wal/colors.sh"
-# xrandr --dpi 144
+sxhkd -c $HOME/.config/bspwm/sxhkdrc &
+pidof -q polybar || sleep 1s && $HOME/.config/polybar/launch.sh &
+pidof -q compfy || { compfy --config "$HOME"/.config/compfy.conf & }
 
-# pkill sxhkd
-# pgrep -x sxhkd > /dev/null || sxhkd -c $HOME/.config/bspwm/sxhkdrc &
-
-
-# mpd >/dev/null 2>&1 &     # Music player daemon
-
-# xsetroot -cursor_name left_ptr &   # Change cursor from default x shape
-
-# xset r rate 300 50 &	# Speed xrate up
-
-# #xrdb .Xresources &
-
-# #picom --experimental-backends --shadow-exclude-reg '1920+0-0' --opacity-rule "85:class_g ='urxvt'" --opacity-rule "80:class_g = 'rofi'" --opacity-rule "90:class_g = 'Alacritty'" --inactive-opacity 1.00 --blur-background-exclude "class_g = 'slop'" -CGfF -o 0.70 -O 0.028 -I 0.028 -t 0 -l 0 -r 3 -D2 -m 1.00 &
-
-# pkill setbg
-# setbg &
-
-# #pkill picom
-# #picom -b --config ~/.config/picom.conf --experimental-backends &
-
-# pkill dunst
-# dunst &                                # notification daemon
-
-# #pkill unclutter
-# #unclutter &       # hide mouse pointer when idle
-
-# pkill nm-applet
-# nm-applet &        # networkmanager applet/wifi,ethernet settings
-
-#pkill /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-
-#zathura ~/.local/share/Magyarch-i3.pdf &
-#pkill notify-send
-#sleep 8s && notify-send 'Nyomja meg a Super+F1-et a használati utasításért.' -t 10000 &
-
-#xset s off -dpms &
-
-#pkill udiskie
-#udiskie -a &
-#conky -c ~/.config/conky/magyarch.conkyrc &
-
-#redshift -l 47.162495:19.503304 -t 6000:3600 -g 0.8 -m randr -v &
-#xrandr --output DP-0 --primary --mode 3840x2160 --pos 2160x0 \
-#	--output HDMI-0 --auto --scale 2x2 --rotate left &
-
-#pkill polybar
-#(sleep 2s && $HOME/.config/polybar/launch.sh) &
 # ----------------------------------------------------------------------------------------------
 
 
 # Bspwm configs
-bspc config border_width         5
-bspc config window_gap           15
-bspc config top_padding          40
+bspc config border_width         3
+bspc config window_gap           10
+bspc config top_padding          35
 bspc config bottom_padding       10
 bspc config right_padding        10
 bspc config left_padding         10
@@ -76,10 +28,10 @@ bspc config borderless_monocle    false  # no borders in monocle layout.
 bspc config gapless_monocle       false  # no gaps in monocle layout.
 bspc config single_monocle        true  # use monocle layout if there is only 1 window.
 bspc config automatic_scheme alternate
-bspc config center_pseudo_tiled   true
+#bspc config center_pseudo_tiled   true
 #bspc config initial_polarity second_child
-bspc config initial_polarity second_child
 bspc config focus_follows_pointer true
+bspc config honor_size_hints 	 true
 #bspc config external_rules_command $HOME/.config/bspwm/spotify_rules
 #b#spc config external_rules_command $HOME/.local/bin/float.sh
 #bspc config external_rules_command $HOME/.config/bspwm/external_rules.sh
@@ -88,10 +40,11 @@ bspc config focus_follows_pointer true
 
 
 # Moving foating windows
-bspc config pointer_modifier mod4
-bspc config pointer_action1 move
-bspc config pointer_action2 resize_side
-bspc config pointer_action3 resize_corner
+bspc config pointer_motion_interval   5
+bspc config pointer_modifier          mod4
+bspc config pointer_action1           move
+bspc config pointer_action2           resize_side
+bspc config pointer_action3           resize_corner
 
 
 # Border colors
@@ -120,35 +73,38 @@ bspc monitor -d ""  ""  ""  ""  ""  ""  ""  ""  ""  "
 
 
 # Open applications on specific workspaces
-bspc rule -a Brave-browser desktop='^1'
-bspc rule -a discord desktop='^2' follow=on
-bspc rule -a TelegramDesktop desktop='^2' follow=on
-bspc rule -a Subl3 desktop='^3' follow=on
-bspc rule -a Steam desktop='^4' state=fullscreen follow=on
+bspc rule -a firefox desktop='^1' follow=on
+bspc rule -a discord desktop='^2' state=pseudo_tiled follow=on
+bspc rule -a eadesktop.exe desktop='^6' state=pseudo_tiled follow=on
+bspc rule -a Sublime_text desktop='^3' follow=on
+bspc rule -a steam desktop='^4' state=pseudo_tiled follow=on
 bspc rule -a Vlc desktop='^7' state=fullscreen follow=on
+bspc rule -a qBittorrent desktop='^7' follow=on
+bspc rule -a Thunar desktop='^8' follow=on
 bspc rule -a Pcmanfm desktop='^8' follow=on
 bspc rule -a Spotify desktop='^9' follow=on
 bspc rule -a VirtualBox Manager state=fullscreen
 bspc rule -a VirtualBox Machine state=fullscreen
 #bspc rule -a Ulauncher  border=off
-#bspc rule -a burp-StartBurp desktop='^9' state=floating follow=on
+bspc rule -a Lutris desktop='^5' follow=on
 #bspc rule -a scpad sticky=on state=floating rectangle=1880x1000+940+500
 #bspc rule -a ncmpcpp sticky=on state=floating rectangle=1880x1000+940+500
 
 # Floating apps
-bspc rule -a Gpick state=floating center=on
-bspc rule -a Lxappearance state=floating center=on
-bspc rule -a Pavucontrol state=floating center=on
-bspc rule -a Pcmanfm:Dialog state=floating center=on
-bspc rule -a Alacritty:Alacritty:News state=floating center=on
-bspc rule -a Alacritty:Alacritty:Music state=floating center=on
-bspc rule -a com.github.neithern.g4music state=floating rectangle=1380x1300+1280+450 border=off
-bspc rule -a Alacritty:Alacritty:scratchpad state=floating center=on
-bspc rule -a bauh state=floating rectangle=1880x1000+940+500
-bspc rule -a Sxiv state=floating rectangle=1880x1000+940+500
-bspc rule -a mpv state=floating center=on
-bspc rule -a xdg-desktop-portal-gnome state=floating rectangle=1880x1000+940+500
-
+bspc rule -a heroic.exe desktop='^6' state=pseudo_tiled follow=on
+bspc rule -a Lxappearance state=floating rectangle=1480x800+540+300
+bspc rule -a Xfce4-appfinder state=floating rectangle=1480x800+540+300
+bspc rule -a pavucontrol state=floating rectangle=1480x800+540+300
+bspc rule -a Pcmanfm:Dialog state=floating
+bspc rule -a Alacritty:Alacritty:News state=floating rectangle=1480x800+540+300
+bspc rule -a kitty:kitty:Music state=floating rectangle=1480x800+0+0 center=true
+bspc rule -a com.github.neithern.g4music state=floating rectangle=1480x800+540+300 border=off
+bspc rule -a Alacritty:Alacritty:scratchpad state=floating rectangle=1480x800+540+300
+bspc rule -a kitty:kitty:scratchpad state=floating rectangle=1480x800+0+0 center=true
+bspc rule -a upc.exe desktop='^6' state=pseudo_tiled private=on follow=on
+bspc rule -a Sxiv state=floating rectangle=1480x800+540+300
+bspc rule -a mpv state=floating rectangle=800x400+1730+50
+bspc rule -a epicgameslauncher.exe desktop='^6' state=pseudo_tiled follow=on
 # Manage apps
 bspc rule -a polybar manage=off
 bspc rule -a Screenkey manage=off

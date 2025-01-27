@@ -2,7 +2,7 @@
 
 # for hidpi 4k
 xrandr --dpi 144
-export GDK_SCALE=2
+#export GDK_SCALE=2
 # ---------------------------------------------
 
  setbg &		# Set the background
@@ -21,7 +21,7 @@ dunst &                 # dunst for notifications
  nm-applet &
  /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # #zathura ~/.local/share/Magyarch-bspwm.pdf &
- sleep 2s && notify-send 'Nyomja meg a Super+F1-et a használati utasításért.' -t 10000 &
+# sleep 2s && notify-send 'Nyomja meg a Super+F1-et a használati utasításért.' -t 10000 &
 # #conky -c ~/.config/conky/conky.conkyrc &
 #redshift -l 47.162495:19.503304 -t 6000:3600 -g 0.8 -m randr -v &
 #~/.config/nimdow/nimdowstatus &

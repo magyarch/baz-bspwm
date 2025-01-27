@@ -1,7 +1,7 @@
 "vim: filetype=vifm
 source ~/.config/vifm/vifmshortcuts
-source ~/.config/vifm/favicons.vifm
-"source ~/.config/vifm/icons
+"source ~/.config/vifm/favicons.vifm
+source ~/.config/vifm/icons
 
 set vicmd=$EDITOR
 set syscalls

@@ -7,7 +7,8 @@ super + {_,shift + } Return
 
 # Dmenu2 and rofi(window switcher, application launcher)
 super + {_,shift +} d
-    {dmenu_run, rofi -show window}
+    {dmenu_run -i --nb '#282a36' --nf '#c3cdc8' --sb '#6272a4' --font 'JetBrains Mono Nerd Font-11 
+    ' , xfce4-appfinder}
 
 
 # Tui filemanager and same command with sudo
@@ -16,7 +17,7 @@ super + {_,shift + } r
 
 # Show keys with rofi/default gui editor
 super + {_,shift + } e
-    {show_keys.sh, subl}
+    {wmctrl -a Code || code, wmctrl -a Sublime || subl}
 
 # Switch tile and monocle layout and simple flip layout
 super + {_,shift + } m
@@ -28,19 +29,19 @@ super + {_,shift + } n
 
 # Htop,gtop system monitor
 super + {_,shift + } i
-    {$TERMINAL -e htop, picsound}
+    {$TERMINAL -e htop, switch_audio.sh}
 
 # S,R,lock script,calendar app
 super + {_,shift + } c
-    {power, eww open --toggle powermenu}
+    {rofi_power, eww open --toggle powermenu}
 
 # Default web browser brave and firefox
 super + {_,shift + } w
-    {$BROWSER, $BROWSER2}
+    {wmctrl -a Microsoft-edge || $BROWSER, $BROWSER2}
 
 # Chat client, gui filemanager
 super + {_,shift + } p
-    {discord, pcmanfm}
+    {wmctrl -a Discord || discord, wmctrl -a Thunar || thunar}
 
 # Hide polybar/Reload bspwm
 super + {_,shift + } b
@@ -155,7 +156,7 @@ F12
 
 # Sratchpad
 F1
-  code
+  wmctrl -a Steam || steam
 ##########################################
          # BSPWM LAYOUT KEYS
 ###########################################
@@ -163,7 +164,7 @@ F1
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-  bspc {desktop -f,node -d} '^{1-9,10}' --follow; desktop=$(bspc query -D --names -d); notify-send $desktop --urgency=low -t 350;
+  bspc {desktop -f,node -d} '^{1-9,10}' --follow;
 
 #Focus selected desktop
 alt + Tab
@@ -223,6 +224,10 @@ super + shift + {Left,Down,Up,Right}
     dir={west,south,north,east}; \
     bspc node -s "$dir.local" --follow \
         || bspc node -m "$dir" --follow
+
+super + ctrl + {m,s,p}
+    bspc node -g {marked,sticky,private}
+
 
 ##########################################################################################
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>END>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
