@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 # Profile file. Runs on login.
 
 # Adds `~/.scripts` and all subdirectories to $PATH

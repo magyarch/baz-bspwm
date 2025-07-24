@@ -9,7 +9,7 @@ killall cleanfullscreen
 cleanfullscreen &
 sxhkd -c $HOME/.config/bspwm/sxhkdrc &
 pidof -q polybar || sleep 1s && $HOME/.config/polybar/launch.sh &
-pidof -q compfy || { compfy --config "$HOME"/.config/compfy.conf & }
+#pidof -q compfy || { compfy --config "$HOME"/.config/compfy.conf & }
 
 # ----------------------------------------------------------------------------------------------
 
@@ -98,9 +98,9 @@ bspc rule -a pavucontrol state=floating rectangle=1480x800+540+300
 bspc rule -a Pcmanfm:Dialog state=floating
 bspc rule -a Alacritty:Alacritty:News state=floating rectangle=1480x800+540+300
 bspc rule -a kitty:kitty:Music state=floating rectangle=1480x800+0+0 center=true
-bspc rule -a com.github.neithern.g4music state=floating rectangle=1480x800+540+300 border=off
+bspc rule -a com.github.neithern.g4music state=floating rectangle=1080x800+540+300 border=off
 bspc rule -a Alacritty:Alacritty:scratchpad state=floating rectangle=1480x800+540+300
-bspc rule -a kitty:kitty:scratchpad state=floating rectangle=1480x800+0+0 center=true
+bspc rule -a kitty:kitty:scratchpad state=floating rectangle=1080x800+0+0 center=true
 bspc rule -a upc.exe desktop='^6' state=pseudo_tiled private=on follow=on
 bspc rule -a Sxiv state=floating rectangle=1480x800+540+300
 bspc rule -a mpv state=floating rectangle=800x400+1730+50
