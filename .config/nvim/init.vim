@@ -21,8 +21,10 @@ Plug 'vifm/vifm.vim'
 Plug 'kovetskiy/sxhkd-vim'
 call plug#end()
 
+" Első indításkor automatikusan telepíti a plugineket
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)')) | PlugInstall --sync | source $MYVIMRC | endif
+
 set bg=dark
-set go=a
 set mouse=a
 set nohlsearch
 set clipboard=unnamedplus
