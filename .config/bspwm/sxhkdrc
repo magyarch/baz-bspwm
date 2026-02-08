@@ -3,7 +3,7 @@
 
 # Main and float terminal
 super + {_,shift + } Return
-    {$TERMINAL, scratch scratchpad}
+    {$TERMINAL, scratch scratchpad }
 
 # Dmenu2 and rofi(window switcher, application launcher)
 super + {_,shift +} d
@@ -24,7 +24,7 @@ super + {_,shift + } m
 
 # News, tui music player
 super + {_,shift + } n
-    {scratch News, scratch Music}
+    {scratch News, scratch Music  }
 
 # Htop,gtop system monitor
 super + {_,shift + } i
@@ -32,11 +32,11 @@ super + {_,shift + } i
 
 # S,R,lock script,calendar app
 super + {_,shift + } c
-    {power, eww open --toggle powermenu}
+    {rofi_power, rofi_power}
 
 # Default web browser brave and firefox
 super + {_,shift + } w
-    {wmctrl -a Microsoft-edge || $BROWSER, $BROWSER2}
+    {wmctrl -a firefox || $BROWSER, $BROWSER2}
 
 # Chat client, gui filemanager
 super + {_,shift + } p
